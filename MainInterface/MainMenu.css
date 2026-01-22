@@ -68,7 +68,7 @@ body {
     letter-spacing: 3px;
     opacity: 0;
     font-family: Murderer;
-    animation: GoingLeftAnimation 0.5s ease-out 5.5s forwards, Fadein 0.5s ease-in-out 5.5s forwards;  
+    animation: GoingLeftAnimation 0.5s ease-out 5.5s forwards, Fadein 0.5s ease-in-out 5.5s forwards, MainTextShake3 3s steps(1) 3s  infinite forwards, MainTextFlicker2 3s steps(1) 3s infinite forwards;  
 }
 
 .MainMenuButtons {
@@ -123,6 +123,71 @@ body {
 @keyframes MainTextFlicker1{
     0% {
         opacity: 0;
+    }   
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes MainTextFlicker2{
+    0% {
+        opacity: 1;
+    }   
+    2.5% {
+        opacity: 0;
+    }   
+    4% {
+        opacity: 1;
+    }   
+    6.5% {
+        opacity: 0;
+    }   
+    8% {
+        opacity: 1;
+    }   
+    10% {
+        opacity: 0;
+    }   
+    13% {
+        opacity: 1;
+    }   
+    14% {
+        opacity: 0;
+    }   
+    15% {
+        opacity: 1;
+    }   
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes MainTextShake3{
+    0% {
+        transform: translateX(-20px);
+    }   
+    10% {
+        transform: translateX(20px);
+    }   
+    13% {
+        transform: translateX(-20px);
+    }   
+    14% {
+        transform: translateX(20px);
+    }   
+    15% {
+        transform: translateX(-20px);
+    }   
+    16% {
+        transform: translateX(20px);
+    }   
+    17% {
+        transform: translateX(-20px);
+    } 
+    19% {
+        transform: translateX(0);
     }   
 
     100% {
