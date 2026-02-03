@@ -59,16 +59,20 @@ body {
 
 .MainMenuTitle {
     position: fixed;
-    top: 28%;
-    left: 75px;
-    translate: 0 -25%;
-    color: rgb(255, 0, 0);    
+    top: 30%;
+    left: 20%;
+    translate: -30% -20%;
+    scale: 0.8;
+    color: rgb(255, 0, 0);  
+    background-color: none;  
+    width: auto;
+    height: auto;
     font-size: 200px;
     font-weight: 2;
     letter-spacing: 3px;
     opacity: 0;
     font-family: Murderer;
-    animation: GoingLeftAnimation 0.5s ease-out 5.5s forwards, Fadein 0.5s ease-in-out 5.5s forwards, MainTextShake3 3s steps(1) 3s  infinite forwards, MainTextFlicker2 3s steps(1) 3s infinite forwards;  
+    animation: GoingLeftAnimation 0.5s ease-out 5.5s forwards, Fadein 0.5s ease-in-out 5.5s forwards, MainTextShake3 3s steps(1) 3s infinite forwards, MainTextFlicker2 3s steps(1) 3s infinite forwards;  
 }
 
 .MainMenuButtons {
@@ -79,12 +83,15 @@ body {
     background-color: rgba(0, 0, 0, 0);
     display: grid;
     width: 450px;
+    scale: 0.8;
 
     grid-template-rows: 100px 100px 100px 100px 100px;
     row-gap: 30px;
     grid-template-columns: 425px;
     align-content: center;
     justify-content: center;
+
+    animation: GoingLeftAnimation 0.5s ease-in-out 4s forwards;
 }
 
 .MainMenuButton1, .MainMenuButton2, .MainMenuButton3, .MainMenuButton4, .MainMenuButton5, .MainMenuButton6 {
@@ -123,10 +130,12 @@ body {
 @keyframes MainTextFlicker1{
     0% {
         opacity: 0;
+        color: white;
     }   
 
     100% {
         opacity: 1;
+        color: red;
     }
 }
 
