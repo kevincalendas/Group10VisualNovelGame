@@ -4,22 +4,34 @@
         <title> Visual Novel </title>
         <link rel="stylesheet" href="MainMenu.css">
         <link rel="stylesheet" href="../GameFonts/Fonts.css">
+
     </head>
     <body>  
-        
-        <div class="MainIntroPanel">
-            <h1 class="MainIntro1H"> Group 10 Dev</h1>
+        <!-- Code Connector kineme -->
+         <script src="MainMenu.js" defer></script>
+        <div class="MainIntroPanel" id="MainIntroPanel">
+            <h1 class="MainIntro1H" id="MainIntro1H"> Group 10 Dev</h1>
         </div>
         
-        <div class="MainIntroPanel1">
+        <div class="ActivateGame" id="ActivateGame">
+                <h1 class="ActivateGameText" id="ActivateGameText"> Click Anywhere to Start </h1>
+        </div>
+
+        <div class="MainIntroPanel1" id="MainIntroPanel1">
             <img class="BackgroundImage" src="../OtherImages/Background.png">
-            <h1 class="MainMenuTitle"> Unspoken </h1>
-            <div class="MainMenuButtons">
-                <button class="MainMenuButton1"> Play </button>
-                <button class="MainMenuButton2"> Load </button>
-                <button class="MainMenuButton3"> Game Settings </button>
-                <button class="MainMenuButton4"> Extra </button>
-                <button class="MainMenuButton5"> Quit </button>
+            <audio id="MainMenuMusicBackground" loop preload="auto">
+                <source src="../MainMusicFiles/MainMenuBackgroundMusic.mp3" type="audio/mpeg">
+            </audio>
+
+            <audio id="MainMenuSFX1" preload="auto">
+                <source src="../MainSoundEffects/dragon-studio-tv-static-323620.mp3" type="audio/mpeg">
+            </audio>
+            <h1 class="MainMenuTitle" id="MainMenuTitle"> Unspoken </h1>
+            <div class="MainMenuButtons" id="MainMenuButtons">
+                <button class="MainMenuButton1" id="MainMenuButton1"> Play </button>
+                <button class="MainMenuButton2" id="MainMenuButton2"> Load </button>
+                <button class="MainMenuButton3" id="MainMenuButton3"> Game Settings </button>    
+                <button class="MainMenuButton5" id="MainMenuButton5"> Quit </button>
             </div>
         </div>
     </body>
