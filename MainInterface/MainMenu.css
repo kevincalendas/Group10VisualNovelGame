@@ -31,9 +31,10 @@ body {
 }
 
 .BackgroundImage {
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    background-color: rgb(90, 90, 90);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: none;
     position: fixed;
     left: 50%;
     top: 50%;
@@ -78,37 +79,48 @@ body {
     opacity: 0;
 }
 
-.MainMenuTitle {
+/* Main Menu */
+
+.MainContainerMenu {
     position: fixed;
-    top: 30%;
-    left: 20%;
-    translate: -30% -20%;
-    scale: 0.8;
-    color: rgb(255, 0, 0);  
-    background-color: none;  
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 95%;
+    height: 95%;
+    background-color: none;
+    z-index: 1;
+}
+
+.MainMenuTitle {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    translate: 0 -50%;
+    left: 5%;
     width: auto;
     height: auto;
-    font-size: 200px;
-    font-weight: 2;
-    letter-spacing: 3px;
-    opacity: 0;
+    font-size: 150px;
     font-family: Murderer;
-    animation: MainTextShake3 3s steps(1) 3s infinite forwards, MainTextFlicker2 3s steps(1) 3s infinite forwards;
+    font-weight: 100;
+    color: red;
+    background-color: none;
 }
 
 .MainMenuButtons {
     position: fixed;
-    right: 40px;
-    top: 35%;
-    translate: 0 -25%;
+    margin: 0;
+    right: -30px;
+    top: 50%;
+    translate: 0 -50%;
     background-color: rgba(0, 0, 0, 0);
     display: grid;
     width: 450px;
+    height: 100%;
     scale: 0.8;
-
-    grid-template-rows: 100px 100px 100px 100px 100px;
-    row-gap: 30px;
-    grid-template-columns: 425px;
+    grid-template-rows: 100px 100px 100px 100px;
+    row-gap: 20px;
+    grid-template-columns: 400px;
     align-content: center;
     justify-content: center;
 }
@@ -259,6 +271,16 @@ body {
 
     100% {
         scale: 1;
+    }
+}
+
+@keyframes scalemoreup {
+    0% {
+        scale: 1;
+    }   
+
+    100% {
+        scale: 1.5;
     }
 }
 

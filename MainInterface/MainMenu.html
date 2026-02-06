@@ -3,7 +3,9 @@
     <head>
         <title> Visual Novel </title>
         <link rel="stylesheet" href="MainMenu.css">
+        <link rel="stylesheet" href="ResponsivenessMainMenu(BETA).css">
         <link rel="stylesheet" href="../GameFonts/Fonts.css">
+        
 
     </head>
     <body>  
@@ -19,6 +21,7 @@
 
         <div class="MainIntroPanel1" id="MainIntroPanel1">
             <img class="BackgroundImage" src="../OtherImages/Background.png">
+            <img class="BackgroundImage" src="../OtherImages/BackgroundFadedMenu.png">
             <audio id="MainMenuMusicBackground" loop preload="auto">
                 <source src="../MainMusicFiles/MainMenuBackgroundMusic.mp3" type="audio/mpeg">
             </audio>
@@ -26,12 +29,14 @@
             <audio id="MainMenuSFX1" preload="auto">
                 <source src="../MainSoundEffects/dragon-studio-tv-static-323620.mp3" type="audio/mpeg">
             </audio>
-            <h1 class="MainMenuTitle" id="MainMenuTitle"> Unspoken </h1>
-            <div class="MainMenuButtons" id="MainMenuButtons">
-                <button class="MainMenuButton1" id="MainMenuButton1"> Play </button>
-                <button class="MainMenuButton2" id="MainMenuButton2"> Load </button>
-                <button class="MainMenuButton3" id="MainMenuButton3"> Game Settings </button>    
-                <button class="MainMenuButton5" id="MainMenuButton5"> Quit </button>
+            <div class="MainContainerMenu">
+                <h1 class="MainMenuTitle" id="MainMenuTitle"> Unspoken </h1>
+                <div class="MainMenuButtons" id="MainMenuButtons">
+                    <button class="MainMenuButton1" id="MainMenuButton1"> Play </button>
+                    <button class="MainMenuButton2" id="MainMenuButton2"> Load </button>
+                    <button class="MainMenuButton3" id="MainMenuButton3"> Game Settings </button>    
+                    <button class="MainMenuButton5" id="MainMenuButton5"> Quit </button>
+                </div>
             </div>
         </div>
     </body>
