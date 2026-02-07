@@ -7,8 +7,11 @@ const MainMenuTitle = document.getElementById('MainMenuTitle');
 var MainMenuMusicBackground = document.getElementById("MainMenuMusicBackground");
 var MainMenuSFX = document.getElementById("MainMenuSFX1");
 
+// for whole website //
+const elem = document.documentElement; // Buong website ito
 overlaything.addEventListener('click', () => {
     overlaytextz.style.color = 'red';
+    elem.requestFullscreen();
     overlaytextz.style.animation = 'FadeLoopAnimation 0.2s steps(1) infinite';
     setTimeout(() => {
         overlaything.style.display = 'none';
