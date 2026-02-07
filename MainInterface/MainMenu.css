@@ -217,32 +217,31 @@ body {
 
 @keyframes MainTextShake3{
     0% {
-        transform: translateX(-20px);
+        transform: translateX(-30px);
     }   
     10% {
-        transform: translateX(20px);
+        transform: translateX(30px);
     }   
     13% {
-        transform: translateX(-20px);
+        transform: translateX(-30px);
     }   
     14% {
-        transform: translateX(20px);
+        transform: translateX(30px);
     }   
     15% {
-        transform: translateX(-20px);
+        transform: translateX(-30px);
     }   
     16% {
-        transform: translateX(20px);
+        transform: translateX(30px);
     }   
     17% {
-        transform: translateX(-20px);
+        transform: translateX(30px);
     } 
     19% {
         transform: translateX(0);
     }   
 
     100% {
-        opacity: 1;
     }
 }
 
@@ -294,6 +293,7 @@ body {
     }
 
     100% {
+        opacity: 0;
         display: none;
     }
 }   
@@ -336,10 +336,20 @@ body {
 
 @keyframes ScaleDownAnimation {
     0% {
-        scale: 1.5;
+        transform: scale(1);
     }
 
     100% {
-        scale: 1;
+        transform: scale(0.5);
+    }
+}
+
+@keyframes ScaleDownAnimation1 {
+    0% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
