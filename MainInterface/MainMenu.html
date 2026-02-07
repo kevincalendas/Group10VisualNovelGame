@@ -29,15 +29,16 @@
             <audio id="MainMenuSFX1" preload="auto">
                 <source src="../MainSoundEffects/dragon-studio-tv-static-323620.mp3" type="audio/mpeg">
             </audio>
-            <div class="MainContainerMenu">
+            <div class="MainContainerMenu" id="MainContainerMenu">
                 <h1 class="MainMenuTitle" id="MainMenuTitle"> Unspoken </h1>
                 <div class="MainMenuButtons" id="MainMenuButtons">
-                    <button class="MainMenuButton1" id="MainMenuButton1"> Play </button>
+                    <button class="MainMenuButton1" id="MainMenuButton1" onclick="PlayButtonDirect()"> Play </button>
                     <button class="MainMenuButton2" id="MainMenuButton2"> Load </button>
                     <button class="MainMenuButton3" id="MainMenuButton3"> Game Settings </button>    
                     <button class="MainMenuButton5" id="MainMenuButton5"> Quit </button>
                 </div>
             </div>
         </div>
+        <h1 class="LoadingText" id="LoadingText"> Please wait.. </h1>
     </body>
 </html>

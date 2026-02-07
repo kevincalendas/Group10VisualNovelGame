@@ -4,8 +4,10 @@ const MainIntro1H = document.getElementById('MainIntro1H');
 const MainIntroPanel = document.getElementById('MainIntroPanel');
 const MainIntroPanel1 = document.getElementById('MainIntroPanel1');
 const MainMenuTitle = document.getElementById('MainMenuTitle');
+const LoadingText = document.getElementById('LoadingText');
 var MainMenuMusicBackground = document.getElementById("MainMenuMusicBackground");
 var MainMenuSFX = document.getElementById("MainMenuSFX1");
+
 
 // for whole website //
 const elem = document.documentElement; // Buong website ito
@@ -23,6 +25,7 @@ overlaything.addEventListener('click', () => {
         overlaything.style.display = 'none';
         
         setTimeout(() => {
+            overlaytextz.classList.remove('FadeLoopAnimation');
             MainIntro1H.style.animation = 'MainIntroPanel 0.08s ease 1.05s 4 forwards, MainIntroPanel1 0.07s ease 2.5s 3 forwards';
             setTimeout(() => {
                 MainMenuSFX.play();
@@ -56,6 +59,19 @@ overlaything.addEventListener('click', () => {
 
 // Main Menu Button1 Open Function with Animation //
 
-function OpenMainMenuButton1() {
-
+function PlayButtonDirect() {
+    setTimeout(() => {
+        MainIntroPanel1.style.animation = 'Fadeout 0.5s ease forwards, ScaleUPAnimation 1s ease 0.1s forwards';
+        setTimeout(() => {
+            LoadingText.style.animation = 'Fadein 1s ease 0.5s forwards';
+            LoadingText.style.display = 'block';
+            setTimeout(() => {
+                LoadingText.style.animation = 'Fadeout 1s ease 0.5s forwards';
+                setTimeout(() => {
+                    LoadingText.style.display = 'none';
+                    window.location.href = "../StoryInterface/StoryInterface.html";
+                }, 1000);
+            }, 5000);
+        }, 1000);
+    }, 500);
 }

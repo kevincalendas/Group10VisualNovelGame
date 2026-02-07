@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(OtherImages/Mainplaybackground.png);
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Intro */
+.ActivateGame {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.ActivateGameText{
+    position: fixed;
+    bottom: 3%;
+    font-size: 25px;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    text-shadow: 0 0 60px red;
+    animation: FadeLoopAnimation 1s steps(1) infinite;
+}
+
+/* Loading thing interface */
+
+.LoadingScreenDIV {
+    display: none;
+    position: fixed;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 500px;
+    height: 200px;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.HeadphoneSug {
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    translate: -50% 0%;
+    filter: invert(100%);
+    width: 140px;
+    height: 140px;
+    opacity: 0;
+}
+
+.LoadingScreenText {
+    position: fixed;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    font-size: 150px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Murderer;
+    font-weight: 100;
+}
+
+.LoadingScreenText1 {
+    position: fixed;
+    opacity: 0;
+    margin: 0;
+    bottom: 30px;
+    left: 50%;
+    translate: -50% 0%;
+    width: 150%;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial;
+    font-weight: 100;
+}
+
+.MainDialoguePanel {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    left: 45%;
+    translate: -43% 0;
+    width: 100%;
+    height: 230px;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scale: 0.8;
+}
+
+.DialogueProfileIMG {
+    position: absolute;
+    left: -100px;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    animation: jumpinganimation 10s  infinite;
+}
+
+.DialogueCharName {
+    position: fixed;
+    margin: 0;
+    left: 170px;
+    top: 20px;
+    font-size: 50px;
+    font-family: StormDust;
+    font-weight: 100;
+    color: white;
+    width: 90%;
+    display: inline-block;
+    clip-path: inset(0 100% 0 0); /* Hides the text initially */
+    animation: reveal-animation 4s steps(60) forwards;
+}
+
+.DialogueLines {
+    position:relative;
+    margin: 0;
+    left: 170px;
+    top: 75px;
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: 100;
+    color: white;
+    background-color: none;
+    height: calc(90% - 60px);
+    width: calc(90% - 90px);
+    display: inline-block;
+    text-align: justify;
+    clip-path: inset(0 100% 0 0); /* Hides the text initially */
+    animation: reveal-animation 4s steps(60) forwards;
+}
+
+@keyframes jumpinganimation {
+    0% { 
+        transform: translateY(0); 
+        content: url(OtherImages/CharacterProfile/LyzaProfile.png);
+    }
+    1% { 
+        transform: translateY(-20px); 
+    }
+    2% { 
+        transform: translateY(0); 
+        content: url(OtherImages/CharacterProfile/RhemaProfile.png);
+    }
+    100% { 
+        transform: translateY(0); 
+    }
+}
+
+@keyframes reveal-animation {
+    to { 
+        clip-path: inset(0 0 0 0); 
+    } /* Unveils the text from left to right */
+}
+
+.MainDialogueCenterPanel {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    width: 95%;
+    height: 95%;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.MainDialogueCenterText {
+    position: fixed;
+    margin: 0;
+    left: 10;
+    top: 5%;
+    width: 80%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 30px;
+    font-family: Arial;
+    color: white;
+}

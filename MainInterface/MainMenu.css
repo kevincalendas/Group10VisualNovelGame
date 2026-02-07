@@ -101,7 +101,7 @@ body {
     left: 5%;
     width: auto;
     height: auto;
-    font-size: 150px;
+    font-size: 170px;
     font-family: Murderer;
     font-weight: 100;
     color: red;
@@ -111,7 +111,7 @@ body {
 .MainMenuButtons {
     position: fixed;
     margin: 0;
-    right: -100px;
+    right: -150px;
     top: 50%;
     translate: 0 -50%;
     background-color: rgba(0, 0, 0, 0);
@@ -126,17 +126,36 @@ body {
     justify-content: center;
 }
 
+.LoadingText {
+    display: none;
+    opacity: 0;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    translate: -50% 0;
+    font-family: Arial;
+    font-size: 25px;
+    z-index: 100;
+    color: white;
+}
+
 .MainMenuButton1, .MainMenuButton2, .MainMenuButton3, .MainMenuButton4, .MainMenuButton5, .MainMenuButton6 {
     color: white;
     background-color: rgba(0, 0, 0, 0);
     border: none;
-    font-size: 60px;
+    font-size: 75px;
     font-family: Saphifen;
     justify-content: center;
     align-content: center;
     text-shadow: 0 0 10px rgb(255, 25, 25, 0);
     transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     text-align: left;
+}
+
+.MainMenuButton1:active, .MainMenuButton2:active, .MainMenuButton3:active, .MainMenuButton4:active, .MainMenuButton5:active, .MainMenuButton6:active {
+    color: red;
+    scale: 0.5;
+    transition: all 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .MainMenuButton1:hover, .MainMenuButton2:hover, .MainMenuButton3:hover, .MainMenuButton4:hover, .MainMenuButton5:hover, .MainMenuButton6:hover {
@@ -345,6 +364,16 @@ body {
 
     100% {
         transform: scale(0.5);
+    }
+}
+
+@keyframes ScaleUPAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
     }
 }
 
