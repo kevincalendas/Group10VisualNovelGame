@@ -59,7 +59,7 @@ body {
     top: 45%;
     left: 50%;
     translate: -50% -50%;
-    font-size: 75px;
+    font-size: 50px;
     color: white;
     font-family: Saphifen;
     font-weight: 50;
@@ -89,6 +89,7 @@ body {
     width: 95%;
     height: 95%;
     background-color: none;
+    scale: 0.9;
     z-index: 1;
 }
 
@@ -110,7 +111,7 @@ body {
 .MainMenuButtons {
     position: fixed;
     margin: 0;
-    right: -30px;
+    right: -100px;
     top: 50%;
     translate: 0 -50%;
     background-color: rgba(0, 0, 0, 0);
@@ -129,7 +130,7 @@ body {
     color: white;
     background-color: rgba(0, 0, 0, 0);
     border: none;
-    font-size: 75px;
+    font-size: 60px;
     font-family: Saphifen;
     justify-content: center;
     align-content: center;
@@ -217,6 +218,9 @@ body {
 
 @keyframes MainTextShake3{
     0% {
+        transform: translateX(0px);
+    }   
+    1% {
         transform: translateX(-30px);
     }   
     10% {
