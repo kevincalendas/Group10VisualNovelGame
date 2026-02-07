@@ -4,7 +4,7 @@ const MainIntro1H = document.getElementById('MainIntro1H');
 const MainIntroPanel = document.getElementById('MainIntroPanel');
 const MainIntroPanel1 = document.getElementById('MainIntroPanel1');
 const MainMenuTitle = document.getElementById('MainMenuTitle');
-var MainMenuMusicBackground = document.getElementById("MainMenuMusicBackground");
+var MainMenuMusicBackground = document.getElementById("MainMenuMusicBackgroundMusic");
 var MainMenuSFX = document.getElementById("MainMenuSFX1");
 
 // for whole website //
