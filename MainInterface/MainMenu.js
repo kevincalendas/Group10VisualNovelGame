@@ -11,7 +11,13 @@ var MainMenuSFX = document.getElementById("MainMenuSFX1");
 const elem = document.documentElement; // Buong website ito
 overlaything.addEventListener('click', () => {
     overlaytextz.style.color = 'red';
-    elem.requestFullscreen();
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) {
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) {
+        elem.msRequestFullscreen();
+    }
     overlaytextz.style.animation = 'FadeLoopAnimation 0.2s steps(1) infinite';
     setTimeout(() => {
         overlaything.style.display = 'none';
