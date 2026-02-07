@@ -44,7 +44,7 @@ overlaything.addEventListener('click', () => {
             // closing the static sound effect and starting the music at the same time to create a smooth transition //
             setTimeout(() => {
                 MainMenuMusicBackground.play();
-            }, 4700);
+            }, 4000);
 
             // ScaleDownAnimation // scale down Animation for the Main Menu //
             MainIntroPanel.style.animation = 'Fadeout 0.5s ease 4s both, ScaleDownAnimation 1s ease 4s both, MainTextShake3 0.5s ease 2.5s 1 both';
