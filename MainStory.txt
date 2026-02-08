@@ -1,71 +1,72 @@
-In this story, there are four friends—Kevin, AJ, Lyza, and Rhema. One day, they decided to have a sleepover at Rhema’s house, which was located near a dark and silent forest. Their friendship was strong; they treated each other like family, bound together like siblings. They were deeply attached to one another.
+--line 1A Narrator--
+In this story, there are four friends—Kevin, AJ, Lyza, and Rhema. One day, they decided to have a sleepover at Rhema’s house, 
+which was located near a dark and silent forest. 
+Their friendship was strong; they treated each other like family, bound together like siblings. They were deeply attached to one another.
+However, there was one unsettling thing that Kevin noticed about Rhema. Sometimes, she behaved strangely—her silence lingering too long, her gaze seeming distant.
+He felt that something was wrong, something Rhema was hiding and refusing to tell them.
 
-However, there was one unsettling thing that Kevin noticed about Rhema. Sometimes, she behaved strangely—her silence lingering too long, her gaze seeming distant. He felt that something was wrong, something Rhema was hiding and refusing to tell them.
-
+--Line 2A Line--
 Because of this, he decided to have a sleepover at Rhema’s house to investigate. After thinking about the plan, he immediately told AJ and Lyza what he had in mind. Together, they asked Rhema if they could stay over. Rhema hesitated, her voice low and uneasy, before quietly asking, “Are you guys sure?”
-
 Without hesitation, they replied, “Yes. We’re really sure.”
 
+--Line 3A Narrator--
 And that was when everything began.
-
 The night they went to Rhema's house, the air already felt wrong. 
-
-It was supposed to be a simple sleepover—blankets on the floor, phones glowing dimly, rain tapping against the windows like impatient fingers. As the evening dragged on, the four of them sat in a loose circle, talking about their lives. Kevin complained about school. AJ admitted he hadn't been sleeping well. Lyza talked about her fear of being left behind.
-
+It was supposed to be a simple sleepover—blankets on the floor, phones glowing dimly, rain tapping against the windows like impatient fingers.
+As the evening dragged on, the four of them sat in a loose circle, talking about their lives. Kevin complained about school. AJ admitted he hadn't been sleeping well. 
+Lyza talked about her fear of being left behind.
 Rhema said nothing.
 
-She sat cross-legged near the window, her face half-hidden by shadow. Every time someone asked if she was okay, she only smiled-slow, tight, unreadable. That silence pressed harder than any words, and soon Kevin, AJ, and Lyza started exchanging uneasy glances. Whatever Rhema was hiding felt heavier than the dark outside.
-
+--Line 4A Narrator--
+She sat cross-legged near the window, her face half-hidden by shadow. Every time someone asked if she was okay, she only smiled-slow, tight, unreadable.
+That silence pressed harder than any words, and soon Kevin, AJ, and Lyza started exchanging uneasy glances. Whatever Rhema was hiding felt heavier than the dark outside.
 Trying to break the tension, Kevin laughed nervously and began telling a story.
+At first, it sounded harmless—an old local legend. A forest near Rhema's house. People who went in after sunset. 
+Voices that mimicked your friends. Footsteps that followed you even when no one was there.
 
-At first, it sounded harmless—an old local legend. A forest near Rhema's house. People who went in after sunset. Voices that mimicked your friends. Footsteps that followed you even when no one was there.
-
+--Line 5A Line--
 As his voice lowered, the lights flickered.
-
+--Line 6A Line--
 "Kevin, you should stop," AJ said, his voice tight.
-
+--Line 7A Line--
 "Yeah," Lyza added. "This isn't funny."
-
+--Line 8A Line--
 Kevin froze. "Alright. I'Il stop."
-
+--Line 9A Line--
 Silence fell again.
 
+--Line 10A Line--
 Then Rhema spoke.
-
 Her voice was calm. Too calm.
 
+--Line 10A Line--
 "What if we go to the forest?" she said softly. "You guys want that, right?"
-
+--Line 11A Line--
 The rain stopped.
-
 Kevin's eyes lit up. "Yes. I want that. How about you, AJ? Lyza?"
-
+--Line 12A Line--
 "I don't want to go," AJ said immediately.
-
+--Line 13A Line--
 Lyza hesitated. "Maybe... maybe we can do that tomorrow morning. Not now."
-
 Rhema tilted her head, her smile widening just a little.
-
+--Line 14A Line--
 Kevin stood up. "Girl, we're just going there. Nothing's gonna happen to us. So-let's go."
 
+--Line 15A Line--
 Before anyone could argue, Rhema was already at the door, slipping on her shoes.
-
 AJ and lyza followed—by no choice.
-The forest swallowed them the moment they stepped inside. The trees were too close together, their branches tangled like broken fingers. The path Rhema promised was there seemed to disappear the deeper they went.
+The forest swallowed them the moment they stepped inside. The trees were too close together, 
+their branches tangled like broken fingers. The path Rhema promised was there seemed to disappear the deeper they went.
 
+--Line 16A Line--
 "Rhema," Lyza whispered, her voice barely breaking the silence. "Are you sure this is the way?"
 
 Rhema slowed her steps.
-
 "Yes," she said after a pause. "As far as 1 remember... this is the way going into the
 forest."
-
 The trees seemed to lean closer.
-
 "You hear that?" Kevin asked suddenly.
-
 Footsteps echoed behind them.
-
 AJ turned around sharply. "That's just us."
 
 They stopped walking.

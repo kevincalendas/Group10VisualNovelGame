@@ -1,3 +1,38 @@
+.Fadein1sec {
+    animation: Fadein 1s ease-in-out both;
+}
+
+.FadeinOutIn1sec {
+    animation: FadeinOutIn1sec 1s ease-in-out both;
+}
+
+.SentenceFade {
+    opacity: 0;
+    display: inline;
+    animation: SentenceFadein 1s ease-in-out both;
+}
+
+@keyframes SentenceFadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes FadeinOutIn1sec {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 @keyframes FadeLoopAnimation {
     0% {
         opacity: 1;

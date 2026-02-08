@@ -1,14 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-image: url(OtherImages/Mainplaybackground.png);
-    background-color: black;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
-}
-
 /* Main Intro */
 .ActivateGame {
     position: fixed;
@@ -194,13 +183,16 @@ body {
 
 .MainDialogueCenterText {
     position: fixed;
+    opacity: 1;
     margin: 0;
     left: 10;
     top: 5%;
     width: 80%;
     height: 90%;
-    background-color: rgba(0, 0, 0, 0.6);
-    font-size: 30px;
+    background-color: rgba(0, 0, 0, 1);
+    line-height: 1.4;
+    font-size: 120%;
+    text-align: justify;
     font-family: Arial;
     color: white;
 }

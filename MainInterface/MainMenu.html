@@ -3,7 +3,12 @@
     <head>
         <title> Visual Novel </title>
         <link rel="stylesheet" href="MainMenu.css">
-        <link rel="stylesheet" href="ResponsivenessMainMenu(BETA).css">
+
+        <!-- Reusing Story Interface CSS for Main Menu -->
+        <link rel="stylesheet" href="../StoryInterface/StroyInterface.css">
+        <link rel="stylesheet" href="../StoryInterface/StoryAnimations.css">
+
+        <link rel="stylesheet" href="ResponsivenessMainMenu(BETA).css"> 
         <link rel="stylesheet" href="../GameFonts/Fonts.css">
         
 
@@ -11,6 +16,7 @@
     <body>  
         <!-- Code Connector kineme -->
          <script src="MainMenu.js" defer></script>
+        <!-- Reusing Story Interface JS for Main Menu -->
         <div class="MainIntroPanel" id="MainIntroPanel">
             <h1 class="MainIntro1H" id="MainIntro1H"> Group 10 Dev</h1>
         </div>
@@ -39,6 +45,29 @@
                 </div>
             </div>
         </div>
+
+        <!-- Play Interface Story -->
         <h1 class="LoadingText" id="LoadingText"> Please wait.. </h1>
+        <div class="LoadingScreenDIV" id="LoadingScreenDIV">
+            <img class="HeadphoneSug" id="HeadphoneSug" src="../StoryInterface/StoryIcons/HeadphoneIcon.png">
+            <h1 class="LoadingScreenText1" id="LoadingScreenText1">Wear headphones for best experience</h1>
+            <h1 class="LoadingScreenText" id="LoadingScreenText">Unspoken</h1>
+        </div>
+        <div class="MainDialogueCenterPanel" id="MainDialogueCenterPanel">
+            <h1 class="MainDialogueCenterText" id="MainDialogueCenterText">This is a test interface for the visual novel game. It is used to test the dialogue system and the character profiles.</h1>
+        </div>
+        <div class="MainDialoguePanel" id="MainDialoguePanel">
+            <img class="DialogueProfileIMG" src="../OtherImages/CharacterProfile/LyzaProfile.png">
+            <h1 class="DialogueCharName">Lyza</h1>
+            <h1 class="DialogueLines">Dialogue</h1>
+
+            <!-- Music ELements -->
+             <audio id="MainMenuSFX1" preload="auto">
+                <source src="../MainSoundEffects/dragon-studio-tv-static-323620.mp3" type="audio/mpeg">
+            </audio>
+            <audio id="OpeningIntro1" preload="auto">
+                <source src="../MainSoundEffects/IntroOpeningEffect.mp3" type="audio/mpeg">
+            </audio>
+        </div>
     </body>
 </html>
