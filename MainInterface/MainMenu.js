@@ -74,6 +74,7 @@ function PlayButtonDirect() {
     setTimeout(() => {
         MainIntroPanel1.style.animation = 'Fadeout 0.5s ease forwards, ScaleUPAnimation 1s ease 0.1s forwards';
         setTimeout(() => {
+            MainIntroPanel1.classList.remove('MainIntroPanel1');
             MainIntroPanel1.style.display = 'none';
             LoadingText.style.animation = 'Fadein 1s ease 0.5s forwards';
             LoadingText.style.display = 'block';
@@ -115,24 +116,46 @@ function ShowLoadingScreen() {
     }, 5000);
 }   
 
+// Story Lines A //
 const MainDialogueCenterPanel = document.getElementById("MainDialogueCenterPanel");
 const MainDialogueCenterText = document.getElementById("MainDialogueCenterText");
+const MainDialogueCenteredNar = document.getElementById("MainDialogueCenteredNar");
+var Voice1ANarrator = document.getElementById("Voice1ANarrator");
 
 let CurrentPreviousLine = 0;
 let currentStoryLine = 0;
 function Line1AStory() {
+    Voice1ANarrator.play();
     console.log("Showing first line...");
     MainDialogueCenterPanel.style.display = "flex";
-    MainDialogueCenterText.innerHTML = '<span class="SentenceFade">In this story, there are four friends—Kevin, AJ, Lyza, and Rhema. </span>';
+    MainDialogueCenterText.innerHTML = '<span class="SentenceFade">In this story, there are four friends—Kevin, AJ, Lyza, and Rhema.    </span>';
     setTimeout(() => {
         console.log("Showing second line...");
         MainDialogueCenterText.insertAdjacentHTML('beforeend', '<span class="SentenceFade">One day, they decided to have a sleepover at Rhema’s house, which was located near a dark and silent forest. </span>');
-        setTimeout(() => {
-            console.log("Showing thrid line...");
-            MainDialogueCenterText.insertAdjacentHTML('beforeend', '<span class="SentenceFade">Their friendship was strong; they treated each other like family, bound together like siblings. </span>');
-        }, 5500);
-    }, 5500);
-    
+    }, 8500);
+    setTimeout(() => {
+        console.log("Showing third line...");
+        MainDialogueCenterText.insertAdjacentHTML('beforeend', '<span class="SentenceFade">Their friendship was strong; they treated each other like family, bound together like siblings. They were deeply attached to one another. </span>');
+    }, 17100);
+    setTimeout(() => {
+        console.log("Showing fourth line...");
+        MainDialogueCenterText.insertAdjacentHTML('beforeend', '<span class="SentenceFade">However, there was one unsettling thing that Kevin noticed about Rhema. Sometimes, she behaved strangely—her silence lingering too long, her gaze seeming distant. </span>');
+    }, 26500);
+    setTimeout(() => {
+        console.log("Showing fifth line...");
+        MainDialogueCenterText.style.opacity = 0;
+        MainDialogueCenteredNar.style.opacity = 1;
+        MainDialogueCenteredNar.style.display = "flex";
+        MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">He felt that something was wrong</span>';
+    }, 42700);   
+    setTimeout(() => {
+        console.log("Showing 6th line...");
+        MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">something Rhema was hiding and</span>';
+    }, 45100);  
+    setTimeout(() => {
+        console.log("Showing 7th line...");
+        MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">refusing to tell them.</span>';
+    }, 47800);  
 }
 
 function Line2AStory() {
