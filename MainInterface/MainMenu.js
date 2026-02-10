@@ -82,14 +82,45 @@ function PlayButtonDirect() {
                 LoadingText.style.animation = 'Fadeout 1s ease 0.5s forwards';
                 setTimeout(() => {
                     LoadingText.style.display = 'none';
-                    ShowLoadingScreen();
+                    ChooseNarrateAud();
                 }, 1000);
             }, 5000);
         }, 1000);
     }, 500);
 }
 
-function ShowLoadingScreen() {
+function ChooseNarrateAud() {
+    const SelectionOptionPanel1A = document.getElementById("SelectionOptionPanel1A");
+    
+    SelectionOptionPanel1A.style.display = "block";
+    SelectionOptionPanel1A.classList.add('SentenceFade');
+    SelectionOptionPanel1A.style.opacity = 1;
+}
+
+// for button in choosing selection //
+const Option1AWindow = document.getElementById("Option1AWindow");
+const Option1BWindow = document.getElementById("Option1BWindow");
+
+Option1AWindow.addEventListener('click', () => {
+    const SelectionOptionPanel1A = document.getElementById("SelectionOptionPanel1A");
+
+    SelectionOptionPanel1A.classList.remove('SentenceFade');
+
+    setTimeout(() => {
+        SelectionOptionPanel1A.classList.add('Fadeout2A');
+        setTimeout(() => {
+            SelectionOptionPanel1A.style.display = "none";
+            setTimeout(() => {
+                SelectionOptionPanel1A.classList.remove('Fadeout2A');
+                ShowLoadingScreen1A();
+            }, 200);
+        }, 800);
+    }, 200);
+});
+
+
+
+function ShowLoadingScreen1A() {
     LoadingScreenDIV.style.display = "flex";
     MainMenuMusicBackground.pause();
     setTimeout(() => {

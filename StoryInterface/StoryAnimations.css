@@ -12,6 +12,10 @@
     animation: SentenceFadein 1s ease-in-out both;
 }
 
+.Fadeout2A {
+    animation: Fadeout2 0.5s ease-out both;
+}
+
 @keyframes SentenceFadein {
     from {
         opacity: 0;
@@ -195,6 +199,16 @@
     100% {
         opacity: 0;
         display: none;
+    }
+}   
+
+@keyframes Fadeout2 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }   
 
