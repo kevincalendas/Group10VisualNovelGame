@@ -16,6 +16,42 @@
     animation: Fadeout2 0.5s ease-out both;
 }
 
+.addedEnteredNextLine {
+    opacity: 1;
+    display: inline;
+    animation: EnteredNextLine 0.5s ease-in-out forwards;
+}
+
+@keyframes KindaFadeInout {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes EnteredNextLine {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+}
+
 @keyframes SentenceFadein {
     from {
         opacity: 0;

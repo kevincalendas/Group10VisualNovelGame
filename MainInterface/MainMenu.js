@@ -151,28 +151,54 @@ function ShowLoadingScreen1A() {
 const MainDialogueCenterPanel = document.getElementById("MainDialogueCenterPanel");
 const MainDialogueCenterText = document.getElementById("MainDialogueCenterText");
 const MainDialogueCenteredNar = document.getElementById("MainDialogueCenteredNar");
+
+const OnclickNextWindow = document.getElementById("OnclickNextWindow");
+const OnclickDesc1 = document.getElementById("OnclickDesc1");
 var Voice1ANarrator = document.getElementById("Voice1ANarrator");
 
 let CurrentPreviousLine = 0;
 let currentStoryLine = 0;
 function Line1AStory() {
+    currentStoryLine = 1;
+
+    if(currentStoryLine == 2) {
+        return;
+    }
+    
     Voice1ANarrator.play();
     console.log("Showing first line...");
     MainDialogueCenterPanel.style.display = "flex";
+    MainDialogueCenterPanel.style.opacity = 1;
     MainDialogueCenterText.innerHTML = '<span class="SentenceFade">In this story, there are four friends—Kevin, AJ, Lyza, and Rhema.    </span>';
     setTimeout(() => {
+        if(currentStoryLine == 2) {
+            console.log("Stopped!");
+            return;
+        }
         console.log("Showing second line...");
         MainDialogueCenterText.insertAdjacentHTML('beforeend', '<span class="SentenceFade">One day, they decided to have a sleepover at Rhema’s house, which was located near a dark and silent forest. </span>');
     }, 8500);
     setTimeout(() => {
+        if(currentStoryLine == 2) {
+            console.log("Stopped!");
+            return;
+        }
         console.log("Showing third line...");
         MainDialogueCenterText.insertAdjacentHTML('beforeend', '<span class="SentenceFade">Their friendship was strong; they treated each other like family, bound together like siblings. They were deeply attached to one another. </span>');
     }, 17100);
     setTimeout(() => {
+        if(currentStoryLine == 2) {
+            console.log("Stopped!");
+            return;
+        }
         console.log("Showing fourth line...");
         MainDialogueCenterText.insertAdjacentHTML('beforeend', '<span class="SentenceFade">However, there was one unsettling thing that Kevin noticed about Rhema. Sometimes, she behaved strangely—her silence lingering too long, her gaze seeming distant. </span>');
     }, 26500);
     setTimeout(() => {
+        if(currentStoryLine == 2) {
+            console.log("Stopped!");
+            return;
+        }
         console.log("Showing fifth line...");
         MainDialogueCenterText.style.opacity = 0;
         MainDialogueCenteredNar.style.opacity = 1;
@@ -180,14 +206,80 @@ function Line1AStory() {
         MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">He felt that something was wrong</span>';
     }, 42700);   
     setTimeout(() => {
+        if(currentStoryLine == 2) {
+            console.log("Stopped!");
+            return;
+        }
         console.log("Showing 6th line...");
         MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">something Rhema was hiding and</span>';
     }, 45100);  
     setTimeout(() => {
+        if(currentStoryLine == 2) {
+            console.log("Stopped!");
+            return;
+
+        }
         console.log("Showing 7th line...");
         MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">refusing to tell them.</span>';
+        OnclickNextWindow.style.display = "block";
+        OnclickDesc1.style.opacity = 1;
     }, 47800);  
+    setTimeout(() => {
+        if(currentStoryLine == 2) {
+            console.log("Stopped!");
+            return;
+        }
+        MainDialogueCenterPanel.style.display = "none";
+        MainDialogueCenteredNar.style.display = "none";
+        MainDialogueCenteredNar.innerHTML = "";
+    }, 49000);
 }
 
-function Line2AStory() {
+function Line2A1AStory() {
+    CurrentPreviousLine = 1;
+    currentStoryLine = 2;
+    MainDialogueCenterPanel.style.display = "flex";
+    MainDialogueCenteredNar.style.display = "flex";
+    MainDialogueCenteredNar.style.opacity = 1;
+    console.log("Showing Line2AStory");
+    MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">Because of this, he decided to have a sleepover at Rhema’s house to investigate.</span>';
+    setTimeout(() => {
+        OnclickNextWindow.style.display = "block";
+        OnclickDesc1.style.opacity = 1;
+    }, 2000);
 }
+function Line2A2AStory() {
+    CurrentPreviousLine = 2;
+    currentStoryLine = 3;
+    MainDialogueCenterPanel.style.display = "flex";
+    MainDialogueCenteredNar.style.display = "flex";
+    MainDialogueCenteredNar.style.opacity = 1;
+    console.log("Showing Line2AStory");
+    MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">After thinking about the plan, he immediately told AJ and Lyza what he had in mind.</span>';
+    setTimeout(() => {
+        OnclickNextWindow.style.display = "block";
+        OnclickDesc1.style.opacity = 1;
+    }, 2000);
+}
+
+// FOR BUTTON FUNCTION //
+
+OnclickNextWindow.addEventListener('click', () => {
+     if(currentStoryLine === 1) {
+        console.log("Going Next part: Line2A1AStory");
+        OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        setTimeout(() => {
+            OnclickDesc1.classList.remove('addedEnteredNextLine');
+            OnclickNextWindow.style.display = "none";
+            Line2A1AStory()
+        }, 2000);
+    } else if (currentStoryLine === 2) {
+        console.log("Going Next part: Line2A2AStory");
+        OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        setTimeout(() => {
+            OnclickDesc1.classList.remove('addedEnteredNextLine');
+            OnclickNextWindow.style.display = "none";
+            Line2A2AStory()
+        }, 2000);
+    } 
+});
