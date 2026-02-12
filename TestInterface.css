@@ -1,100 +1,66 @@
-body {
-    background-color: black;
+.MainDialoguePanel {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 45%;
+    translate: -43% 0;
+    width: 70%;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scale: 0.8;
 }
 
-.SelectionOptionPanel1A {
+.DialogueProfileIMG {
+    position: absolute;
+    left: -100px;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    animation: jumpinganimation 10s  infinite;
+}
+
+.DialogueCharName {
     position: fixed;
-    display: block;
-    top: 50%;
+    margin: 0;
+    left: 170px;
+    top: 20px;
+    font-size: 50px;
+    font-family: StormDust;
+    font-weight: 100;
+    color: white;
+    width: 90%;
+    display: inline-block;
+    clip-path: inset(0 100% 0 0); /* Hides the text initially */
+    animation: reveal-animation 4s steps(60) forwards;
+}
+
+.DialogueLines {
+    position:relative;
+    margin: 0;
+    left: 170px;
+    top: 75px;
+    font-size: 25px;
+    font-family: Arial;
+    font-weight: 100;
+    color: white;
+    background-color: none;
+    height: calc(90% - 60px);
+    width: calc(90% - 90px);
+    display: inline-block;
+    text-align: justify;
+    clip-path: inset(0 100% 0 0); /* Hides the text initially */
+    animation: reveal-animation 4s steps(60) forwards;
+}
+
+.DialogueBackground {
+    position: absolute;
+    top: 40%;
     left: 50%;
     translate: -50% -50%;
-    width: 600px;
-    height: 300px;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-.H1TITOP {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    translate: -50% 0;
-    font-family: Arial;
-    font-weight: bold;
-}
-
-.Option1AWindow {
-    background-color: rgb(103, 103, 103);
-    position: fixed;
-    top: 55%;
-    left: 50px;
-    translate: 0 -50%;
-    width: 200px;
-    height: 65%;
-    transition: all 0.1s ease-out;
-}
-
-.Option1AWindowSelOP1 {
-    position: fixed;
-    top: 13%;
-    left: 50%;
-    translate: -60% 0;
-    width: 100px;
-    height: 100px;
-}
-
-.H1A1TOPP {
-    position: fixed;
-    top: 52%;
-    left: 50%;
-    translate: -50%;
     width: 100%;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 25px;
+    height: 150%;
 }
-
-.Option1BWindow {
-    background-color: rgb(103, 103, 103);
-    position: fixed;
-    top: 55%;
-    right: 50px;
-    translate: 0 -50%;
-    width: 200px;
-    height: 65%;
-    transition: all 0.1s ease-out;
-}
-
-.Option1AWindow:hover, .Option1BWindow:hover {
-    scale: 1.05;
-    transition: all 0.1s ease-out;
-}
-
-.Option1AWindowSelOP1 {
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    translate: -60% 0;
-    width: 75px;
-    height: 75px;
-}
-
-.Option1AWindowSelOP2 {
-    position: fixed;
-    top: 24%;
-    left: 50%;
-    translate: -60% 0;
-    width: 60px;
-    height: 60px;
-}
-
-.H1A1TOPP {
-    position: fixed;
-    top: 55%;
-    left: 50%;
-    translate: -50%;
-    width: 100%;
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 20px;
-}
-
