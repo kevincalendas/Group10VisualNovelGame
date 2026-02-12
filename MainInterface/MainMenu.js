@@ -162,6 +162,7 @@ function Line1AStory() {
     currentStoryLine = 1;
 
     if(currentStoryLine == 2) {
+        MainDialogueCenterText.style.display = "none";
         return;
     }
     
@@ -173,14 +174,19 @@ function Line1AStory() {
     setTimeout(() => {
         if(currentStoryLine == 2) {
             console.log("Stopped!");
+            MainDialogueCenterText.style.display = "none";
             return;
         }
         console.log("Showing second line...");
         MainDialogueCenterText.insertAdjacentHTML('beforeend', '<span class="SentenceFade">One day, they decided to have a sleepover at Rhema’s house, which was located near a dark and silent forest. </span>');
+
+        OnclickNextWindow.style.display = "block";
+        OnclickDesc1.style.opacity = 1;
     }, 8500);
     setTimeout(() => {
         if(currentStoryLine == 2) {
             console.log("Stopped!");
+            MainDialogueCenterText.style.display = "none";
             return;
         }
         console.log("Showing third line...");
@@ -189,6 +195,7 @@ function Line1AStory() {
     setTimeout(() => {
         if(currentStoryLine == 2) {
             console.log("Stopped!");
+            MainDialogueCenterText.style.display = "none";
             return;
         }
         console.log("Showing fourth line...");
@@ -197,6 +204,7 @@ function Line1AStory() {
     setTimeout(() => {
         if(currentStoryLine == 2) {
             console.log("Stopped!");
+            MainDialogueCenterText.style.display = "none";
             return;
         }
         console.log("Showing fifth line...");
@@ -204,10 +212,12 @@ function Line1AStory() {
         MainDialogueCenteredNar.style.opacity = 1;
         MainDialogueCenteredNar.style.display = "flex";
         MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">He felt that something was wrong</span>';
+        
     }, 42700);   
     setTimeout(() => {
         if(currentStoryLine == 2) {
             console.log("Stopped!");
+            MainDialogueCenterText.style.display = "none";
             return;
         }
         console.log("Showing 6th line...");
@@ -216,17 +226,16 @@ function Line1AStory() {
     setTimeout(() => {
         if(currentStoryLine == 2) {
             console.log("Stopped!");
+            MainDialogueCenterText.style.display = "none";
             return;
-
         }
         console.log("Showing 7th line...");
-        MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">refusing to tell them.</span>';
-        OnclickNextWindow.style.display = "block";
-        OnclickDesc1.style.opacity = 1;
-    }, 47800);  
+            MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">refusing to tell them.</span>';
+        }, 47800);  
     setTimeout(() => {
         if(currentStoryLine == 2) {
             console.log("Stopped!");
+            MainDialogueCenterText.style.display = "none";
             return;
         }
         MainDialogueCenterPanel.style.display = "none";
@@ -247,6 +256,11 @@ function Line2A1AStory() {
         OnclickNextWindow.style.display = "block";
         OnclickDesc1.style.opacity = 1;
     }, 2000);
+
+    if(currentStoryLine == 3) {
+            console.log("Stopped!");
+            return;
+        }
 }
 function Line2A2AStory() {
     CurrentPreviousLine = 2;
@@ -260,6 +274,28 @@ function Line2A2AStory() {
         OnclickNextWindow.style.display = "block";
         OnclickDesc1.style.opacity = 1;
     }, 2000);
+
+
+    //stopping the current event after clicking next line://
+    if(currentStoryLine == 3) {
+            console.log("Stopped!");
+            MainDialogueCenterText.style.display = "none";
+            return;
+        }
+}
+
+function Line2A3AStory() {
+    CurrentPreviousLine = 3;
+    currentStoryLine = 4;
+    MainDialogueCenterPanel.style.display = "flex";
+    MainDialogueCenteredNar.style.display = "flex";
+    MainDialogueCenteredNar.style.opacity = 1;
+    console.log("Showing Line2AStory");
+    MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">Together, they asked Rhema if they could stay over.</span>';
+    setTimeout(() => {
+        OnclickNextWindow.style.display = "block";
+        OnclickDesc1.style.opacity = 1;
+    }, 2000);
 }
 
 // FOR BUTTON FUNCTION //
@@ -267,17 +303,37 @@ function Line2A2AStory() {
 OnclickNextWindow.addEventListener('click', () => {
      if(currentStoryLine === 1) {
         console.log("Going Next part: Line2A1AStory");
+        OnclickDesc1.classList.remove('LoopUPandDOWNAnims');
         OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        MainDialogueCenterText.style.display = "none";
+        MainDialogueCenteredNar.style.display = "none";
         setTimeout(() => {
             OnclickDesc1.classList.remove('addedEnteredNextLine');
+            OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
             OnclickNextWindow.style.display = "none";
             Line2A1AStory()
         }, 2000);
     } else if (currentStoryLine === 2) {
         console.log("Going Next part: Line2A2AStory");
         OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        MainDialogueCenterText.style.display = "none";
+        MainDialogueCenteredNar.style.display = "none";
         setTimeout(() => {
             OnclickDesc1.classList.remove('addedEnteredNextLine');
+            OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
+            OnclickNextWindow.style.display = "none";
+            Line2A2AStory()
+        }, 2000);
+    } else if (currentStoryLine === 3) {
+        console.log("Going Next part: Line2A2AStory");
+        OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        MainDialogueCenterText.style.display = "none";
+        MainDialogueCenteredNar.style.display = "none";
+        setTimeout(() => {
+            OnclickDesc1.classList.remove('addedEnteredNextLine');
+            OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
             OnclickNextWindow.style.display = "none";
             Line2A2AStory()
         }, 2000);

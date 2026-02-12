@@ -341,7 +341,8 @@
     background-color: none;
     color: white;
     font-family: Arial;
-    font-size: 50px;
+    font-size: 35px;
     font-weight: bolder;
     text-align: center;
+    animation: LoopUpandDownAnim 1s ease-in infinite forwards;
 }

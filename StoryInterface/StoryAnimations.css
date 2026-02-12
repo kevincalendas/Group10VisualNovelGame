@@ -22,6 +22,10 @@
     animation: EnteredNextLine 0.5s ease-in-out forwards;
 }
 
+.LoopUPandDOWNAnims {
+    animation: LoopUpandDownAnim 1s ease-in infinite forwards;
+}
+
 @keyframes KindaFadeInout {
     0% {
         opacity: 0.5;
@@ -308,5 +312,18 @@
 
     100% {
         transform: scale(1);
+    }
+}
+
+@keyframes LoopUpandDownAnim {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
     }
 }
