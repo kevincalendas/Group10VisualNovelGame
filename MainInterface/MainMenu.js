@@ -166,13 +166,14 @@ function Line1AStory() {
         return;
     }
     
+    Voice1ANarrator.currentTime = 0;
     Voice1ANarrator.play();
     console.log("Showing first line...");
     MainDialogueCenterPanel.style.display = "flex";
     MainDialogueCenterPanel.style.opacity = 1;
     MainDialogueCenterText.innerHTML = '<span class="SentenceFade">In this story, there are four friends—Kevin, AJ, Lyza, and Rhema.    </span>';
     setTimeout(() => {
-        if(currentStoryLine == 2) {
+        if(currentStoryLine >= 2) {
             console.log("Stopped!");
             MainDialogueCenterText.style.display = "none";
             return;
@@ -184,7 +185,7 @@ function Line1AStory() {
         OnclickDesc1.style.opacity = 1;
     }, 8500);
     setTimeout(() => {
-        if(currentStoryLine == 2) {
+        if(currentStoryLine >= 2) {
             console.log("Stopped!");
             MainDialogueCenterText.style.display = "none";
             return;
@@ -193,7 +194,7 @@ function Line1AStory() {
         MainDialogueCenterText.insertAdjacentHTML('beforeend', '<span class="SentenceFade">Their friendship was strong; they treated each other like family, bound together like siblings. They were deeply attached to one another. </span>');
     }, 17100);
     setTimeout(() => {
-        if(currentStoryLine == 2) {
+        if(currentStoryLine >= 2) {
             console.log("Stopped!");
             MainDialogueCenterText.style.display = "none";
             return;
@@ -202,7 +203,7 @@ function Line1AStory() {
         MainDialogueCenterText.insertAdjacentHTML('beforeend', '<span class="SentenceFade">However, there was one unsettling thing that Kevin noticed about Rhema. Sometimes, she behaved strangely—her silence lingering too long, her gaze seeming distant. </span>');
     }, 26500);
     setTimeout(() => {
-        if(currentStoryLine == 2) {
+        if(currentStoryLine >= 2) {
             console.log("Stopped!");
             MainDialogueCenterText.style.display = "none";
             return;
@@ -215,7 +216,7 @@ function Line1AStory() {
         
     }, 42700);   
     setTimeout(() => {
-        if(currentStoryLine == 2) {
+        if(currentStoryLine >= 2) {
             console.log("Stopped!");
             MainDialogueCenterText.style.display = "none";
             return;
@@ -224,7 +225,7 @@ function Line1AStory() {
         MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">something Rhema was hiding and</span>';
     }, 45100);  
     setTimeout(() => {
-        if(currentStoryLine == 2) {
+        if(currentStoryLine >= 2) {
             console.log("Stopped!");
             MainDialogueCenterText.style.display = "none";
             return;
@@ -233,7 +234,7 @@ function Line1AStory() {
             MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">refusing to tell them.</span>';
         }, 47800);  
     setTimeout(() => {
-        if(currentStoryLine == 2) {
+        if(currentStoryLine >= 2) {
             console.log("Stopped!");
             MainDialogueCenterText.style.display = "none";
             return;
@@ -302,6 +303,7 @@ function Line2A3AStory() {
 
 OnclickNextWindow.addEventListener('click', () => {
      if(currentStoryLine === 1) {
+        Voice1ANarrator.pause();
         console.log("Going Next part: Line2A1AStory");
         OnclickDesc1.classList.remove('LoopUPandDOWNAnims');
         OnclickDesc1.classList.toggle('addedEnteredNextLine');
@@ -326,7 +328,7 @@ OnclickNextWindow.addEventListener('click', () => {
             Line2A2AStory()
         }, 2000);
     } else if (currentStoryLine === 3) {
-        console.log("Going Next part: Line2A2AStory");
+        console.log("Going Next part: Line2A3AStory");
         OnclickDesc1.classList.toggle('addedEnteredNextLine');
         OnclickDesc1.classList.toggle('addedEnteredNextLine');
         MainDialogueCenterText.style.display = "none";
@@ -335,7 +337,7 @@ OnclickNextWindow.addEventListener('click', () => {
             OnclickDesc1.classList.remove('addedEnteredNextLine');
             OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
             OnclickNextWindow.style.display = "none";
-            Line2A2AStory()
+            Line2A3AStory()
         }, 2000);
     } 
 });
