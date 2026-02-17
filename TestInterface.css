@@ -1,12 +1,15 @@
 .MainDialoguePanel {
     display: block;
-    position: absolute;
-    bottom: 20px;
+    position: fixed;
+    margin: 0;
+    bottom: 0px;
     left: 45%;
-    translate: -43% 0;
-    width: 70%;
+    translate: -43% 20px;
+    width: 950px;
     height: 250px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url('StoryInterface/StoryInterfaceUIs/GameElementNarr1.png');
+    background-size: 100% 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -15,45 +18,46 @@
 
 .DialogueProfileIMG {
     position: absolute;
-    left: -100px;
+    left: -120px;
     bottom: 0;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin-right: 20px;
     animation: jumpinganimation 10s  infinite;
+    border: none;
+    border-radius: 55px;
 }
 
 .DialogueCharName {
     position: fixed;
     margin: 0;
-    left: 170px;
-    top: 20px;
-    font-size: 50px;
+    left: 17%;
+    top: 13%;
+    font-size: 40px;
     font-family: StormDust;
     font-weight: 100;
     color: white;
     width: 90%;
     display: inline-block;
-    clip-path: inset(0 100% 0 0); /* Hides the text initially */
-    animation: reveal-animation 4s steps(60) forwards;
+    z-index: inherit;
 }
 
 .DialogueLines {
-    position:relative;
+    position: fixed;
     margin: 0;
-    left: 170px;
-    top: 75px;
-    font-size: 25px;
+    left: 16%;
+    top: 38%;
+    font-size: 20px;
     font-family: Arial;
     font-weight: 100;
     color: white;
     background-color: none;
-    height: calc(90% - 60px);
+    height: calc(80% - 60px);
     width: calc(90% - 90px);
     display: inline-block;
     text-align: justify;
     clip-path: inset(0 100% 0 0); /* Hides the text initially */
-    animation: reveal-animation 4s steps(60) forwards;
+    animation: reveal-animation 1s steps(60) forwards;
 }
 
 .DialogueBackground {
@@ -63,4 +67,12 @@
     translate: -50% -50%;
     width: 100%;
     height: 150%;
+    border: none;
+    border-radius: 1000px;
+}
+
+@keyframes reveal-animation {
+    to { 
+        clip-path: inset(0 0 0 0); 
+    } /* Unveils the text from left to right */
 }
