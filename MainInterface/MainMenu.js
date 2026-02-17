@@ -143,6 +143,7 @@ function ShowLoadingScreen1A() {
         LoadingScreenText1.style.animation = "Fadein 0.5s ease 6.3s forwards, Fadeout 2s ease 10.5s forwards";
         setTimeout(() => {
             Line1AStory()
+            LoadingScreenDIV.style.display = "none";
         }, 12500);
     }, 5000);
 }   
