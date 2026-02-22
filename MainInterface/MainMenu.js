@@ -423,7 +423,7 @@ function Line3A1AStory() {
 
     //Hiding Temp//
     MainDialoguePanel.style.display = "none";
-    console.log("Showing Line2AStory");
+    console.log("Showing Line3A1AStory");
     setTimeout(() => {
         OnclickNextWindow.style.display = "block";
         OnclickDesc1.style.opacity = 1;
@@ -450,12 +450,326 @@ function Line3A2AStory() {
 
     //Hiding Temp//
     MainDialoguePanel.style.display = "none";
-    console.log("Showing Line2AStory");
+    console.log("Showing Line3A2AStory");
     setTimeout(() => {
         OnclickNextWindow.style.display = "block";
         OnclickDesc1.style.opacity = 1;
     }, 10000);
 }
+
+function Line3A3AStory() {
+    CurrentPreviousLine = 10;
+    currentStoryLine = 11;
+
+    //showing DialogueBottSeubBitch//
+    MainDialogueCenterPanel.style.display = "block";
+    MainDialogueCenteredNar.style.display = "block";
+    MainDialogueCenteredNar.style.opacity = 1;
+    MainDialogueCenteredNar.style.transition = "all 0.3s ease-out";
+
+    MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade"> AJ admitted he hadnt been sleeping well.  </span>';
+
+    // Showing another line narrator in a sec.//
+
+    setTimeout(() => {
+        MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">Lyza talked about her fear of being left behind.</span>';
+        setTimeout(() => {
+            MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">Rhema said nothing.</span>';
+        }, 5000);
+    }, 5000);
+
+    //Hiding Temp//
+    MainDialoguePanel.style.display = "none";
+    console.log("Showing Line3A3AStory");
+    setTimeout(() => {
+        OnclickNextWindow.style.display = "block";
+        OnclickDesc1.style.opacity = 1;
+    }, 7000);
+}
+
+//4A narrator Lines //
+
+function Line4AStory() {
+    CurrentPreviousLine = 11;
+    currentStoryLine = 12;
+
+    //showing DialogueBottSeubBitch//
+    MainDialogueCenterPanel.style.display = "block";
+    MainDialogueCenteredNar.style.display = "block";
+    MainDialogueCenteredNar.style.opacity = 1;
+    MainDialogueCenteredNar.style.transition = "all 0.3s ease-out";
+
+    MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade"> She sat cross-legged near the window, her face half-hidden by shadow. </span>';
+
+    // Showing another line narrator in a sec.//
+
+    setTimeout(() => {
+        MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">Every time someone asked if she was okay, she only smiled-slow, tight, unreadable.</span>';
+    }, 5000);
+
+    //Hiding Temp//
+    MainDialoguePanel.style.display = "none";
+    console.log("Showing Line3A3AStory");
+    setTimeout(() => {
+        OnclickNextWindow.style.display = "block";
+        OnclickDesc1.style.opacity = 1;
+    }, 3000);
+}
+
+function Line4A1AStory() {
+    CurrentPreviousLine = 12;
+    currentStoryLine = 13;
+
+    //showing DialogueBottSeubBitch//
+    MainDialogueCenterPanel.style.display = "block";
+    MainDialogueCenteredNar.style.display = "block";
+    MainDialogueCenteredNar.style.opacity = 1;
+    MainDialogueCenteredNar.style.transition = "all 0.3s ease-out";
+
+    MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade"> That silence pressed harder than any words,  </span>';
+
+    // Showing another line narrator in a sec.//
+
+    setTimeout(() => {
+        MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">And soon Kevin, AJ, and Lyza started exchanging uneasy glances. </span>';
+    }, 5000);
+
+    //Hiding Temp//
+    MainDialoguePanel.style.display = "none";
+    console.log("Showing Line4A1AStory");
+    setTimeout(() => {
+        OnclickNextWindow.style.display = "block";
+        OnclickDesc1.style.opacity = 1;
+    }, 3000);
+}
+
+function Line4A2AStory() {
+    CurrentPreviousLine = 13;
+    currentStoryLine = 14;
+
+    //showing DialogueBottSeubBitch//
+    MainDialogueCenterPanel.style.display = "block";
+    MainDialogueCenteredNar.style.display = "block";
+    MainDialogueCenteredNar.style.opacity = 1;
+    MainDialogueCenteredNar.style.transition = "all 0.3s ease-out";
+
+    MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade"> Whatever Rhema was hiding felt heavier than the dark outside.  </span>';
+    //Hiding Temp//
+    MainDialoguePanel.style.display = "none";
+    console.log("Showing Line4A2AStory");
+    setTimeout(() => {
+        OnclickNextWindow.style.display = "block";
+        OnclickDesc1.style.opacity = 1;
+    }, 3000);
+}
+
+function Line4A3AStory() {
+    CurrentPreviousLine = 14;
+    currentStoryLine = 15;
+
+    //showing DialogueBottSeubBitch//
+    MainDialogueCenterPanel.style.display = "block";
+    MainDialogueCenteredNar.style.display = "block";
+    MainDialogueCenteredNar.style.opacity = 1;
+    MainDialogueCenteredNar.style.transition = "all 0.3s ease-out";
+
+    MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade"> Trying to break the tension, Kevin laughed nervously and began telling a story.</span>';
+    
+    //Appearing in seconds //
+    setTimeout(() => {
+        MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade"> At first, it sounded harmless—an old local legend. A forest near Rhemas house. </span>';
+        if (currentStoryLine >= 16 ) {
+            MainDialogueCenteredNar.style.display = "none";
+            console.log("stopped!");
+            return
+        }
+        setTimeout(() => {
+            MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade"> People who went in after sunset. </span>';
+            if (currentStoryLine >= 16 ) {
+                MainDialogueCenteredNar.style.display = "none";
+                console.log("stopped!");
+                return
+            }
+            setTimeout(() => {
+                MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade"> Voices that mimicked your friends.  </span>';
+                if (currentStoryLine >= 16 ) {
+                    MainDialogueCenteredNar.style.display = "none";
+                console.log("stopped!");
+                return
+            }
+                setTimeout(() => {
+                    MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade"> Footsteps that followed you even when no one was there.</span>';
+                    if (currentStoryLine >= 16 ) {
+                        MainDialogueCenteredNar.style.display = "none";
+                        console.log("stopped!");
+                        return
+                    }
+                }, 3000);
+            }, 3000);
+        }, 6000);
+    }, 5000);
+    
+    //Hiding Temp//
+    MainDialoguePanel.style.display = "none";
+    console.log("Showing Line4A3AStory");
+    setTimeout(() => {
+        OnclickNextWindow.style.display = "block";
+        OnclickDesc1.style.opacity = 1;
+    }, 3000);
+}
+
+function Line4A4AStory(){
+    CurrentPreviousLine = 15;
+    currentStoryLine = 16;
+
+    //showing DialogueBottSeubBitch//
+    MainDialogueCenterPanel.style.display = "none";
+    MainDialogueCenteredNar.style.display = "none";
+    MainDialogueCenteredNar.style.opacity = 0;
+    MainDialogueCenteredNar.style.transition = "all 0.3s ease-out";
+
+
+    //Hiding Temp//
+    MainDialoguePanel.style.display = "block";
+    MainDialoguePanel.style.opacity = "1";
+    DialogueProfileIMG.style.backgroundImage = "url('../OtherImages/CharacterProfile/LyzaProfile.png')";
+    DialogueProfileIMG.style.opacity = "0";
+    DialogueCharName.style.opacity = "1";
+    DialogueCharName.innerHTML = '';
+    DialogueLines.innerHTML = 'As his voice lowered, the lights flickered.';
+    DialogueLines.classList.toggle("reveal-animationsss");
+    console.log("Showing Line2AStory");
+    setTimeout(() => {
+        OnclickNextWindow.style.display = "block";
+        OnclickDesc1.style.opacity = 1;
+    }, 2000);
+}   
+
+function Line4A5AStory(){
+    CurrentPreviousLine = 16;
+    currentStoryLine = 17;
+
+    //showing DialogueBottSeubBitch//
+    MainDialogueCenterPanel.style.display = "none";
+    MainDialogueCenteredNar.style.display = "none";
+    MainDialogueCenteredNar.style.opacity = 0;
+    MainDialogueCenteredNar.style.transition = "all 0.3s ease-out";
+
+    
+    //Hiding Temp//
+    MainDialoguePanel.style.display = "block";
+    MainDialoguePanel.style.opacity = "1";
+    DialogueProfileIMG.style.backgroundImage = "url('../OtherImages/CharacterProfile/AJProfile.png')";
+    DialogueProfileIMG.style.opacity = "1";
+    DialogueCharName.style.opacity = "1";
+    DialogueCharName.innerHTML = 'AJ';
+    DialogueLines.innerHTML = '"Kevin, you should stop," AJ said, his voice tight.';
+    DialogueLines.classList.toggle("reveal-animationsss");
+    console.log("Showing Line2AStory");
+    setTimeout(() => {
+        OnclickNextWindow.style.display = "block";
+        OnclickDesc1.style.opacity = 1;
+    }, 2000);
+}   
+
+function Line4A6AStory(){
+    CurrentPreviousLine = 17;
+    currentStoryLine = 18;
+
+    //showing DialogueBottSeubBitch//
+    MainDialogueCenterPanel.style.display = "none";
+    MainDialogueCenteredNar.style.display = "none";
+    MainDialogueCenteredNar.style.opacity = 0;
+    MainDialogueCenteredNar.style.transition = "all 0.3s ease-out";
+
+
+    //Hiding Temp//
+    MainDialoguePanel.style.display = "block";
+    MainDialoguePanel.style.opacity = "1";
+    DialogueProfileIMG.style.backgroundImage = "url('../OtherImages/CharacterProfile/LyzaProfile.png')";
+    DialogueProfileIMG.style.opacity = "1";
+    DialogueCharName.style.opacity = "1";
+    DialogueCharName.innerHTML = 'Lyza';
+    DialogueLines.innerHTML = '""Yeah," Lyza added.';
+    setTimeout(() => {
+        DialogueLines.innerHTML = '"This isnt funny.';
+        DialogueLines.classList.toggle("reveal-animationsss");
+        if (currentStoryLine >= 19 ) {
+            MainDialogueCenteredNar.style.display = "none";
+            console.log("stopped!");
+            return;
+        }
+    }, 3000);
+    DialogueLines.classList.toggle("reveal-animationsss");
+    console.log("Showing Line2AStory");
+    setTimeout(() => {
+        OnclickNextWindow.style.display = "block";
+        OnclickDesc1.style.opacity = 1;
+    }, 2000);
+}   
+
+function Line4A7AStory(){
+    CurrentPreviousLine = 18;
+    currentStoryLine = 19;
+
+    //showing DialogueBottSeubBitch//
+    MainDialogueCenterPanel.style.display = "none";
+    MainDialogueCenteredNar.style.display = "none";
+    MainDialogueCenteredNar.style.opacity = 0;
+    MainDialogueCenteredNar.style.transition = "all 0.3s ease-out";
+
+
+    //Hiding Temp//
+    MainDialoguePanel.style.display = "block";
+    MainDialoguePanel.style.opacity = "1";
+    DialogueProfileIMG.style.backgroundImage = "url('../OtherImages/CharacterProfile/LyzaProfile.png')";
+    DialogueProfileIMG.style.opacity = "1";
+    DialogueCharName.style.opacity = "1";
+    DialogueCharName.innerHTML = 'Kevin';
+    DialogueLines.innerHTML = '"Kevin froze. "Alright. IIl stop."';
+    DialogueLines.classList.toggle("reveal-animationsss");
+    console.log("Showing Line2AStory");
+    setTimeout(() => {
+        OnclickNextWindow.style.display = "block";
+        OnclickDesc1.style.opacity = 1;
+    }, 2000);
+}   
+
+function Line4A8AStory(){
+    CurrentPreviousLine = 19;
+    currentStoryLine = 20;
+
+    //showing DialogueBottSeubBitch//
+    MainDialogueCenterPanel.style.display = "block";
+    MainDialogueCenteredNar.style.display = "block";
+    MainDialogueCenteredNar.style.opacity = 1;
+    MainDialogueCenteredNar.style.transition = "all 0.3s ease-out";
+
+    MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">Silence fell again.</span>';
+
+    setTimeout(() => {
+        MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">Then Rhema spoke.</span>';
+        if (currentStoryLine >= 21 ) {
+                MainDialogueCenteredNar.style.display = "none";
+                console.log("stopped!");
+                return;
+            }
+        setTimeout(() => {
+            MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">Her voice was calm. Too calm.</span>';
+            if (currentStoryLine >= 21 ) {
+                MainDialogueCenteredNar.style.display = "none";
+                console.log("stopped!");
+                return;
+            }
+        }, 3000);
+    }, 3000);
+    //Hiding Temp//
+    MainDialoguePanel.style.display = "none";
+    setTimeout(() => {
+        OnclickNextWindow.style.display = "block";
+        OnclickDesc1.style.opacity = 1;
+    }, 2000);
+}   
 
 
 
@@ -580,5 +894,145 @@ OnclickNextWindow.addEventListener('click', () => {
             OnclickNextWindow.style.display = "none";
             Line3A2AStory()
         }, 2000);
-    }   
+    }   else if (currentStoryLine === 10) {
+        console.log("Going Next part: Line3A3AStory");
+        OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        MainDialoguePanel.style.display = "none";
+        MainDialogueCenterText.style.display = "none";
+        MainDialogueCenteredNar.style.display = "none";
+        setTimeout(() => {
+            OnclickDesc1.classList.remove('addedEnteredNextLine');
+            OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
+            MainDialoguePanel.style.display = "block";
+            OnclickNextWindow.style.display = "none";
+            Line3A3AStory()
+        }, 2000);
+    }   else if (currentStoryLine === 11) {
+        console.log("Going Next part: Line4AStory");
+        OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        MainDialoguePanel.style.display = "none";
+        MainDialogueCenterText.style.display = "none";
+        MainDialogueCenteredNar.style.display = "none";
+        setTimeout(() => {
+            OnclickDesc1.classList.remove('addedEnteredNextLine');
+            OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
+            MainDialoguePanel.style.display = "block";
+            OnclickNextWindow.style.display = "none";
+            Line4AStory()
+        }, 2000);
+    }   else if (currentStoryLine === 12) {
+        console.log("Going Next part: Line4A1AStory");
+        OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        MainDialoguePanel.style.display = "none";
+        MainDialogueCenterText.style.display = "none";
+        MainDialogueCenteredNar.style.display = "none";
+        setTimeout(() => {
+            OnclickDesc1.classList.remove('addedEnteredNextLine');
+            OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
+            MainDialoguePanel.style.display = "block";
+            OnclickNextWindow.style.display = "none";
+            Line4A1AStory()
+        }, 2000);
+    }   else if (currentStoryLine === 13) {
+        console.log("Going Next part: Line4A2AStory");
+        OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        MainDialoguePanel.style.display = "none";
+        MainDialogueCenterText.style.display = "none";
+        MainDialogueCenteredNar.style.display = "none";
+        setTimeout(() => {
+            OnclickDesc1.classList.remove('addedEnteredNextLine');
+            OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
+            MainDialoguePanel.style.display = "block";
+            OnclickNextWindow.style.display = "none";
+            Line4A2AStory()
+        }, 2000);
+    }   else if (currentStoryLine === 14) {
+        console.log("Going Next part: Line4A3AStory");
+        OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        MainDialoguePanel.style.display = "none";
+        MainDialogueCenterText.style.display = "none";
+        MainDialogueCenteredNar.style.display = "none";
+        setTimeout(() => {
+            OnclickDesc1.classList.remove('addedEnteredNextLine');
+            OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
+            MainDialoguePanel.style.display = "block";
+            OnclickNextWindow.style.display = "none";
+            Line4A3AStory()
+        }, 2000);
+    }   else if (currentStoryLine === 15) {
+        console.log("Going Next part: Line4A4AStory");
+        OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        MainDialoguePanel.style.display = "none";
+        MainDialogueCenterText.style.display = "none";
+        MainDialogueCenteredNar.style.display = "none";
+        setTimeout(() => {
+            OnclickDesc1.classList.remove('addedEnteredNextLine');
+            OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
+            MainDialoguePanel.style.display = "block";
+            OnclickNextWindow.style.display = "none";
+            Line4A4AStory()
+        }, 2000);
+    }   else if (currentStoryLine === 16) {
+        console.log("Going Next part: Line4A5AStory");
+        OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        OnclickDesc1.classList.toggle('addedEnteredNextLine');
+        MainDialoguePanel.style.display = "none";
+        MainDialogueCenterText.style.display = "none";
+        MainDialogueCenteredNar.style.display = "none";
+        setTimeout(() => {
+            OnclickDesc1.classList.remove('addedEnteredNextLine');
+            OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
+            MainDialoguePanel.style.display = "block";
+            OnclickNextWindow.style.display = "none";
+            Line4A5AStory()
+        }, 2000);
+    }   else if (currentStoryLine === 17) {
+            console.log("Going Next part: Line4A6AStory");
+            OnclickDesc1.classList.toggle('addedEnteredNextLine');
+            OnclickDesc1.classList.toggle('addedEnteredNextLine');
+            MainDialoguePanel.style.display = "none";
+            MainDialogueCenterText.style.display = "none";
+            MainDialogueCenteredNar.style.display = "none";
+            setTimeout(() => {
+                OnclickDesc1.classList.remove('addedEnteredNextLine');
+                OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
+                MainDialoguePanel.style.display = "block";
+                OnclickNextWindow.style.display = "none";
+                Line4A6AStory()
+            }, 2000);
+    }   else if (currentStoryLine === 18) {
+            console.log("Going Next part: Line4A7AStory");
+            OnclickDesc1.classList.toggle('addedEnteredNextLine');
+            OnclickDesc1.classList.toggle('addedEnteredNextLine');
+            MainDialoguePanel.style.display = "none";
+            MainDialogueCenterText.style.display = "none";
+            MainDialogueCenteredNar.style.display = "none";
+            setTimeout(() => {
+                OnclickDesc1.classList.remove('addedEnteredNextLine');
+                OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
+                MainDialoguePanel.style.display = "block";
+                OnclickNextWindow.style.display = "none";
+                Line4A7AStory()
+            }, 2000);
+    }   else if (currentStoryLine === 19) {
+            console.log("Going Next part: Line4A8AStory");
+            OnclickDesc1.classList.toggle('addedEnteredNextLine');
+            OnclickDesc1.classList.toggle('addedEnteredNextLine');
+            MainDialoguePanel.style.display = "none";
+            MainDialogueCenterText.style.display = "none";
+            MainDialogueCenteredNar.style.display = "none";
+            setTimeout(() => {
+                OnclickDesc1.classList.remove('addedEnteredNextLine');
+                OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
+                MainDialoguePanel.style.display = "block";
+                OnclickNextWindow.style.display = "none";
+                Line4A8AStory()
+            }, 2000);
+    } 
 });

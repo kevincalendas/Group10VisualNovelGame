@@ -29,47 +29,52 @@ Lyza talked about her fear of being left behind.
 Rhema said nothing.
 
 --Line 4A Narrator--
-She sat cross-legged near the window, her face half-hidden by shadow. Every time someone asked if she was okay, she only smiled-slow, tight, unreadable.
-That silence pressed harder than any words, and soon Kevin, AJ, and Lyza started exchanging uneasy glances. Whatever Rhema was hiding felt heavier than the dark outside.
+She sat cross-legged near the window, her face half-hidden by shadow. 
+Every time someone asked if she was okay, she only smiled-slow, tight, unreadable.
+That silence pressed harder than any words, 
+And soon Kevin, AJ, and Lyza started exchanging uneasy glances. 
+Whatever Rhema was hiding felt heavier than the dark outside.
 Trying to break the tension, Kevin laughed nervously and began telling a story.
-At first, it sounded harmless—an old local legend. A forest near Rhema's house. People who went in after sunset. 
-Voices that mimicked your friends. Footsteps that followed you even when no one was there.
+At first, it sounded harmless—an old local legend. A forest near Rhema's house. 
+People who went in after sunset. 
+Voices that mimicked your friends. 
+Footsteps that followed you even when no one was there.
 
---Line 5A Line--
+--Line 4A1 Line--
 As his voice lowered, the lights flickered.
---Line 6A Line--
+--Line 4A2 Line--
 "Kevin, you should stop," AJ said, his voice tight.
---Line 7A Line--
+--Line 4A3 Line--
 "Yeah," Lyza added. "This isn't funny."
---Line 8A Line--
+--Line 4A4 Line--
 Kevin froze. "Alright. I'Il stop."
---Line 9A Line--
+--Line 4A5 Line--
 Silence fell again.
 
---Line 10A Line--
+--Line 4A6 Line--
 Then Rhema spoke.
 Her voice was calm. Too calm.
 
---Line 10A Line--
+--Line 4A7 Line--
 "What if we go to the forest?" she said softly. "You guys want that, right?"
---Line 11A Line--
+--Line 4A8 Line--
 The rain stopped.
 Kevin's eyes lit up. "Yes. I want that. How about you, AJ? Lyza?"
---Line 12A Line--
+--Line 4A9 Line--
 "I don't want to go," AJ said immediately.
---Line 13A Line--
+--Line 4A10 Line--
 Lyza hesitated. "Maybe... maybe we can do that tomorrow morning. Not now."
 Rhema tilted her head, her smile widening just a little.
---Line 14A Line--
+--Line 4A11 Line--
 Kevin stood up. "Girl, we're just going there. Nothing's gonna happen to us. So-let's go."
 
---Line 15A Line--
+--Line 5A Line--
 Before anyone could argue, Rhema was already at the door, slipping on her shoes.
 AJ and lyza followed—by no choice.
 The forest swallowed them the moment they stepped inside. The trees were too close together, 
 their branches tangled like broken fingers. The path Rhema promised was there seemed to disappear the deeper they went.
 
---Line 16A Line--
+--Line 5A1 Line--
 "Rhema," Lyza whispered, her voice barely breaking the silence. "Are you sure this is the way?"
 
 Rhema slowed her steps.
