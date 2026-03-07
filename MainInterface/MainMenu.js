@@ -745,6 +745,7 @@ function Line4A8AStory(){
     MainDialogueCenteredNar.style.opacity = 1;
     MainDialogueCenteredNar.style.transition = "all 0.3s ease-out";
 
+    MainDialogueCenterText.style.display = "none";
     MainDialogueCenteredNar.innerHTML = '<span class="SentenceFade">Silence fell again.</span>';
 
     setTimeout(() => {
@@ -761,6 +762,20 @@ function Line4A8AStory(){
                 console.log("stopped!");
                 return;
             }
+            setTimeout(() => {
+                MainDialogueCenterPanel.style.display = "none";
+                MainDialogueCenteredNar.style.opacity = 0;
+                MainDialogueCenteredNar.style.transition = "all 0.3s ease-out";
+                MainDialoguePanel.style.display = "block";
+                DialogueProfileIMG.style.backgroundImage = "url('../OtherImages/CharacterProfile/RhemaProfile.png')";
+                DialogueCharName.innerHTML = 'Rhema';
+                DialogueLines.innerHTML = '"What if we go to the forest?" she said softly.';
+                DialogueLines.classList.toggle("reveal-animationsss");
+                setTimeout(() => {
+                    DialogueLines.innerHTML = '"You guys want that, right?"';
+                    DialogueLines.classList.add("reveal-animationsss");
+                }, 4000);
+            }, 3400);
         }, 3000);
     }, 3000);
     //Hiding Temp//
@@ -768,7 +783,7 @@ function Line4A8AStory(){
     setTimeout(() => {
         OnclickNextWindow.style.display = "block";
         OnclickDesc1.style.opacity = 1;
-    }, 2000);
+    }, 6000);
 }   
 
 
@@ -788,7 +803,7 @@ OnclickNextWindow.addEventListener('click', () => {
             OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
             OnclickNextWindow.style.display = "none";
             Line2A1AStory()
-        }, 2000);
+        }, 500);
     } else if (currentStoryLine === 2) {
         console.log("Going Next part: Line2A2AStory");
         OnclickDesc1.classList.toggle('addedEnteredNextLine');
@@ -800,7 +815,7 @@ OnclickNextWindow.addEventListener('click', () => {
             OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
             OnclickNextWindow.style.display = "none";
             Line2A2AStory()
-        }, 2000);
+        }, 500);
     } else if (currentStoryLine === 3) {
         console.log("Going Next part: Line2A3AStory");
         OnclickDesc1.classList.toggle('addedEnteredNextLine');
@@ -812,7 +827,7 @@ OnclickNextWindow.addEventListener('click', () => {
             OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
             OnclickNextWindow.style.display = "none";
             Line2A3AStory()
-        }, 2000);
+        }, 500);
     } else if (currentStoryLine === 4) {
         console.log("Going Next part: Line2A4AStory");
         OnclickDesc1.classList.toggle('addedEnteredNextLine');
@@ -824,7 +839,7 @@ OnclickNextWindow.addEventListener('click', () => {
             OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
             OnclickNextWindow.style.display = "none";
             Line2A4AStory()
-        }, 2000);
+        }, 500);
     } else if (currentStoryLine === 5) {
         console.log("Going Next part: Line2A5AStory");
         OnclickDesc1.classList.toggle('addedEnteredNextLine');
@@ -836,7 +851,7 @@ OnclickNextWindow.addEventListener('click', () => {
             OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
             OnclickNextWindow.style.display = "none";
             Line2A5AStory()
-        }, 2000);
+        }, 500);
     } else if (currentStoryLine === 6) {
         console.log("Going Next part: Line2A6AStory");
         OnclickDesc1.classList.toggle('addedEnteredNextLine');
@@ -849,7 +864,7 @@ OnclickNextWindow.addEventListener('click', () => {
             OnclickDesc1.classList.toggle('LoopUPandDOWNAnims');
             OnclickNextWindow.style.display = "none";
             Line2A6AStory()
-        }, 2000);
+        }, 500);
     } else if (currentStoryLine === 7) {
         console.log("Going Next part: Line2A7AStory");
         OnclickDesc1.classList.toggle('addedEnteredNextLine');
@@ -863,7 +878,7 @@ OnclickNextWindow.addEventListener('click', () => {
             MainDialoguePanel.style.display = "block";
             OnclickNextWindow.style.display = "none";
             Line2A7AStory()
-        }, 2000);
+        }, 500);
 
         // Next Line 3A //
     } else if (currentStoryLine === 8) {
@@ -879,7 +894,7 @@ OnclickNextWindow.addEventListener('click', () => {
             MainDialoguePanel.style.display = "block";
             OnclickNextWindow.style.display = "none";
             Line3A1AStory()
-        }, 2000);
+        }, 500);
     } else if (currentStoryLine === 9) {
         console.log("Going Next part: Line3A2AStory");
         OnclickDesc1.classList.toggle('addedEnteredNextLine');
@@ -893,7 +908,7 @@ OnclickNextWindow.addEventListener('click', () => {
             MainDialoguePanel.style.display = "block";
             OnclickNextWindow.style.display = "none";
             Line3A2AStory()
-        }, 2000);
+        }, 500);
     }   else if (currentStoryLine === 10) {
         console.log("Going Next part: Line3A3AStory");
         OnclickDesc1.classList.toggle('addedEnteredNextLine');
@@ -907,7 +922,7 @@ OnclickNextWindow.addEventListener('click', () => {
             MainDialoguePanel.style.display = "block";
             OnclickNextWindow.style.display = "none";
             Line3A3AStory()
-        }, 2000);
+        }, 500);
     }   else if (currentStoryLine === 11) {
         console.log("Going Next part: Line4AStory");
         OnclickDesc1.classList.toggle('addedEnteredNextLine');
@@ -921,7 +936,7 @@ OnclickNextWindow.addEventListener('click', () => {
             MainDialoguePanel.style.display = "block";
             OnclickNextWindow.style.display = "none";
             Line4AStory()
-        }, 2000);
+        }, 500);
     }   else if (currentStoryLine === 12) {
         console.log("Going Next part: Line4A1AStory");
         OnclickDesc1.classList.toggle('addedEnteredNextLine');
@@ -935,7 +950,7 @@ OnclickNextWindow.addEventListener('click', () => {
             MainDialoguePanel.style.display = "block";
             OnclickNextWindow.style.display = "none";
             Line4A1AStory()
-        }, 2000);
+        }, 500);
     }   else if (currentStoryLine === 13) {
         console.log("Going Next part: Line4A2AStory");
         OnclickDesc1.classList.toggle('addedEnteredNextLine');
@@ -949,7 +964,7 @@ OnclickNextWindow.addEventListener('click', () => {
             MainDialoguePanel.style.display = "block";
             OnclickNextWindow.style.display = "none";
             Line4A2AStory()
-        }, 2000);
+        }, 500);
     }   else if (currentStoryLine === 14) {
         console.log("Going Next part: Line4A3AStory");
         OnclickDesc1.classList.toggle('addedEnteredNextLine');
@@ -963,7 +978,7 @@ OnclickNextWindow.addEventListener('click', () => {
             MainDialoguePanel.style.display = "block";
             OnclickNextWindow.style.display = "none";
             Line4A3AStory()
-        }, 2000);
+        }, 500);
     }   else if (currentStoryLine === 15) {
         console.log("Going Next part: Line4A4AStory");
         OnclickDesc1.classList.toggle('addedEnteredNextLine');
@@ -977,7 +992,7 @@ OnclickNextWindow.addEventListener('click', () => {
             MainDialoguePanel.style.display = "block";
             OnclickNextWindow.style.display = "none";
             Line4A4AStory()
-        }, 2000);
+        }, 500);
     }   else if (currentStoryLine === 16) {
         console.log("Going Next part: Line4A5AStory");
         OnclickDesc1.classList.toggle('addedEnteredNextLine');
@@ -991,7 +1006,7 @@ OnclickNextWindow.addEventListener('click', () => {
             MainDialoguePanel.style.display = "block";
             OnclickNextWindow.style.display = "none";
             Line4A5AStory()
-        }, 2000);
+        }, 500);
     }   else if (currentStoryLine === 17) {
             console.log("Going Next part: Line4A6AStory");
             OnclickDesc1.classList.toggle('addedEnteredNextLine');
@@ -1005,7 +1020,7 @@ OnclickNextWindow.addEventListener('click', () => {
                 MainDialoguePanel.style.display = "block";
                 OnclickNextWindow.style.display = "none";
                 Line4A6AStory()
-            }, 2000);
+            }, 500);
     }   else if (currentStoryLine === 18) {
             console.log("Going Next part: Line4A7AStory");
             OnclickDesc1.classList.toggle('addedEnteredNextLine');
@@ -1019,7 +1034,7 @@ OnclickNextWindow.addEventListener('click', () => {
                 MainDialoguePanel.style.display = "block";
                 OnclickNextWindow.style.display = "none";
                 Line4A7AStory()
-            }, 2000);
+            }, 500);
     }   else if (currentStoryLine === 19) {
             console.log("Going Next part: Line4A8AStory");
             OnclickDesc1.classList.toggle('addedEnteredNextLine');
@@ -1033,6 +1048,6 @@ OnclickNextWindow.addEventListener('click', () => {
                 MainDialoguePanel.style.display = "block";
                 OnclickNextWindow.style.display = "none";
                 Line4A8AStory()
-            }, 2000);
+            }, 500);
     } 
 });
