@@ -161,6 +161,9 @@ const DialogueProfileIMG = document.getElementById("DialogueProfileIMG");
 const OnclickNextWindow = document.getElementById("OnclickNextWindow");
 const OnclickDesc1 = document.getElementById("OnclickDesc1");
 
+// Story Visual //
+const ImageStoryVisualMain = document.getElementById("ImageStoryVisualMain");
+
 let CurrentPreviousLine = 0;
 let currentStoryLine = 0;
 function Line1AStory() {
@@ -181,6 +184,13 @@ function Line1AStory() {
     MainDialogueCenterPanel.style.display = "flex";
     MainDialogueCenterPanel.style.opacity = 1;
     MainDialogueCenterText.innerHTML = '<span class="SentenceFade">In this story, there are four friends—Kevin, AJ, Lyza, and Rhema.    </span>';
+    
+    //Showing Story Visual 1 //
+    console.log("Showing Story Visual 1...");
+    ImageStoryVisualMain.style.display = "block";
+    ImageStoryVisualMain.style.animation = "Fadein 1s ease 0.5s forwards";
+
+
     setTimeout(() => {
         if(currentStoryLine >= 2) {
             console.log("Stopped!");

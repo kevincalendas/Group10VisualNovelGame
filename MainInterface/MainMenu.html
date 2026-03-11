@@ -10,6 +10,9 @@
 
         <link rel="stylesheet" href="ResponsivenessMainMenu(BETA).css"> 
         <link rel="stylesheet" href="../GameFonts/Fonts.css">
+
+        <!--For loads CSS-->
+        <link rel="stylesheet" href="MainLoad.css">
         
 
     </head>
@@ -23,6 +26,8 @@
         <div class="ActivateGame" id="ActivateGame">
                 <h1 class="ActivateGameText" id="ActivateGameText"> Click Anywhere to Start </h1>
         </div>
+
+        <!-- Main Menu Interface -->
 
         <div class="MainIntroPanel1" id="MainIntroPanel1">
             <img class="BackgroundImage" src="../OtherImages/Background.png">
@@ -38,12 +43,32 @@
                 <h1 class="MainMenuTitle" id="MainMenuTitle"> Unspoken </h1>
                 <div class="MainMenuButtons" id="MainMenuButtons">
                     <button class="MainMenuButton1" id="MainMenuButton1" onclick="PlayButtonDirect()"> Play </button>
-                    <button class="MainMenuButton2" id="MainMenuButton2"> Load </button>
+                    <button class="MainMenuButton2" id="MainMenuButton2" onclick="OpenLoadMenu()"> Load </button>
                     <button class="MainMenuButton3" id="MainMenuButton3"> Game Settings </button>    
                     <button class="MainMenuButton5" id="MainMenuButton5"> Quit </button>
                 </div>
             </div>
         </div>
+
+        <!-- Main Menu Interface Load Settings-->
+        <script src="MainLoad.js" defer></script>
+
+        <div class="MainContainerofLoadUI" id="MainContainerofLoadUI">
+            <h1 class="LoadGameH1A1">Unspoken | Load Game</h1>
+            <div class="LoadGameContainer">
+                <button class="LoadGameButton1" id="LoadGameButton1"> Saved Slot 1 </button>
+                <button class="LoadGameButton2" id="LoadGameButton2"> Saved Slot 2 </button>
+                <button class="LoadGameButton3" id="LoadGameButton3"> Saved Slot 3 </button>
+                <button class="LoadGameButton4" id="LoadGameButton4"> Saved Slot 4 </button>
+                <button class="LoadGameButton5" id="LoadGameButton5" onclick="CloseLoadMenu()"> Go back </button>
+            </div>
+            <img class="ImageLoad1" src="../OtherImages/ImageTests/Test1.png">
+            <img class="ImageLoad2" src="../OtherImages/ImageTests/Test2.png">
+            <img class="ImageLoad3" src="../OtherImages/ImageTests/Test3.png">
+            <img class="ImageLoad4" src="../OtherImages/ImageTests/Test4.png">
+            <img class="ImageLoad5" src="../OtherImages/ImageTests/Test5.png">
+        </div>
+
 
         <!-- Play Interface Story -->
         <div class="SelectionOptionPanel1A" id="SelectionOptionPanel1A">
@@ -76,6 +101,9 @@
             <h1 class="DialogueCharName" id="DialogueCharName">Lyza</h1>
             <h1 class="DialogueLines" id="DialogueLines">Dialogue</h1>
         </div>
+        <img class="ImageStoryVisualMain" id="ImageStoryVisualMain" src="https://i.pinimg.com/originals/c4/f0/e5/c4f0e5deee099d0c414e4f420a0e1072.gif">
+
+
         <!-- Music ELements -->
              <audio id="MainMenuSFX1" preload="auto">
                 <source src="../MainSoundEffects/dragon-studio-tv-static-323620.mp3" type="audio/mpeg">

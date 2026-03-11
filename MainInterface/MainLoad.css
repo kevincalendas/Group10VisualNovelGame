@@ -1,16 +1,22 @@
-body {
-    background-color: black;
-}
 .MainContainerofLoadUI {
-    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    
+    display: none;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+    scale: 1;
+    opacity: 0;
 }
 
 .LoadGameContainer {
     position: fixed;
     top: 50%;
     left: 5%;
-    translate: -0% -40%;
+    translate: 0 -45%;
     width: 500px;
     height: 400px;
     background-color: rgb(109, 0, 0, 0);
@@ -22,20 +28,22 @@ body {
 
 @media (max-height: 500px) {
     .LoadGameContainer {
-        grid-template-rows: 55px 55px 55px 55px 55px;
-        top: 60%;
+        grid-template-rows: 45px 45px 45px 45px 45px;
+        top: 70%;
     }
     .LoadGameButton1, .LoadGameButton2, .LoadGameButton3, .LoadGameButton4, .LoadGameButton5 {
         
     }
+
 }
 .LoadGameH1A1 {
     position: fixed;
-    top: 8%;
-    left: 3%;
+    top: 20%;
+    left: 5%;
+    translate: 0 -70%;
     font-family: Murderer;
     font-weight: 100;
-    font-size: clamp(50px, 75px, 100px);
+    font-size: clamp(25px, 85px, 100px);
     color: white;
     text-align: center;
     margin: 0;
@@ -63,7 +71,7 @@ body {
     z-index: -1;
     opacity: 0; 
     transition: opacity 0.5s ease-in-out, translate 0.5s ease-out;
-    filter: brightness(50%);
+    filter: brightness(40%);
     mask-image: linear-gradient(to right, transparent 0%, black 60%);
 }
 
@@ -93,7 +101,7 @@ body {
 }
 
 .LoadGameButton1:hover, .LoadGameButton2:hover, .LoadGameButton3:hover, .LoadGameButton4:hover, .LoadGameButton5:hover {
-    color: rgb(255, 255, 255, 0.5);
+    color: rgba(255, 0, 0, 0.5);
     scale: 1.1;
     transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
