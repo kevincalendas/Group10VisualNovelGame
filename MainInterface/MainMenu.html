@@ -40,6 +40,10 @@
                 <source src="../MainSoundEffects/dragon-studio-tv-static-323620.mp3" type="audio/mpeg">
             </audio>
             <div class="MainContainerMenu" id="MainContainerMenu">
+                <video class="MainMenuVideo" id="MainMenuVideo" muted loop playsinline>
+                    <source src="../MainVideoNovelFiles/MainInterfaceVideoPreviewIntro.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
                 <h1 class="MainMenuTitle" id="MainMenuTitle"> Unspoken </h1>
                 <div class="MainMenuButtons" id="MainMenuButtons">
                     <button class="MainMenuButton1" id="MainMenuButton1" onclick="PlayButtonDirect()"> Play </button>
@@ -54,8 +58,8 @@
         <script src="MainLoad.js" defer></script>
 
         <div class="MainContainerofLoadUI" id="MainContainerofLoadUI">
-            <h1 class="LoadGameH1A1">Unspoken | Load Game</h1>
-            <div class="LoadGameContainer">
+            <h1 class="LoadGameH1A1" id="LoadGameH1A1">Unspoken | Load Game</h1>
+            <div class="LoadGameContainer" id="LoadGameContainer">
                 <button class="LoadGameButton1" id="LoadGameButton1"> Saved Slot 1 </button>
                 <button class="LoadGameButton2" id="LoadGameButton2"> Saved Slot 2 </button>
                 <button class="LoadGameButton3" id="LoadGameButton3"> Saved Slot 3 </button>

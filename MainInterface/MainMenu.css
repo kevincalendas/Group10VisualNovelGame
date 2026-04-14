@@ -27,7 +27,11 @@ body {
     font-family: Arial;
     font-weight: bold;
     text-shadow: 0 0 60px red;
-    animation: FadeLoopAnimation 1s steps(1) infinite;
+    animation: Fadein 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1 forwards, MovUp1 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1 forwards;
+}
+
+.ActivateGameText:active {
+    animation: ScaleClicked 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) both;
 }
 
 .BackgroundImage {
@@ -65,6 +69,7 @@ body {
     font-weight: 50;
     text-shadow: 0 0 60px red;
     opacity: 0;
+    scale: 0.7;
 }
 /* Main Interface Menu Selection */
 
@@ -93,12 +98,25 @@ body {
     z-index: 1;
 }
 
+.MainMenuVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    pointer-events: none;
+    width: auto;
+    height: 150%;
+    object-fit: cover;
+    z-index: -1;
+}
+
 .MainMenuTitle {
     position: absolute;
     margin: 0;
     top: 50%;
     translate: 0 -50%;
-    left: 5%;
+    scale: 0.7;
+    right: 1%;
     width: auto;
     height: auto;
     font-size: 170px;
@@ -111,15 +129,15 @@ body {
 .MainMenuButtons {
     position: fixed;
     margin: 0;
-    right: -150px;
+    left: -100px;
     top: 50%;
     translate: 0 -50%;
     background-color: rgba(0, 0, 0, 0);
     display: grid;
     width: 450px;
     height: 100%;
-    scale: 0.8;
-    grid-template-rows: 100px 100px 100px 100px;
+    scale: 0.55;
+    grid-template-rows: 170px 100px 100px 100px;
     row-gap: 20px;
     grid-template-columns: 400px;
     align-content: center;
@@ -132,14 +150,29 @@ body {
     position: fixed;
     bottom: 10px;
     left: 50%;
+    width: 90%;
     translate: -50% 0;
     font-family: Arial;
     font-size: 25px;
+    text-align: center;
     z-index: 100;
     color: white;
+    scale: 0.75;
 }
 
-.MainMenuButton1, .MainMenuButton2, .MainMenuButton3, .MainMenuButton4, .MainMenuButton5, .MainMenuButton6 {
+.MainMenuButton1 {
+    color: red;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 140px;
+    font-family: Saphifen;
+    justify-content: center;
+    align-content: center;
+    text-shadow: 0 0 10px rgb(255, 25, 25, 0);
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: left;
+}
+.MainMenuButton2, .MainMenuButton3, .MainMenuButton4, .MainMenuButton5, .MainMenuButton6 {
     color: white;
     background-color: rgba(0, 0, 0, 0);
     border: none;
