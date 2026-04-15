@@ -1,9 +1,0 @@
-@media (max-width: 768px) {
-    .MainMenuButtons {
-        grid-template-rows: 75px 75px 75px 75px;
-    }
-
-    .MainMenuButton1, .MainMenuButton2, .MainMenuButton3, .MainMenuButton4, .MainMenuButton5 {
-        font-size: clamp(1rem, 2vw, 5rem);
-    }
-}

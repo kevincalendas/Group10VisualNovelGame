@@ -45,7 +45,8 @@ body {
     translate: -50% -50%;   
     width: 100%;
     height: 100%;
-    z-index: 0;
+    z-index: 2;
+    transform: rotate(180deg);
 }
 
 .MainIntroPanel {
@@ -95,7 +96,7 @@ body {
     height: 95%;
     background-color: none;
     scale: 0.9;
-    z-index: 1;
+    z-index: 3;
 }
 
 .MainMenuVideo {
@@ -115,7 +116,7 @@ body {
     margin: 0;
     top: 50%;
     translate: 0 -50%;
-    scale: 0.7;
+    scale: 0.8;
     right: 1%;
     width: auto;
     height: auto;
@@ -124,24 +125,26 @@ body {
     font-weight: 100;
     color: red;
     background-color: none;
+    z-index: 10;
 }
 
 .MainMenuButtons {
     position: fixed;
     margin: 0;
     left: -100px;
-    top: 50%;
+    top: 55%;
     translate: 0 -50%;
     background-color: rgba(0, 0, 0, 0);
     display: grid;
-    width: 450px;
+    width: 500px;
     height: 100%;
-    scale: 0.55;
-    grid-template-rows: 170px 100px 100px 100px;
+    scale: 0.65;
+    grid-template-rows: 170px 100px 100px 100px 100px;
     row-gap: 20px;
     grid-template-columns: 400px;
     align-content: center;
     justify-content: center;
+    z-index: 10;
 }
 
 .LoadingText {
@@ -165,7 +168,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     border: none;
     font-size: 140px;
-    font-family: Saphifen;
+    font-family: MeltedMonster;
     justify-content: center;
     align-content: center;
     text-shadow: 0 0 10px rgb(255, 25, 25, 0);
@@ -175,9 +178,10 @@ body {
 .MainMenuButton2, .MainMenuButton3, .MainMenuButton4, .MainMenuButton5, .MainMenuButton6 {
     color: white;
     background-color: rgba(0, 0, 0, 0);
+    width: 150%;
     border: none;
     font-size: 75px;
-    font-family: Saphifen;
+    font-family: MeltedMonster;
     justify-content: center;
     align-content: center;
     text-shadow: 0 0 10px rgb(255, 25, 25, 0);

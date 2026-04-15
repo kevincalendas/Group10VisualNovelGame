@@ -12,3 +12,8 @@
     font-family: Murderer;
     src: url(MurdererFont.ttf);   
 }
+
+@font-face {
+    font-family: MeltedMonster;
+    src: url(Melted_Monster.ttf);   
+}

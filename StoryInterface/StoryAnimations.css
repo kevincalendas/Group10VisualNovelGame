@@ -26,6 +26,38 @@
     animation: LoopUpandDownAnim 1s ease-in infinite forwards;
 }
 
+.Up-to-down {
+    animation: Up-to-down 0.5s ease-out both;
+}
+.Down-to-Up {
+    animation: Down-to-Up 0.5s ease-out both;
+}
+
+@keyframes Up-to-down {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes Down-to-Up {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
 @keyframes KindaFadeInout {
     0% {
         opacity: 0.5;
@@ -111,6 +143,32 @@
         transform: translateY(0px);
     }
 }
+
+@keyframes MovLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(25px);
+    }   
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.Animation-Move-Left {
+    animation: MovLeft 1s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+
+.Animation-Clicked-FadeOut {
+    animation: Fadeout2 1s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+
+.Animation-FadeIn {
+    animation: Fadein 1s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+
+
 
 
 @keyframes ScaleClicked {

@@ -1,0 +1,336 @@
+## 🎮 VISUAL NOVEL GAME DATA (Full Script)
+
+---
+
+### CHAPTER 1 — "The Sleepover"
+**Scene:** Rhema's house, rainy night
+**Mood:** Uneasy, suspicious
+
+---
+
+**[NARRATOR]**
+> Kevin notices Rhema has been acting strange — too silent, too distant. He suspects she's hiding something. He tells AJ and Lyza his plan: use a sleepover to investigate.
+
+---
+
+**[KEVIN]**
+> "Guys, I think something's wrong with Rhema. She's been acting really weird. What if we ask her if we can sleep over at her house and see what's going on?"
+
+---
+
+**⬥ CHOICE 1**
+
+**A — "Yeah, let's do it. We're her friends anyway."**
+> *[AJ]* "Okay, I'm in."
+> *[LYZA]* "Yeah, let's do it. We're her friends anyway."
+
+**B — "Maybe we should just ask her directly if she's okay?"**
+> *[KEVIN]* "She won't tell us the truth. We have to see it ourselves."
+> *[AJ]* "...Fine. Let's just do the sleepover then."
+
+*(Both choices → same next scene)*
+
+---
+
+**[NARRATOR]**
+> They asked Rhema if they could sleep over. She hesitated.
+
+**[RHEMA]** *(voice low, uneasy)*
+> "Are you guys sure?"
+
+**[KEVIN, AJ, LYZA]**
+> "Yes. We're really sure."
+
+**[NARRATOR]**
+> And that was when everything began.
+
+---
+
+### CHAPTER 2 — "Into the Forest"
+**Scene:** Rhema's living room → forest edge, midnight
+**Mood:** Creepy, building dread
+
+---
+
+**[NARRATOR]**
+> The night dragged on. Kevin told an old local legend — a forest nearby, voices that mimicked your friends, footsteps that followed you even when no one was there. The lights flickered.
+
+**[AJ]**
+> "Kevin, you should stop."
+
+**[LYZA]**
+> "Yeah. This isn't funny."
+
+**[KEVIN]**
+> "Alright. I'll stop."
+
+**[NARRATOR]**
+> Silence fell again. Then Rhema spoke. Her voice was calm. Too calm.
+
+**[RHEMA]**
+> "What if we go to the forest? You guys want that, right?"
+
+---
+
+**⬥ CHOICE 2**
+
+**A — "Yes! Let's go. Nothing's gonna happen."**
+> *[KEVIN]* "Girl, we're just going there. Let's go!"
+> *[LYZA]* "Kevin, I don't know about this..."
+> *[AJ]* "...I really don't want to."
+
+**B — "Let's just stay here. It's dangerous."**
+> *[LYZA]* "Maybe tomorrow morning instead? Not now."
+> *[AJ]* "Yeah, let's not."
+> *[KEVIN]* "Come on. Nothing's gonna happen to us."
+
+*(Both choices → Rhema is already at the door. Everyone follows.)*
+
+---
+
+**[NARRATOR]**
+> Before anyone could argue, Rhema was already at the door, slipping on her shoes. AJ and Lyza followed — by no choice.
+
+**[NARRATOR]**
+> The forest swallowed them the moment they stepped inside. The trees were too close together. The path Rhema promised seemed to disappear the deeper they went.
+
+**[LYZA]** *(whispering)*
+> "Rhema... are you sure this is the way?"
+
+**[RHEMA]** *(pausing)*
+> "Yes. As far as I remember... this is the way."
+
+**[KEVIN]**
+> "You hear that?"
+
+**[NARRATOR]**
+> Footsteps echoed behind them. They stopped walking. The footsteps didn't.
+
+**[LYZA]** *— screams —*
+
+**[AJ]**
+> "Guys. Look at this."
+
+**[NARRATOR]** (LAST CURRENT ADDED)
+> Between the trees stood a house. Old. Crooked. Half-swallowed by shadows. Rhema stared at it without speaking — as if she recognized it. Or worse, as if it was staring back.
+
+---
+
+### CHAPTER 3 — "The Haunted House"
+**Scene:** Inside the old house
+**Mood:** Paranoid, trapped, betrayal
+
+---
+
+**[NARRATOR]**
+> The house was too clean. Not a speck of dust. Not a single sign of abandonment. As if someone had just been there, watching.
+
+**[NARRATOR]**
+> Lyza turned and ran for the door. BANG. It slammed shut on its own.
+
+**[LYZA]** *— screams —*
+
+**[AJ]**
+> "Oh my God... we're in a trap. What are we going to do?!"
+
+**[LYZA]** *(pointing at Kevin)*
+> "This is all your fault! You planned this! Why did I even go along with you?!"
+
+**[LYZA]**
+> "Kevin wanted to investigate you, Rhema. You've been acting strange lately. That's why we asked to sleep over at your house."
+
+**[KEVIN]**
+> "That's a lie! Stop lying!"
+
+**[RHEMA]** *(cold, shaking)*
+> "What the hell is this, Kevin? That's exactly why I didn't want you to know about my problems."
+> "Traitor."
+
+**[AJ]** *(quietly)*
+> "...He did say that. I'm sorry, Rhema."
+
+**[KEVIN]** *(laughs — cold, not nervous)*
+> "Yes. That's all true. And now... I've finally trapped all of you."
+
+---
+
+**⬥ CHOICE 3**
+
+**A — Rhema confronts Kevin head-on.**
+> *[RHEMA]* "Kevin, what the hell are you saying?! Is this some kind of prank?! Cut the crap!"
+> *[KEVIN]* "I like you. You're brave. I'll give you that."
+> *[RHEMA]* "Stop talking in circles."
+
+**B — AJ steps forward to reason with Kevin.**
+> *[AJ]* "Kevin, what do you want from us? Just say it."
+> *[KEVIN]* "Hmm... simple. I want all of you to play with me."
+> *[AJ]* "Play? What game?"
+
+*(Both choices → Kevin activates the locks)*
+
+---
+
+**[NARRATOR]**
+> Kevin reached behind him and pressed something on the wall.
+
+**[SFX]** *— CLANG —*
+
+**[NARRATOR]**
+> The main door slammed shut. Locks twisted on their own.
+
+**[KEVIN]**
+> "Welcome to Find the Key. You have one hour. Somewhere in this house is a key. Find it — and you walk out alive. If you don't... you won't have to worry about walking out."
+
+**[NARRATOR]**
+> A digital timer on the wall flickered on.
+> **60:00**
+
+---
+
+### CHAPTER 4 — "Kevin's Game"
+**Scene:** The house, walls slowly closing in, red timer ticking
+**Mood:** Thriller, panic, desperation
+
+---
+
+**[KEVIN]**
+> "Every ten minutes, this house shrinks. And every ten minutes — you get a clue. Consider it my generosity."
+
+**[NARRATOR]**
+> Kevin was gone. A paper fell to the floor.
+> *Clue 1 — written in black ink:*
+> **"The key hides where light fears to reach."**
+
+**[TIMER]** → 50:00
+
+---
+
+**⬥ CHOICE 4**
+
+**A — "The dark hallway. No windows. That's where we go."** *(Rhema's instinct)*
+> *[LYZA]* "Are you sure?!"
+> *[RHEMA]* "Trust me."
+> *They run. The space behind them narrows by inches.*
+
+**B — "Let's search the main room first. Be thorough."** *(Lyza's suggestion)*
+> *[AJ]* "Okay, quick — check everything."
+> *Nothing found. Clue 2 arrives at 40:00.*
+> **"Look beneath what reflects you."**
+> *[RHEMA]* "The hallway. The one with no windows. Go!"
+
+*(Both choices → They reach the dark hallway)*
+
+---
+
+**[NARRATOR]**
+> In the hallway, a cracked mirror hung on the wall. Their reflections looked distorted. Beneath the mirror's frame — a faint scratch mark.
+
+**[TIMER]** → 40:00
+
+**[NARRATOR]**
+> *Clue 2 whispered from the walls:*
+> **"Look beneath what reflects you."**
+
+**[NARRATOR]**
+> The mirror shattered. Glass exploded across the floor. Rhema dropped to her knees, ignoring the glass cutting her skin. She found a latch. She pulled it open.
+> Inside — not a key. Another clue.
+> **"Trust is heavier than fear."**
+
+**[TIMER]** → 30:00
+
+**[NARRATOR]**
+> Another room collapsed completely. They stumbled into the last remaining room. One door. Locked. Carved above it:
+> **"One of you already holds the key."**
+
+**[TIMER]** → 20:00
+
+**[NARRATOR]**
+> Rhema slowly reached into her jacket. Her fingers touched something cold. Metal. She pulled it out.
+> A small, old key.
+> She hadn't put it there.
+
+---
+
+### CHAPTER 5 — "Trust Over Fear"
+**Scene:** Last remaining room, walls inches away, timer at 05:00
+**Mood:** Desperate, emotional, climactic
+
+---
+
+**[KEVIN]** *(stepping from a hidden panel)*
+> "One key. Three players."
+
+**[NARRATOR]**
+> The carving above the door burned and shifted. New words:
+> **"Only one walks free."**
+
+**[TIMER]** → 05:00
+
+**[LYZA]** *(tears in her eyes)*
+> "Rhema... please."
+
+---
+
+**⬥ CHOICE 5 — Final Choice**
+
+**A — Use the key. Save yourself.**
+> *[NARRATOR]* Rhema raised the key toward the lock. Her hand trembled.
+> *[AJ]* "Rhema, don't—"
+> *[RHEMA]* *(stops)* "...I can't. I can't do this."
+> *She steps back. She can't leave them.*
+
+**B — Refuse. No one gets left behind.**
+> *[RHEMA]* "This isn't about sacrifice."
+> *[KEVIN]* *(smile fading)* "...What are you doing?"
+> *[RHEMA]* "If only one walks free — then none of us walk alone."
+
+*(Both choices → Rhema throws the key)*
+
+---
+
+**[NARRATOR]**
+> Rhema threw the key across the room. It hit the ground — and split in half.
+
+**[SFX]** *— violent shake —*
+
+**[NARRATOR]**
+> The carving above the door shattered. New words carved themselves into the wood:
+> **"Correct."**
+
+**[NARRATOR]**
+> The door unlocked with a loud metallic snap.
+
+**[TIMER]** → **00:47**
+
+**[NARRATOR]**
+> The walls stopped. The ceiling rose slightly. All three of them — still alive.
+
+**[LYZA]** *— bursts into tears —*
+
+**[AJ]**
+> "How did you know?"
+
+**[RHEMA]**
+> "He wanted one of us to choose themselves. The game was built on fear. So I chose trust."
+
+**[KEVIN]** *(stepping back into shadows)*
+> "You passed this round. The next one won't be about trust."
+
+**[NARRATOR]**
+> A new timer appeared above the doorway.
+> **60:00**
+> Rhema stared at it. Then at Kevin. Her fear was gone — replaced by something sharper.
+
+**[RHEMA]**
+> "You made a mistake. You think we're trapped in your game. But now we know the rules."
+
+**[KEVIN]** *(smiling slowly)*
+> "Good."
+
+**[NARRATOR]**
+> The door creaked open again. Darkness waiting. But this time — they didn't look like victims.
+> They looked ready.
+
+**[TIMER]** → 59:59
+
+> *And together — they stepped back inside.*
