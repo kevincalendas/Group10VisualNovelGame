@@ -74,6 +74,16 @@
 
 
         <!-- Play Interface Story -->
+
+        <div class="MainNotificationMenu" id="MainNotificationMenu">
+            <h1 class="MainNotificationText" id="MainNotificationText"> Chapter 1 Finished </h1>
+            <p class="MainNotificationText1" id="MainNotificationText1"> Congratulations! You have finished the Chapter 1. Your chapter has been saved at Loads.</p>
+            <div class="LoadingLineAnimationNotification" id="LoadingLineAnimationNotification"></div>
+        </div>
+
+        <div class="ChapterDisplayNextWindow" id="ChapterDisplayNextWindow">
+            <h1 class="ChapterDisplayText" id="ChapterDisplayText">Chapter 1 | Into the Forest</h1>
+        </div>
         
         <h1 class="LoadingText" id="LoadingText"> Please wait.. </h1>
         <button class="NextStoryLineButton" id="NextStoryLineButton">Next ►</button>
@@ -110,5 +120,11 @@
             <audio id="StartMusicNarr" preload="auto">
                 <source src="../StoryInterface/StoryBackgroundMusic/StartEerieMusicNarrator.ogg" type="audio/ogg">
             </audio>
+            <!-- Sound Effect for next chapter display💋-->
+             <audio id="SoundEffectBoom1" preload="auto">
+                <source src="../MainSoundEffects/ChapterBoomSoundEffect.mp3" type="audio/ogg">
+            </audio>
+            
+        
     </body>
 </html>

@@ -33,6 +33,106 @@
     animation: Down-to-Up 0.5s ease-out both;
 }
 
+.Notification-Animation {
+    animation: Notification-Animation 5s ease-out both;
+}
+
+.Notification-Animation1 {
+    animation: Notification-Animation1 2s ease-out both;
+}
+
+.Notification-Loading-Line-Animation {
+    animation: LoadingLineAnimation 4.5s linear both;
+}
+
+.DisplayNextChapterAnims1 {
+    animation: DisplayNextChapterAnims 5.5s ease-out 3.6s both;
+}
+
+
+/* For notification animation */
+
+@keyframes Notification-Animation {
+    0% {
+        transform: translateX(150px);
+        opacity: 0;
+    }
+
+    5% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    95% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+}
+
+@keyframes Notification-Animation1 {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+        scale: 1;
+    }
+
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+        scale: 0.8;
+    }
+
+    55% {
+        transform: translateX(0);
+        opacity: 1;
+        scale: 0.8;
+    }
+
+    100% {
+        transform: translateX(400px);
+        opacity: 0;
+        scale: 0.8;
+    }
+}
+
+@keyframes DisplayNextChapterAnims {
+    0% {
+        opacity: 0;
+        color: rgb(255, 255, 255, 0);
+        text-shadow: 0 0 30px rgb(255, 255, 255, 0);
+    }
+    5% {
+        opacity: 1;
+        color: rgb(255, 0, 0, 1);
+        text-shadow: 0 0 30px rgb(255, 255, 255, 1);
+    }
+    30% {
+        color: rgb(255, 0, 0, 1);
+        text-shadow: 0 0 20px rgb(255, 255, 255, 0.5);
+    }
+    100% {
+        color: rgba(255, 0, 0, 0, 0);
+        text-shadow: 0 0 10px rgb(255, 255, 255, 0);
+        
+    }
+}
+
+
+@keyframes LoadingLineAnimation {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 1%;
+    }
+}
+
 @keyframes Up-to-down {
     0% {
         transform: translateY(-50px);

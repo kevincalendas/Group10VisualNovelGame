@@ -136,8 +136,17 @@ function ShowLoadingScreen1A() {
 
 // STORY LINES //
 
-let StoryLineNumberSelected = 0;
 let StoryChapterSelected = 1;
+
+// SAVE STORY //
+
+let StoryLineNumberSelected = parseInt(localStorage.getItem("LineStorySavee")) || 0;
+
+let Chapter1FinishedSave = parseInt(localStorage.getItem("Chapter1FinishedSaved")) || "False";
+let Chapter2FinishedSave = parseInt(localStorage.getItem("Chapter2FinishedSaved")) || "False";
+let Chapter3FinishedSave = parseInt(localStorage.getItem("Chapter3FinishedSaved")) || "False";
+let Chapter4FinishedSave = parseInt(localStorage.getItem("Chapter4FinishedSaved")) || "False";
+let Chapter5FinishedSave = parseInt(localStorage.getItem("Chapter5FinishedSaved")) || "False";
 
 const StoryLines = [
 
@@ -365,6 +374,8 @@ const MainDialoguePanel = document.getElementById("MainDialoguePanel");
 
 function DisplayStoryLine() {
     const currentStoryLinesMain = StoryLines[StoryLineNumberSelected];
+    
+    StorySavingSession()
 
     console.log("Current Story Line:", currentStoryLinesMain);
 
@@ -415,6 +426,7 @@ const StoryLineChoice1 = document.querySelector(".StoryLineChoice1");
 const StoryLineChoice2 = document.querySelector(".StoryLineChoice2");
 
 let ChoiceFinalMade = "none";
+const ChoiceFinalMadeSave = localStorage.getItem("ChoiceFinalMadeSaved", ChoiceFinalMade);
 
 NextStoryLineButton.addEventListener('click', () => {
     NextStoryLineButton.classList.remove('Animation-Move-Left');
@@ -424,7 +436,9 @@ NextStoryLineButton.addEventListener('click', () => {
     NextStoryLineButton.addEventListener('animationend', () => {
         NextStoryLineButton.style.display = "none";
 
+
         StoryLineNumberSelected++;
+        localStorage.setItem("LineStorySavee", StoryLineNumberSelected);
         StoryLineSkipChoices();
 
         MainDialoguePanel.classList.remove('Fadein1sec');
@@ -464,7 +478,9 @@ function setupChoice(index) {
 
 StoryLineChoice1.addEventListener('click', () => {
     ChoiceFinalMade = StoryChoiceLetterSelected + "A";
+    localStorage.setItem("ChoiceFinalMadeSaved", ChoiceFinalMadeSave);
     console.log("Choice Final Made:", ChoiceFinalMade);
+
     if (ChoiceFinalMade == "0A") {
         console.log("Choice 0A was selected.");
         StoryLineChoicesPanel.classList.remove('Fadeout2A');
@@ -474,6 +490,7 @@ StoryLineChoice1.addEventListener('click', () => {
             StoryLineChoicesPanel.style.display = "none";
         }, 1200);
         StoryLineNumberSelected = 2;
+            localStorage.setItem("LineStorySavee", StoryLineNumberSelected);
         DisplayStoryLine();
     } else if (ChoiceFinalMade == "1A") {
         console.log("Choice 1A was selected.");
@@ -484,6 +501,7 @@ StoryLineChoice1.addEventListener('click', () => {
             StoryLineChoicesPanel.style.display = "none";
         }, 1200);
         StoryLineNumberSelected = 16;
+            localStorage.setItem("LineStorySavee", StoryLineNumberSelected);
         DisplayStoryLine();
     } else if (ChoiceFinalMade == "2A") {
         console.log("Choice 2A was selected.");
@@ -494,6 +512,7 @@ StoryLineChoice1.addEventListener('click', () => {
             StoryLineChoicesPanel.style.display = "none";
         }, 1200);
         StoryLineNumberSelected = 42;
+            localStorage.setItem("LineStorySavee", StoryLineNumberSelected);
         DisplayStoryLine();
     } else if (ChoiceFinalMade == "3A") {
         console.log("Choice 3A was selected.");
@@ -504,6 +523,7 @@ StoryLineChoice1.addEventListener('click', () => {
             StoryLineChoicesPanel.style.display = "none";
         }, 1200);
         StoryLineNumberSelected = 64;
+            localStorage.setItem("LineStorySavee", StoryLineNumberSelected);
         DisplayStoryLine();
     }
 })
@@ -511,7 +531,9 @@ StoryLineChoice1.addEventListener('click', () => {
 
 StoryLineChoice2.addEventListener('click', () => {
     ChoiceFinalMade = StoryChoiceLetterSelected + "B";
+    localStorage.setItem("ChoiceFinalMadeSaved", ChoiceFinalMadeSave);
     console.log("Choice Final Made:", ChoiceFinalMade);
+
     if (ChoiceFinalMade == "0B") {
         console.log("Choice 0B was selected.");
         StoryLineChoicesPanel.classList.remove('Fadeout2A');
@@ -521,6 +543,7 @@ StoryLineChoice2.addEventListener('click', () => {
             StoryLineChoicesPanel.style.display = "none";
         }, 1200);
         StoryLineNumberSelected = 4;
+            localStorage.setItem("LineStorySavee", StoryLineNumberSelected);
         DisplayStoryLine();
     } else if (ChoiceFinalMade == "1B") {
         console.log("Choice 1B was selected.");
@@ -531,6 +554,7 @@ StoryLineChoice2.addEventListener('click', () => {
             StoryLineChoicesPanel.style.display = "none";
         }, 1200);
         StoryLineNumberSelected = 19;
+            localStorage.setItem("LineStorySavee", StoryLineNumberSelected);
         DisplayStoryLine();
     } else if (ChoiceFinalMade == "2B") {
         console.log("Choice 2B was selected.");
@@ -541,6 +565,7 @@ StoryLineChoice2.addEventListener('click', () => {
             StoryLineChoicesPanel.style.display = "none";
         }, 1200);
         StoryLineNumberSelected = 46;
+            localStorage.setItem("LineStorySavee", StoryLineNumberSelected);
         DisplayStoryLine();
     } else if (ChoiceFinalMade == "3B") {
         console.log("Choice 3B was selected.");
@@ -551,6 +576,7 @@ StoryLineChoice2.addEventListener('click', () => {
             StoryLineChoicesPanel.style.display = "none";
         }, 1200);
         StoryLineNumberSelected = 68;
+            localStorage.setItem("LineStorySavee", StoryLineNumberSelected);
         DisplayStoryLine();
     }
 })
@@ -559,23 +585,204 @@ function StoryLineSkipChoices() {
     if (ChoiceFinalMade == "0A") {
         if (StoryLineNumberSelected == 4) {
             StoryLineNumberSelected = 6;
+            localStorage.setItem("LineStorySavee", StoryLineNumberSelected);
             ChoiceFinalMade = "none";
         }
     } else if (ChoiceFinalMade == "1A") {
         if (StoryLineNumberSelected == 19) {
             StoryLineNumberSelected = 22;
+            localStorage.setItem("LineStorySavee", StoryLineNumberSelected);
             ChoiceFinalMade = "none";
         }
     } else if (ChoiceFinalMade == "2A") {
         if (StoryLineNumberSelected == 45) {
-            StoryLineNumberSelected = 48;
+            StoryLineNumberSelected = 45;
+            localStorage.setItem("LineStorySavee", StoryLineNumberSelected);
             ChoiceFinalMade = "none";
         }
     }  else if (ChoiceFinalMade == "3A") {
         if (StoryLineNumberSelected == 62) {
             StoryLineNumberSelected = 66;
+            localStorage.setItem("LineStorySavee", StoryLineNumberSelected);
             ChoiceFinalMade = "none";
         }
     }
+}
+
+// Story Saving Section //
+
+let NotificationTimeout = null;
+
+const MainNotificationMenu = document.getElementById("MainNotificationMenu");
+const MainNotificationText =  document.getElementById("MainNotificationText");
+const MainNotificationText1 =  document.getElementById("MainNotificationText1");
+const LoadingLineAnimationNotification = document.getElementById("LoadingLineAnimationNotification");
+
+var SoundEffectBoom1 = document.getElementById("SoundEffectBoom1");
+const ChapterDisplayNextWindow = document.getElementById("ChapterDisplayNextWindow");
+const ChapterDisplayText = document.getElementById("ChapterDisplayText");
+
+function StorySavingSession() {
+    if (StoryLineNumberSelected === 0) {
+        ChapterNextWindow();
+        
+        setTimeout(() => {
+            ChapterDisplayText.innerHTML = "Chapter 1 | The Sleepover";
+        }, 3600);
+
+        setTimeout(() => {
+            clearTimeout(NotificationTimeout);
+            MainNotificationMenu.style.display = "block";
+            MainNotificationMenu.classList.remove('Notification-Animation1');
+            MainNotificationMenu.classList.remove('Notification-Animation');
+            void MainNotificationMenu.offsetWidth;
+            MainNotificationMenu.classList.add('Notification-Animation');
+
+            ChapterDisplayText.textContent = "Chapter 1 | The Sleepover";
+
+            NotificationTimeout = setTimeout(() => {
+                MainNotificationMenu.style.display = "none";
+            }, 6000);
+    
+            LoadingLineAnimationNotification.classList.remove('Notification-Loading-Line-Animation');
+            void LoadingLineAnimationNotification.offsetWidth;
+            LoadingLineAnimationNotification.classList.add('Notification-Loading-Line-Animation');
+    
+            MainNotificationText.innerHTML = "New Journey!";
+            MainNotificationText1.innerHTML = "You've started Unspoken game.";
+        
+            Chapter1FinishedSave = "True";
+            localStorage.setItem("Chapter1FinishedSaved", Chapter1FinishedSave);
+            console.log("GAME SAVED NOTIFICATION: CHAPTER 1");
+        }, 10500);
+    } if (StoryLineNumberSelected === 10) {
+        ChapterNextWindow();
+
+        setTimeout(() => {
+            ChapterDisplayText.innerHTML = "Chapter 2 | Into the Forest";
+        }, 3600);
+
+        setTimeout(() => {
+            clearTimeout(NotificationTimeout);
+            MainNotificationMenu.style.display = "block";
+            MainNotificationMenu.classList.remove('Notification-Animation1');
+            MainNotificationMenu.classList.remove('Notification-Animation');
+            void MainNotificationMenu.offsetWidth;
+            MainNotificationMenu.classList.add('Notification-Animation');
+
+            ChapterDisplayText.textContent = "Chapter 1 | The Sleepover";
+
+            NotificationTimeout = setTimeout(() => {
+                ChapterDisplayText.textContent = "Chapter 2 | Into the Forest";
+            }, 3700);
+    
+            NotificationTimeout = setTimeout(() => {
+                MainNotificationMenu.style.display = "none";
+            }, 6000);
+    
+            LoadingLineAnimationNotification.classList.remove('Notification-Loading-Line-Animation');
+            void LoadingLineAnimationNotification.offsetWidth;
+            LoadingLineAnimationNotification.classList.add('Notification-Loading-Line-Animation');
+    
+            MainNotificationText.innerHTML = "Chapter 1 Finished";
+            MainNotificationText1.innerHTML = "Congratulations! You have finished the Chapter 1. Your chapters has been saved at Loads.";
+        
+            Chapter1FinishedSave = "True";
+            localStorage.setItem("Chapter1FinishedSaved", Chapter1FinishedSave);
+            console.log("GAME SAVED NOTIFICATION: CHAPTER 1");
+        }, 10500);
+    }   else if (StoryLineNumberSelected === 31) {
+        ChapterNextWindow();
+
+        setTimeout(() => {
+            ChapterDisplayText.innerHTML = "Chapter 2 | Into the Forest";
+        }, 3600);
+        
+        setTimeout(() => {
+            clearTimeout(NotificationTimeout);
+            MainNotificationMenu.style.display = "block";
+            MainNotificationMenu.classList.remove('Notification-Animation1');
+            MainNotificationMenu.classList.remove('Notification-Animation');
+            void MainNotificationMenu.offsetWidth;
+            MainNotificationMenu.classList.add('Notification-Animation');
+
+            ChapterDisplayText.textContent = "Chapter 2 | The Sleepover";
+
+            setTimeout(() => {
+                ChapterDisplayText.textContent = "Chapter 3 | Into the Forest";
+            }, 3700);
+
+            NotificationTimeout = setTimeout(() => {
+                MainNotificationMenu.style.display = "none";
+            }, 6000);
+
+            LoadingLineAnimationNotification.classList.remove('Notification-Loading-Line-Animation');
+            void LoadingLineAnimationNotification.offsetWidth;
+            LoadingLineAnimationNotification.classList.add('Notification-Loading-Line-Animation');
+
+            MainNotificationText.innerHTML = "Chapter 2 Finished";
+            MainNotificationText1.innerHTML = "Congratulations! You have finished the Chapter 2. Your chapters has been saved at Loads.";
+            Chapter2FinishedSave = "True";
+            localStorage.setItem("Chapter2FinishedSaved", Chapter2FinishedSave);
+            console.log("GAME SAVED NOTIFICATION: CHAPTER 2");
+        }, 10500);
+    } else if (StoryLineNumberSelected === 54) {
+        ChapterNextWindow();
+
+        setTimeout(() => {
+            ChapterDisplayText.innerHTML = "Chapter 2 | The Haunted House";
+        }, 3600);
+        
+        setTimeout(() => {
+            clearTimeout(NotificationTimeout);
+            MainNotificationMenu.style.display = "block";
+            MainNotificationMenu.classList.remove('Notification-Animation1');
+            MainNotificationMenu.classList.remove('Notification-Animation');
+            void MainNotificationMenu.offsetWidth;
+            MainNotificationMenu.classList.add('Notification-Animation');
+    
+            NotificationTimeout = setTimeout(() => {
+                MainNotificationMenu.style.display = "none";
+            }, 6000);
+    
+            LoadingLineAnimationNotification.classList.remove('Notification-Loading-Line-Animation');
+            void LoadingLineAnimationNotification.offsetWidth;
+            LoadingLineAnimationNotification.classList.add('Notification-Loading-Line-Animation');
+    
+            MainNotificationText.innerHTML = "Chapter 3 Finished";
+            MainNotificationText1.innerHTML = "Congratulations! You have finished the Chapter 3. Your chapters has been saved at Loads.";
+            Chapter3FinishedSave = "True";
+            localStorage.setItem("Chapter3FinishedSaved", Chapter3FinishedSave);
+            console.log("GAME SAVED NOTIFICATION: CHAPTER 3");
+        }, 10500);
+    } 
+}
+
+function ChapterNextWindow() {
+    ChapterDisplayNextWindow.style.display = "block";
+    ChapterDisplayText.style.display = "block";
+    ChapterDisplayText.style.opacity = "0";
+    ChapterDisplayNextWindow.classList.remove('Fadeout2A');
+    void ChapterDisplayNextWindow.offsetWidth;
+    
+    ChapterDisplayText.classList.remove('DisplayNextChapterAnims1');
+    void ChapterDisplayText.offsetWidth;
+    ChapterDisplayText.classList.add('DisplayNextChapterAnims1');
+
+    setTimeout(() => {
+        SoundEffectBoom1.play();
+    }, 2000);
+
+    setTimeout(() => {
+        ChapterDisplayText.classList.remove('DisplayNextChapterAnims1');
+        void ChapterDisplayText.offsetWidth;
+        ChapterDisplayNextWindow.classList.add('Fadeout2A');
+    }, 9000);
+
+
+    setTimeout(() => {
+        ChapterDisplayNextWindow.style.display = "none";
+        ChapterDisplayText.style.display = "none";
+    }, 10000);
 }
 

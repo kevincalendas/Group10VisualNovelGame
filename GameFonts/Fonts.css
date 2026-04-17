@@ -17,3 +17,8 @@
     font-family: MeltedMonster;
     src: url(Melted_Monster.ttf);   
 }
+
+@font-face {
+    font-family: TheyPerished;
+    src: url(TheyPerished-Regular.ttf);   
+}

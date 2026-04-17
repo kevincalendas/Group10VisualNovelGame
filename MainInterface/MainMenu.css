@@ -202,6 +202,54 @@ body {
     animation: MainTextFlicker 0.1s ease 0s 2 forwards, ShakingAnimation 0.1s steps(1) 0s 2 forwards, coloranimation 0.3s steps(1);
 }
 
+/* Notifications */
+
+.MainNotificationMenu {
+    position: fixed;
+    display: none;
+    top: 30px;
+    right: 30px;
+    width: 375px;
+    height: 100px;
+    background: url(../OtherImages/Notification-Background.png);
+    filter: contrast(130%);
+    background-size: 100% 500%; 
+    background-position: 100%;
+    box-shadow: 0 0 30px rgba(48, 48, 48, 0.432);
+    margin: 0;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.MainNotificationText {
+    position: absolute;
+    top: 2px;
+    left: 15px;
+    font-family: Arial;
+    font-size: 18px;
+    color: white;
+    z-index: 101;
+}
+
+.MainNotificationText1 {
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    font-family: Arial;
+    font-size: 15px;
+    color: white;
+    z-index: 101;
+}
+
+.LoadingLineAnimationNotification {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
 /* Animations */
 
 @keyframes FadeLoopAnimation {
