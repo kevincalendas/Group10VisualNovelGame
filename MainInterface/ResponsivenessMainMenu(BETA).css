@@ -1,9 +1,38 @@
-@media (max-width: 768px) {
+@media (max-height: 600px) {
     .MainMenuButtons {
-        grid-template-rows: 75px 75px 75px 75px;
+        grid-template-rows: 140px 100px 100px 100px;
     }
 
-    .MainMenuButton1, .MainMenuButton2, .MainMenuButton3, .MainMenuButton4, .MainMenuButton5 {
+    .MainMenuButton2, .MainMenuButton3, .MainMenuButton4, .MainMenuButton5 {
+        font-size: clamp(5rem, 2vw, 5rem);
+    }
+
+    .MainMenuButton1 {
+        font-size: clamp(8rem, 2vw, 5rem);
+    }
+
+    .MainDialoguePanel {
+        scale: 0.7;
+        bottom: -15px;
+    }
+}
+
+@media (max-height: 400px) {
+    .MainMenuButtons {
+        grid-template-rows: 140px 100px 100px 100px;
+        scale: 0.6;
+    }
+
+    .MainMenuButton2, .MainMenuButton3, .MainMenuButton4, .MainMenuButton5 {
         font-size: clamp(1rem, 2vw, 5rem);
+    }
+
+    .MainMenuButton1 {
+        font-size: clamp(8rem, 2vw, 5rem);
+    }
+
+    .MainDialoguePanel {
+        scale: 0.7;
+        bottom: -15px;
     }
 }

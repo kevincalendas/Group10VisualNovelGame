@@ -122,6 +122,79 @@
     }
 }
 
+/* for PlayPrompt Animation */
+
+.MainNoticeGameplayTextAnimsA {
+    animation: MainNoticeGameplayTextAnims 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+
+.MainNoticeAnimsButtonsA {
+    animation: MainNoticeAnimsButtons1A 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s both;
+}
+
+.MainNoticeAnimsButtonsB {
+    animation: MainNoticeAnimsButtons1A 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.2s both;
+}
+
+.FadeOutScaleOutAMain {
+    animation: FadeOutScaleOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+
+@keyframes FadeOutScaleOut {
+    0% {
+        scale: 1;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    100% {
+        scale: 0.6;
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes MainNoticeGameplayTextAnims {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    45% {
+        transform: translateY(50px);
+        opacity: 1;
+    }
+
+    65% {
+        transform: translateY(50px);
+        opacity: 1;
+
+    }
+
+    66% {
+        transform: translateY(50px);
+        opacity: 1;
+
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes MainNoticeAnimsButtons1A {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
 
 @keyframes LoadingLineAnimation {
     0% {

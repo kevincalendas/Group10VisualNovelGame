@@ -250,6 +250,183 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+/* MainInterface of PlayPromptPanel decisions */
+
+.PlayPromptPanelA {
+    position: fixed;
+    display: none;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 205;
+}
+
+.MainWindowPanelPlayPromptA {
+    position: fixed;
+    display: block;
+    opacity: 1;
+    width: 650px;
+    height: 275px;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.MainNoticeTextPlayPrompt {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    width: 95%;
+    height: 50px;
+    top: 30px;
+    left: 50%;
+    translate: -50%;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    animation: MainNoticeGameplayTextAnims 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+
+.PlayPromptA {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    width: 100%;
+    height: 50px;
+    bottom: 80px;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    animation: MainNoticeAnimsButtons 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s both;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.PlayPromptB {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    width: 100%;
+    height: 50px;
+    bottom: 20px;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    animation: MainNoticeAnimsButtons 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.2s both;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.PlayPromptA:hover, .PlayPromptB:hover{
+    color: red;
+    font-family: TheyPerished;
+    scale: 1.2;
+}
+
+/* MainInterfaceB of PlayPromptPanel decisions */
+
+.PlayPromptPanelB {
+    position: fixed;
+    display: none;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 210;
+}
+
+.MainWindowPanelPlayPromptB {
+    position: fixed;
+    display: block;
+    opacity: 1;
+    width: 650px;
+    height: 275px;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.MainNoticeTextPlayPromptB {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    width: 95%;
+    height: 50px;
+    top: 30px;
+    left: 50%;
+    translate: -50%;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    animation: MainNoticeGameplayTextAnims 1.5s cubic-bezier(0.165, 0.84, 0.44, 1) both;
+}
+
+.PlayPromptA1 {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    width: 100%;
+    height: 50px;
+    bottom: 80px;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    animation: MainNoticeAnimsButtons 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.1s both;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.PlayPromptB1 {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    width: 100%;
+    height: 50px;
+    bottom: 20px;
+    font-family: Arial;
+    font-weight: bolder;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    animation: MainNoticeAnimsButtons 1s cubic-bezier(0.165, 0.84, 0.44, 1) 1.2s both;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.PlayPromptA1:hover, .PlayPromptB1:hover{
+    color: red;
+    font-family: TheyPerished;
+    scale: 1.2;
+}
+
+
+
+
 /* Animations */
 
 @keyframes FadeLoopAnimation {

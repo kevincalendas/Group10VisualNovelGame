@@ -1,8 +1,9 @@
+const MainIntroPanel1 = document.getElementById("MainIntroPanel1");
+const MainContainerofLoadUI = document.getElementById("MainContainerofLoadUI");
+const LoadGameH1A1 = document.getElementById("LoadGameH1A1");
+const LoadGameContainer = document.getElementById("LoadGameContainer");
+
 function OpenLoadMenu() {
-    const MainIntroPanel1 = document.getElementById("MainIntroPanel1");
-    const MainContainerofLoadUI = document.getElementById("MainContainerofLoadUI");
-    const LoadGameH1A1 = document.getElementById("LoadGameH1A1");
-    const LoadGameContainer = document.getElementById("LoadGameContainer");
 
     MainIntroPanel1.style.animation = 'Fadeout 0.5s ease both, ScaleUPAnimation 1s ease 0.1s both';
     MainContainerofLoadUI.style.display = "block";
@@ -14,8 +15,6 @@ function OpenLoadMenu() {
 }
 
 function CloseLoadMenu() {
-    const MainIntroPanel1 = document.getElementById("MainIntroPanel1");
-    const MainContainerofLoadUI = document.getElementById("MainContainerofLoadUI");
 
 
     MainContainerofLoadUI.style.animation = 'Fadeout 0.5s ease both, ScaleUPAnimation 1s ease 0.1s both';

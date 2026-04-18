@@ -2,7 +2,6 @@ const overlaything = document.getElementById('ActivateGame');
 const overlaytextz = document.getElementById('ActivateGameText');
 const MainIntro1H = document.getElementById('MainIntro1H');
 const MainIntroPanel = document.getElementById('MainIntroPanel');
-const MainIntroPanel1 = document.getElementById('MainIntroPanel1');
 const MainMenuTitle = document.getElementById('MainMenuTitle');
 const MainMenuButtons = document.getElementById('MainMenuButtons');
 const LoadingText = document.getElementById('LoadingText');
@@ -73,6 +72,347 @@ overlaything.addEventListener('click', () => {
 
 // PLAY STORY SYSTEMS RATS //
 
+const PlayPromptPanelA = document.getElementById("PlayPromptPanelA");
+const MainNoticeTextPlayPrompt = document.getElementById("MainNoticeTextPlayPrompt");
+const PlayPromptA = document.getElementById("PlayPromptA");
+const PlayPromptB = document.getElementById("PlayPromptB");
+
+function PlayButtonPrompt() {
+    if (StoryLineNumberSelected > 2) {
+
+        console.log("PlayDisplayNoticePrompt Triggered due to the user's Story.");
+        PlayPromptPanelA.style.display = "block";
+
+        MainNoticeTextPlayPrompt.classList.remove('FadeOutScaleOutAMain');
+        PlayPromptA.classList.remove('FadeOutScaleOutAMain');
+        PlayPromptB.classList.remove('FadeOutScaleOutAMain');
+        PlayPromptPanelA.classList.remove('Fadeout2A');
+
+        void PlayPromptPanelA.offsetWidth;
+        void MainNoticeTextPlayPrompt.offsetWidth;
+        void PlayPromptA.offsetWidth;
+        void PlayPromptB.offsetWidth;
+
+        PlayPromptPanelA.classList.add('Fadein1sec');
+        MainNoticeTextPlayPrompt.classList.add('MainNoticeGameplayTextAnimsA');
+        PlayPromptA.classList.add('MainNoticeAnimsButtonsA');
+        PlayPromptB.classList.add('MainNoticeAnimsButtonsB');
+
+
+    } else if (StoryLineNumberSelected < 1) {
+        PlayButtonDirect();
+    }
+}
+
+function PlayButtonPromptSelA() {
+    MainNoticeTextPlayPrompt.classList.remove('MainNoticeGameplayTextAnimsA');
+    PlayPromptA.classList.remove('MainNoticeAnimsButtonsA');
+    PlayPromptB.classList.remove('MainNoticeAnimsButtonsB');
+
+    void MainNoticeTextPlayPrompt.offsetWidth;
+    void PlayPromptA.offsetWidth;
+    void PlayPromptB.offsetWidth;
+
+    MainNoticeTextPlayPrompt.classList.add('FadeOutScaleOutAMain');
+    setTimeout(() => {
+        PlayPromptA.classList.add('FadeOutScaleOutAMain');
+
+        setTimeout(() => {
+            PlayPromptB.classList.add('FadeOutScaleOutAMain');
+        }, 100);
+    }, 100);
+    PlayButtonDirect();
+
+    setTimeout(() => {
+        PlayPromptPanelA.classList.remove('Fadein1sec');
+        void PlayPromptPanelA.offsetWidth;
+        PlayPromptPanelA.classList.add('Fadeout2A');
+    }, 1000);
+}
+
+function PlayButtonPromptSelB() {
+    MainNoticeTextPlayPrompt.classList.remove('MainNoticeGameplayTextAnimsA');
+    PlayPromptA.classList.remove('MainNoticeAnimsButtonsA');
+    PlayPromptB.classList.remove('MainNoticeAnimsButtonsB');
+
+    void MainNoticeTextPlayPrompt.offsetWidth;
+    void PlayPromptA.offsetWidth;
+    void PlayPromptB.offsetWidth;
+
+    MainNoticeTextPlayPrompt.classList.add('FadeOutScaleOutAMain');
+    setTimeout(() => {
+        PlayPromptA.classList.add('FadeOutScaleOutAMain');
+
+        setTimeout(() => {
+            PlayPromptB.classList.add('FadeOutScaleOutAMain');
+        }, 100);
+    }, 100);
+    PlayButtonDirect();
+
+    setTimeout(() => {
+        PlayPromptPanelA.classList.remove('Fadein1sec');
+        void PlayPromptPanelA.offsetWidth;
+        PlayPromptPanelA.classList.add('Fadeout2A');
+    }, 1000);
+
+    setTimeout(() => {
+        PlayPromptPanelA.style.display = "none";
+        StoryLineNumberSelected = 0;
+        localStorage.setItem("LineStorySavee", StoryLineNumberSelected);
+    }, 2100);
+
+    // FOR SETTING THE NOTIFICATION KINEMVERLUT //
+
+    setTimeout(() => {
+        clearTimeout(NotificationTimeout);
+        MainNotificationMenu.style.display = "block";
+        MainNotificationMenu.classList.remove('Notification-Animation1');
+        MainNotificationMenu.classList.remove('Notification-Animation');
+        void MainNotificationMenu.offsetWidth;
+        MainNotificationMenu.classList.add('Notification-Animation');
+
+        ChapterDisplayText.textContent = "Chapter 1 | The Sleepover";
+
+        NotificationTimeout = setTimeout(() => {
+            MainNotificationMenu.style.display = "none";
+        }, 6000);
+    
+        LoadingLineAnimationNotification.classList.remove('Notification-Loading-Line-Animation');
+        void LoadingLineAnimationNotification.offsetWidth;
+        LoadingLineAnimationNotification.classList.add('Notification-Loading-Line-Animation');
+    
+        MainNotificationText.innerHTML = "The reset";
+        MainNotificationText1.innerHTML = "You've reseted your game.";
+    }, 2100);
+}
+
+// FOR LOAD GAME OPTION SYSTEM. INTINDIHIN NALANG PU //
+
+let ChapterLineSelected = 0;
+
+const PlayPromptPanelB = document.getElementById("PlayPromptPanelB");
+const MainNoticeTextPlayPromptB = document.getElementById("MainNoticeTextPlayPromptB");
+const PlayPromptA1 = document.getElementById("PlayPromptA1");
+const PlayPromptB1 = document.getElementById("PlayPromptB1");
+
+function PlayAnimationLoadGameFalse() {
+    console.log("Play Animation at LoadGameChapter has been triggered.");
+    PlayPromptPanelB.style.display = "block";
+
+    MainNoticeTextPlayPromptB.classList.remove('FadeOutScaleOutAMain');
+    PlayPromptA1.classList.remove('FadeOutScaleOutAMain');
+    PlayPromptB1.classList.remove('FadeOutScaleOutAMain');
+    PlayPromptPanelB.classList.remove('Fadeout2A');
+
+    void PlayPromptPanelB.offsetWidth;
+    void MainNoticeTextPlayPromptB.offsetWidth;
+    void PlayPromptA1.offsetWidth;
+    void PlayPromptB1.offsetWidth;
+
+    PlayPromptPanelB.classList.add('Fadein1sec');
+    MainNoticeTextPlayPromptB.classList.add('MainNoticeGameplayTextAnimsA');
+    PlayPromptA1.classList.add('MainNoticeAnimsButtonsA');
+    PlayPromptB1.classList.add('MainNoticeAnimsButtonsB');
+}
+
+function FinishChaptersPlayLoad() {
+    MainContainerofLoadUI.style.animation = 'Fadeout 0.5s ease both, ScaleUPAnimation 1s ease 0.1s both';
+    MainNoticeTextPlayPromptB.classList.remove('MainNoticeGameplayTextAnimsA');
+    PlayPromptA1.classList.remove('MainNoticeAnimsButtonsA');
+    PlayPromptB1.classList.remove('MainNoticeAnimsButtonsB');
+
+    void MainNoticeTextPlayPromptB.offsetWidth;
+    void PlayPromptA1.offsetWidth;
+    void PlayPromptB1.offsetWidth;
+
+    MainNoticeTextPlayPromptB.classList.add('FadeOutScaleOutAMain');
+
+    // saving to current to direct kineme sa chapter kinemberlut basta ayon //
+    StoryLineNumberSelected = ChapterLineSelected;
+    localStorage.setItem("LineStorySavee", StoryLineNumberSelected);
+    setTimeout(() => {
+        PlayPromptA1.classList.add('FadeOutScaleOutAMain');
+
+        setTimeout(() => {
+            PlayPromptB1.classList.add('FadeOutScaleOutAMain');
+            MainIntroPanel1.style.display = 'none';
+            PlayButtonDirect();
+        }, 100);
+    }, 100);
+
+    setTimeout(() => {
+        PlayPromptPanelB.classList.remove('Fadein1sec');
+        void PlayPromptPanelB.offsetWidth;
+        PlayPromptPanelB.classList.add('Fadeout2A');
+        MainContainerofLoadUI.style.display = "none";
+
+        setTimeout(() => {
+            PlayPromptPanelB.style.display = "none";
+        }, 1200);
+    }, 1000);
+}
+
+function FinishChaptersLoad() {
+    console.log("FinishChaptersLoad triggered!");
+    MainNoticeTextPlayPrompt.classList.remove('MainNoticeGameplayTextAnimsA');
+    PlayPromptA.classList.remove('MainNoticeAnimsButtonsA');
+    PlayPromptB.classList.remove('MainNoticeAnimsButtonsB');
+
+    void MainNoticeTextPlayPrompt.offsetWidth;
+    void PlayPromptA.offsetWidth;
+    void PlayPromptB.offsetWidth;
+
+    MainNoticeTextPlayPrompt.classList.add('FadeOutScaleOutAMain');
+    setTimeout(() => {
+        PlayPromptA.classList.add('FadeOutScaleOutAMain');
+
+        setTimeout(() => {
+            PlayPromptB.classList.add('FadeOutScaleOutAMain');
+            MainIntroPanel.style.display = 'none';
+            PlayButtonDirect();
+        }, 100);
+    }, 100);
+
+    setTimeout(() => {
+        PlayPromptPanelA.classList.remove('Fadein1sec');
+        void PlayPromptPanelA.offsetWidth;
+        PlayPromptPanelA.classList.add('Fadeout2A');
+
+        setTimeout(() => {
+            PlayPromptPanelA.style.display = "none";
+        }, 1200);
+    }, 1000);
+}
+
+function ExitLoadChapterPrompt() {
+    MainNoticeTextPlayPromptB.classList.remove('MainNoticeGameplayTextAnimsA');
+    PlayPromptA1.classList.remove('MainNoticeAnimsButtonsA');
+    PlayPromptB1.classList.remove('MainNoticeAnimsButtonsB');
+
+    void MainNoticeTextPlayPromptB.offsetWidth;
+    void PlayPromptA1.offsetWidth;
+    void PlayPromptB1.offsetWidth;
+
+    MainNoticeTextPlayPromptB.classList.add('FadeOutScaleOutAMain');
+    setTimeout(() => {
+        PlayPromptA1.classList.add('FadeOutScaleOutAMain');
+
+        setTimeout(() => {
+            PlayPromptB1.classList.add('FadeOutScaleOutAMain');
+        }, 100);
+    }, 100);
+
+    setTimeout(() => {
+        PlayPromptPanelB.classList.remove('Fadein1sec');
+        void PlayPromptPanelB.offsetWidth;
+        PlayPromptPanelB.classList.add('Fadeout2A');
+
+        setTimeout(() => {
+            PlayPromptPanelB.style.display = "none";
+        }, 500);
+    }, 500);
+}
+
+function LoadGameFunction(ChapterNumber) {
+    console.log("The Chapter Number callsz: " + typeof ChapterNumber, ChapterNumber);
+    if (ChapterNumber === 1) {
+        if (Chapter1FinishedSave === "False") { 
+            if (StoryLineNumberSelected < 1) {
+                MainNoticeTextPlayPromptB.innerHTML = "It looks like you haven't played, do you want to play and finish chapter 1 to unlock chapter 2?";
+                PlayPromptA1.innerHTML = "Finish Chapter 1";
+
+                console.log("LoadGameFalseChapter1 Triggered due to the user data.");
+                PlayAnimationLoadGameFalse();
+            } else if (StoryLineNumberSelected > 2) {
+                MainNoticeTextPlayPromptB.innerHTML = "It looks like you haven't finished the Chapter 1, Do you want to continue to unlock Chapter 2?";
+                PlayPromptA1.innerHTML = "Resume Chapter 1";
+
+                console.log("LoadGameFalseChapter1 Triggered due to the user data.");
+                PlayAnimationLoadGameFalse();
+            }
+        } else if (Chapter1FinishedSave === "True") {
+            MainNoticeTextPlayPromptB.innerHTML = "Do you want to continue Chapter 2? This will change the current session of the game.";
+            PlayPromptA1.innerHTML = "Continue to Chapter 2";
+            ChapterLineSelected = 10;
+
+
+            console.log("LoadGameTrueChapter2 Triggered due to the user data.");
+            PlayAnimationLoadGameFalse();
+        }
+    } else if (ChapterNumber === 2) {
+        if (Chapter2FinishedSave === "False") {
+            if (StoryLineNumberSelected < 1) {
+                MainNoticeTextPlayPromptB.innerHTML = "It looks like you haven't played, do you want to play and finish chapter 1 and 2 to unlock chapter 3?";
+                PlayPromptA1.innerHTML = "Finish Chapter 1";
+
+                console.log("LoadGameFalseChapter1 Triggered due to the user data.");
+                PlayAnimationLoadGameFalse();
+            } else if (StoryLineNumberSelected > 2) {
+                MainNoticeTextPlayPromptB.innerHTML = "It looks like you haven't finished the Chapter 2, Do you want to continue to unlock Chapter 3?";
+                PlayPromptA1.innerHTML = "Resume Chapter 2";
+
+                console.log("LoadGameFalseChapter1 Triggered due to the user data.");
+                PlayAnimationLoadGameFalse();
+            }
+        } else if (Chapter2FinishedSave === "True") {
+            MainNoticeTextPlayPromptB.innerHTML = "Do you want to continue Chapter 3? This will change the current session of the game.";
+            PlayPromptA1.innerHTML = "Continue to Chapter 3";
+            ChapterLineSelected = 31;
+
+            console.log("LoadGameTrueChapter3 Triggered due to the user data.");
+            PlayAnimationLoadGameFalse();
+        }
+    } else if (ChapterNumber === 3) {
+        if (Chapter3FinishedSave === "False") {
+            if (StoryLineNumberSelected < 1) {
+                MainNoticeTextPlayPromptB.innerHTML = "It looks like you haven't played, do you want to play and finish chapter 1, 2, and 3 to unlock chapter 4?";
+                PlayPromptA1.innerHTML = "Finish Chapter 1";
+
+                console.log("LoadGameFalseChapter1 Triggered due to the user data.");
+                PlayAnimationLoadGameFalse();
+            } else if (StoryLineNumberSelected > 2) {
+                MainNoticeTextPlayPromptB.innerHTML = "It looks like you haven't finished the Chapter 3, Do you want to continue to unlock Chapter 4?";
+                PlayPromptA1.innerHTML = "Resume Chapter 3";
+
+                console.log("LoadGameFalseChapter1 Triggered due to the user data.");
+                PlayAnimationLoadGameFalse();
+            }
+        } else if (Chapter3FinishedSave === "True") {
+            MainNoticeTextPlayPromptB.innerHTML = "Do you want to continue Chapter 4? This will change the current session of the game.";
+            PlayPromptA1.innerHTML = "Continue to Chapter 4";
+            ChapterLineSelected = 54;
+
+            console.log("LoadGameTrueChapter4 Triggered due to the user data.");
+            PlayAnimationLoadGameFalse();
+        }
+    } else if (ChapterNumber === 4) {
+        if (Chapter4FinishedSave === "False") {
+            if (StoryLineNumberSelected < 1) {
+                MainNoticeTextPlayPromptB.innerHTML = "It looks like you haven't played, do you want to play and finish chapter 1, 2, 3, and 4 to unlock chapter 5?";
+                PlayPromptA1.innerHTML = "Finish Chapter 1";
+
+                console.log("LoadGameFalseChapter1 Triggered due to the user data.");
+                PlayAnimationLoadGameFalse();
+            } else if (StoryLineNumberSelected > 2) {
+                MainNoticeTextPlayPromptB.innerHTML = "It looks like you haven't finished the Chapter 4, Do you want to continue to unlock Chapter 5?";
+                PlayPromptA1.innerHTML = "Resume Chapter 4";
+
+                console.log("LoadGameFalseChapter1 Triggered due to the user data.");
+                PlayAnimationLoadGameFalse();
+            }
+        } else if (Chapter4FinishedSave === "True") {
+            MainNoticeTextPlayPromptB.innerHTML = "Do you want to continue Chapter 5? This will change the current session of the game.";
+            PlayPromptA1.innerHTML = "Continue to Chapter 5";
+            ChapterLineSelected = 31;
+
+            console.log("LoadGameTrueChapter5 Triggered due to the user data.");
+            PlayAnimationLoadGameFalse();
+        }
+    } else {
+        console.log("Nothing Changes.");
+    }
+}
+
 function PlayButtonDirect() {
     const LoadingScreenDIV = document.getElementById("LoadingScreenDIV");
     const HeadphoneSug = document.getElementById("HeadphoneSug");
@@ -142,12 +482,14 @@ let StoryChapterSelected = 1;
 
 let StoryLineNumberSelected = parseInt(localStorage.getItem("LineStorySavee")) || 0;
 
-let Chapter1FinishedSave = parseInt(localStorage.getItem("Chapter1FinishedSaved")) || "False";
-let Chapter2FinishedSave = parseInt(localStorage.getItem("Chapter2FinishedSaved")) || "False";
-let Chapter3FinishedSave = parseInt(localStorage.getItem("Chapter3FinishedSaved")) || "False";
-let Chapter4FinishedSave = parseInt(localStorage.getItem("Chapter4FinishedSaved")) || "False";
-let Chapter5FinishedSave = parseInt(localStorage.getItem("Chapter5FinishedSaved")) || "False";
+let Chapter1FinishedSave = localStorage.getItem("Chapter1FinishedSaved") || "False";
+let Chapter2FinishedSave = localStorage.getItem("Chapter2FinishedSaved") || "False";
+let Chapter3FinishedSave = localStorage.getItem("Chapter3FinishedSaved") || "False";
+let Chapter4FinishedSave = localStorage.getItem("Chapter4FinishedSaved") || "False";
+let Chapter5FinishedSave = localStorage.getItem("Chapter5FinishedSaved") || "False";
 
+
+// Story ni rhema na kahit i summarize, mahaba parin na para vang kasing haba ng sungay nya sa ulo💕 //
 const StoryLines = [
 
     // CHAPTER 1 LINES //
@@ -329,6 +671,82 @@ const StoryLines = [
     { StoryLineNumber: 78, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../StoryInterface/StoryIcons/NarratorProfile.png", StoryLineText: "A small, old key." },
 
     { StoryLineNumber: 79, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../StoryInterface/StoryIcons/NarratorProfile.png", StoryLineText: "She hadn't put it there." },
+
+    // END OF CHAPTER 4//
+
+    //START OF CHAPTER 5 HERE //
+    { StoryLineNumber: 80, StoryChapter: 5, StoryCharacter: "Kevin", StoryCharacterImg: "../StoryInterface/StoryIcons/KevinProfile.png", StoryLineText: "One key. Three players." },
+
+    { StoryLineNumber: 81, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../StoryInterface/StoryIcons/NarratorProfile.png", StoryLineText: "The carving above the door burned and shifted. New words:" },
+
+    { StoryLineNumber: 82, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../StoryInterface/StoryIcons/NarratorProfile.png", StoryLineText: "**Only one walks free.**" },
+
+    { StoryLineNumber: 83, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../StoryInterface/StoryIcons/NarratorProfile.png", StoryLineText: "05:00" },
+
+    { StoryLineNumber: 84, StoryChapter: 5, StoryCharacter: "Lyza", StoryCharacterImg: "../StoryInterface/StoryIcons/LyzaProfile.png", StoryLineText: "*(tears in her eyes)* Rhema... please." },
+
+    // CHOICE 5 CHAPTER 5 //
+
+    // CHOICE A LINES //
+    { StoryLineNumber: 85, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../StoryInterface/StoryIcons/NarratorProfile.png", StoryLineText: "Rhema raised the key toward the lock. Her hand trembled." },
+
+    { StoryLineNumber: 86, StoryChapter: 5, StoryCharacter: "AJ", StoryCharacterImg: "../StoryInterface/StoryIcons/AJProfile.png", StoryLineText: "Rhema, don't—" },
+
+    { StoryLineNumber: 87, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../StoryInterface/StoryIcons/RhemaProfile.png", StoryLineText: "*(stops)* ...I can't. I can't do this." },
+
+    { StoryLineNumber: 88, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../StoryInterface/StoryIcons/RhemaProfile.png", StoryLineText: "*She steps back. She can't leave them.*" },
+
+    // CHOICE B LINES //
+    { StoryLineNumber: 89, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../StoryInterface/StoryIcons/RhemaProfile.png", StoryLineText: "This isn't about sacrifice." },
+
+    { StoryLineNumber: 90, StoryChapter: 5, StoryCharacter: "Kevin", StoryCharacterImg: "../StoryInterface/StoryIcons/KevinProfile.png", StoryLineText: "*(smile fading)* ...What are you doing?" },
+
+    { StoryLineNumber: 91, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../StoryInterface/StoryIcons/RhemaProfile.png", StoryLineText: "If only one walks free — then none of us walk alone." },
+
+    // CHAPTER 5 CONTINUATION OF THE STORY //
+    { StoryLineNumber: 92, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../StoryInterface/StoryIcons/NarratorProfile.png", StoryLineText: "Rhema threw the key across the room. It hit the ground — and split in half." },
+
+    { StoryLineNumber: 93, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../StoryInterface/StoryIcons/NarratorProfile.png", StoryLineText: "*— violent shake —*" },
+
+    { StoryLineNumber: 94, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../StoryInterface/StoryIcons/NarratorProfile.png", StoryLineText: "The carving above the door shattered. New words carved themselves into the wood:" },
+
+    { StoryLineNumber: 95, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../StoryInterface/StoryIcons/NarratorProfile.png", StoryLineText: "**Correct.**" },
+
+    { StoryLineNumber: 96, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../StoryInterface/StoryIcons/NarratorProfile.png", StoryLineText: "The door unlocked with a loud metallic snap." },
+
+    { StoryLineNumber: 97, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../StoryInterface/StoryIcons/NarratorProfile.png", StoryLineText: "**00:47**" },
+
+    { StoryLineNumber: 98, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../StoryInterface/StoryIcons/NarratorProfile.png", StoryLineText: "The walls stopped. The ceiling rose slightly. All three of them — still alive." },
+
+    { StoryLineNumber: 99, StoryChapter: 5, StoryCharacter: "Lyza", StoryCharacterImg: "../StoryInterface/StoryIcons/LyzaProfile.png", StoryLineText: "*— bursts into tears —*" },
+
+    { StoryLineNumber: 100, StoryChapter: 5, StoryCharacter: "AJ", StoryCharacterImg: "../StoryInterface/StoryIcons/AJProfile.png", StoryLineText: "How did you know?" },
+
+    { StoryLineNumber: 101, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../StoryInterface/StoryIcons/RhemaProfile.png", StoryLineText: "He wanted one of us to choose themselves. The game was built on fear. So I chose trust." },
+
+    { StoryLineNumber: 102, StoryChapter: 5, StoryCharacter: "Kevin", StoryCharacterImg: "../StoryInterface/StoryIcons/KevinProfile.png", StoryLineText: "*(stepping back into shadows)*" },
+
+    { StoryLineNumber: 103, StoryChapter: 5, StoryCharacter: "Kevin", StoryCharacterImg: "../StoryInterface/StoryIcons/KevinProfile.png", StoryLineText: "You passed this round. The next one won't be about trust." },
+
+    { StoryLineNumber: 104, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../StoryInterface/StoryIcons/RhemaProfile.png", StoryLineText: "A new timer appeared above the doorway." },
+
+    { StoryLineNumber: 105, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../StoryInterface/StoryIcons/RhemaProfile.png", StoryLineText: "**60:00** - Rhema stared at it. Then at Kevin. Her fear was gone — replaced by something sharper." },
+
+    { StoryLineNumber: 106, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../StoryInterface/StoryIcons/RhemaProfile.png", StoryLineText: "You made a mistake. You think we're trapped in your game. But now we know the rules." },
+
+    { StoryLineNumber: 107, StoryChapter: 5, StoryCharacter: "Kevin", StoryCharacterImg: "../StoryInterface/StoryIcons/RhemaProfile.png", StoryLineText: "*(smiling slowly)* - Good." },
+
+    { StoryLineNumber: 108, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../StoryInterface/StoryIcons/NarratorProfile.png", StoryLineText: "The door creaked open again. Darkness waiting. But this time — they didn't look like victims." },
+
+    { StoryLineNumber: 109, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../StoryInterface/StoryIcons/NarratorProfile.png", StoryLineText: "They looked ready." },
+
+    { StoryLineNumber: 110, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../StoryInterface/StoryIcons/NarratorProfile.png", StoryLineText: "59:59" },
+
+    { StoryLineNumber: 111, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../StoryInterface/StoryIcons/NarratorProfile.png", StoryLineText: "*And together — they stepped back inside.*" },
+
+    // END //
+    { StoryLineNumber: 112, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../StoryInterface/StoryIcons/NarratorProfile.png", StoryLineText: "END" },
+
 ]
 
 let StoryChoiceLetterSelected = "none";
@@ -419,7 +837,7 @@ function HideStoryCharacterImageNarr() {
     }
 }
 
-// FOR STORY CHANGES SYSTEM. ✌💋🌹😜 VURICAT //
+// FOR STORY CHANGES SYSTEM. ✌💋🌹😜 VURICAT VILCAT BUT WITHOUT C💕💕 //
 
 const StoryLineChoicesPanel = document.getElementById("Story-Line-Choices-Panel");
 const StoryLineChoice1 = document.querySelector(".StoryLineChoice1");
@@ -609,7 +1027,7 @@ function StoryLineSkipChoices() {
     }
 }
 
-// Story Saving Section //
+// Story Saving Section yan ah//
 
 let NotificationTimeout = null;
 
@@ -670,7 +1088,7 @@ function StorySavingSession() {
             void MainNotificationMenu.offsetWidth;
             MainNotificationMenu.classList.add('Notification-Animation');
 
-            ChapterDisplayText.textContent = "Chapter 1 | The Sleepover";
+            ChapterDisplayText.textContent = "Chapter 2 | Into the Forest";
 
             NotificationTimeout = setTimeout(() => {
                 ChapterDisplayText.textContent = "Chapter 2 | Into the Forest";
@@ -687,15 +1105,15 @@ function StorySavingSession() {
             MainNotificationText.innerHTML = "Chapter 1 Finished";
             MainNotificationText1.innerHTML = "Congratulations! You have finished the Chapter 1. Your chapters has been saved at Loads.";
         
-            Chapter1FinishedSave = "True";
-            localStorage.setItem("Chapter1FinishedSaved", Chapter1FinishedSave);
+            Chapter2FinishedSave = "True";
+            localStorage.setItem("Chapter2FinishedSaved", Chapter2FinishedSave);
             console.log("GAME SAVED NOTIFICATION: CHAPTER 1");
         }, 10500);
     }   else if (StoryLineNumberSelected === 31) {
         ChapterNextWindow();
 
         setTimeout(() => {
-            ChapterDisplayText.innerHTML = "Chapter 2 | Into the Forest";
+            ChapterDisplayText.innerHTML = "Chapter 3 | Into the Forest";
         }, 3600);
         
         setTimeout(() => {
@@ -706,7 +1124,7 @@ function StorySavingSession() {
             void MainNotificationMenu.offsetWidth;
             MainNotificationMenu.classList.add('Notification-Animation');
 
-            ChapterDisplayText.textContent = "Chapter 2 | The Sleepover";
+            ChapterDisplayText.textContent = "Chapter 3 | Into the Forest";
 
             setTimeout(() => {
                 ChapterDisplayText.textContent = "Chapter 3 | Into the Forest";
@@ -722,15 +1140,15 @@ function StorySavingSession() {
 
             MainNotificationText.innerHTML = "Chapter 2 Finished";
             MainNotificationText1.innerHTML = "Congratulations! You have finished the Chapter 2. Your chapters has been saved at Loads.";
-            Chapter2FinishedSave = "True";
-            localStorage.setItem("Chapter2FinishedSaved", Chapter2FinishedSave);
+            Chapter3FinishedSave = "True";
+            localStorage.setItem("Chapter3FinishedSaved", Chapter3FinishedSave);
             console.log("GAME SAVED NOTIFICATION: CHAPTER 2");
         }, 10500);
     } else if (StoryLineNumberSelected === 54) {
         ChapterNextWindow();
 
         setTimeout(() => {
-            ChapterDisplayText.innerHTML = "Chapter 2 | The Haunted House";
+            ChapterDisplayText.innerHTML = "Chapter 4 | The Haunted House";
         }, 3600);
         
         setTimeout(() => {
@@ -751,12 +1169,13 @@ function StorySavingSession() {
     
             MainNotificationText.innerHTML = "Chapter 3 Finished";
             MainNotificationText1.innerHTML = "Congratulations! You have finished the Chapter 3. Your chapters has been saved at Loads.";
-            Chapter3FinishedSave = "True";
-            localStorage.setItem("Chapter3FinishedSaved", Chapter3FinishedSave);
+            Chapter4FinishedSave = "True";
+            localStorage.setItem("Chapter4FinishedSaved", Chapter4FinishedSave);
             console.log("GAME SAVED NOTIFICATION: CHAPTER 3");
         }, 10500);
     } 
 }
+
 
 function ChapterNextWindow() {
     ChapterDisplayNextWindow.style.display = "block";
@@ -786,3 +1205,4 @@ function ChapterNextWindow() {
     }, 10000);
 }
 
+// pinish na, ayan lang pu💕 onti lang no //
