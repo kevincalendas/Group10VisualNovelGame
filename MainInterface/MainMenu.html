@@ -18,7 +18,8 @@
     </head>
     <body>  
         <!-- Code Connector kineme -->
-         <script src="MainMenu.js" defer></script>
+        <script src="MainMenu.js" defer></script>
+        <script src="MainMusicStorySystem.js" defer></script>
         <!-- Reusing Story Interface JS for Main Menu -->
         <div class="MainIntroPanel" id="MainIntroPanel">
             <h1 class="MainIntro1H" id="MainIntro1H"> Group 10 Dev</h1>
@@ -47,6 +48,52 @@
             </div>
         </div>
 
+        <!-- For Achievement Menu -->
+         <div class="Achievements-UI-Design-Main" id="Achievements-UI-Design-Main">
+            <div class="Achievements-UI-Design-Sub" id="Achievements-UI-Design-Sub">
+                <h1 class="AchievementH1Name">Achievements</h1>
+                <div class="AchievementNum1Dis1" id="AchievementNum1Dis1">
+                    <h1 class="Chapter1FinishedText">Chapter 1</h1>
+                    <p class="Chapter1FinishedP">Thank you for accomplishing Chapter 1</h1>
+                    
+                    <div class="PercentageofFinishedChap1" id="PercentageofFinishedChap1"></div>
+                </div>
+                <div class="AchievementNum1Dis2" id="AchievementNum1Dis2">
+                    <h1 class="Chapter2FinishedText">Chapter 2</h1>
+                    <p class="Chapter2FinishedP">Thank you for accomplishing Chapter 2</h1>
+                    
+                    <div class="PercentageofFinishedChap2" id="PercentageofFinishedChap2"></div>
+                </div>
+                <div class="AchievementNum1Dis3" id="AchievementNum1Dis3">
+                    <h1 class="Chapter3FinishedText">Chapter 3</h1>
+                    <p class="Chapter3FinishedP">Thank you for accomplishing Chapter 3</h1>
+                    
+                    <div class="PercentageofFinishedChap3" id="PercentageofFinishedChap3"></div>
+                </div>
+                <div class="AchievementNum1Dis4" id="AchievementNum1Dis4">
+                    <h1 class="Chapter4FinishedText">Chapter 4</h1>
+                    <p class="Chapter4FinishedP">Thank you for accomplishing Chapter 4</h1>
+                    
+                    <div class="PercentageofFinishedChap4" id="PercentageofFinishedChap4"></div>
+                </div>
+
+                <div class="AchievementNum1Dis5" id="AchievementNum1Dis5">
+                    <h1 class="Chapter5FinishedText">Chapter 5</h1>
+                    <p class="Chapter5FinishedP">Thank you for accomplishing Chapter 5</h1>
+                    
+                    <div class="PercentageofFinishedChap5" id="PercentageofFinishedChap5"></div>
+                </div>
+
+                <div class="AchievementNum1Dis6" id="AchievementNum1Dis6">
+                    <h1 class="FinishGameText">Finish the Game.</h1>
+                    <p class="FinishGameP">Did you actually finished the Unspoken?</h1>
+                    
+                    <div class="PercentageofFinishedGame" id="PercentageofFinishedGame"></div>
+                </div>
+            </div>
+            <button class="Close-Achievements" onclick="CloseAchievements()"> Close </button>
+         </div>
+
         <div class="MainIntroPanel1" id="MainIntroPanel1">
             <img class="BackgroundImage" src="../OtherImages/BackgroundFadedMenu.png">
             <audio id="MainMenuMusicBackground" loop preload="auto">
@@ -61,7 +108,7 @@
                 <div class="MainMenuButtons" id="MainMenuButtons">
                     <button class="MainMenuButton1" id="MainMenuButton1" onclick="PlayButtonPrompt()"> Play </button>
                     <button class="MainMenuButton2" id="MainMenuButton2" onclick="OpenLoadMenu()"> Load </button>
-                    <button class="MainMenuButton3" id="MainMenuButton3"> Achievements </button>    
+                    <button class="MainMenuButton3" id="MainMenuButton3" onclick="OpenAchievements()"> Achievements </button>    
                     <button class="MainMenuButton5" id="MainMenuButton5"> Quit </button>
                 </div>
             </div>
@@ -142,7 +189,60 @@
              <audio id="SoundEffectBoom1" preload="auto">
                 <source src="../MainSoundEffects/ChapterBoomSoundEffect.mp3" type="audio/ogg">
             </audio>
-            
-        
+        <!-- MusicGameElements-->
+        <audio id="Music1" preload="auto" loop>
+            <source src="../StoryMusics/Musics/Music1.mp3" type="audio/ogg">
+        </audio>
+        <audio id="Music2" preload="auto" loop>
+            <source src="../StoryMusics/Musics/Music2.mp3" type="audio/ogg">
+        </audio>
+        <audio id="Music3" preload="auto" loop>
+            <source src="../StoryMusics/Musics/Music3.mp3" type="audio/ogg">
+        </audio>
+        <audio id="Music4" preload="auto" loop>
+            <source src="../StoryMusics/Musics/Music4.mp3" type="audio/ogg">
+        </audio>
+        <audio id="Music5" preload="auto" loop>
+            <source src="../StoryMusics/Musics/Music5.mp3" type="audio/ogg">
+        </audio>
+        <audio id="Music6" preload="auto" loop>
+            <source src="../StoryMusics/Musics/Music6.mp3" type="audio/ogg">
+        </audio>
+        <audio id="Music7" preload="auto" loop>
+            <source src="../StoryMusics/Musics/Music7.mp3" type="audio/ogg">
+        </audio>
+        <audio id="Music8" preload="auto" loop>
+            <source src="../StoryMusics/Musics/Music8.mp3" type="audio/ogg">
+        </audio>
+        <audio id="EndingMusic" preload="auto" loop>
+            <source src="../StoryMusics/Musics/EndingMusic.mp3" type="audio/ogg">
+        </audio>
+
+        <!--SFX Game Elements-->
+
+        <audio id="SFX1" preload="auto">
+            <source src="../StoryMusics/SFX/SFX1.mp3" type="audio/ogg">
+        </audio>
+        <audio id="SFX2" preload="auto">
+            <source src="../StoryMusics/SFX/SFX2.mp3" type="audio/ogg">
+        </audio>
+        <audio id="SFX3" preload="auto">
+            <source src="../StoryMusics/SFX/SFX3.mp3" type="audio/ogg">
+        </audio>
+        <audio id="SFX4" preload="auto">
+            <source src="../StoryMusics/SFX/SFX4.mp3" type="audio/ogg">
+        </audio>
+        <audio id="SFX5" preload="auto">
+            <source src="../StoryMusics/SFX/SFX5.mp3" type="audio/ogg">
+        </audio>
+        <audio id="SFX6" preload="auto">
+            <source src="../StoryMusics/SFX/SFX6.mp3" type="audio/ogg">
+        </audio>
+        <audio id="SFX7" preload="auto">
+            <source src="../StoryMusics/SFX/SFX7.mp3" type="audio/ogg">
+        </audio>
+        <audio id="SFX8" preload="auto">
+            <source src="../StoryMusics/SFX/SFX8.mp3" type="audio/ogg">
+        </audio>
     </body>
 </html>

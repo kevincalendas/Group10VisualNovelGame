@@ -26,16 +26,6 @@
     grid-template-rows: 80px 80px 80px 80px 80px;
 }
 
-@media (max-height: 500px) {
-    .LoadGameContainer {
-        grid-template-rows: 45px 45px 45px 45px 45px;
-        top: 70%;
-    }
-    .LoadGameButton1, .LoadGameButton2, .LoadGameButton3, .LoadGameButton4, .LoadGameButton5 {
-        
-    }
-
-}
 .LoadGameH1A1 {
     position: fixed;
     top: 20%;

@@ -501,11 +501,13 @@ let StoryChapterSelected = 1;
 
 let StoryLineNumberSelected = parseInt(localStorage.getItem("LineStorySavee")) || 0;
 
+
 let Chapter1FinishedSave = localStorage.getItem("Chapter1FinishedSaved") || "False";
 let Chapter2FinishedSave = localStorage.getItem("Chapter2FinishedSaved") || "False";
 let Chapter3FinishedSave = localStorage.getItem("Chapter3FinishedSaved") || "False";
 let Chapter4FinishedSave = localStorage.getItem("Chapter4FinishedSaved") || "False";
 let Chapter5FinishedSave = localStorage.getItem("Chapter5FinishedSaved") || "False";
+let FinishedGame = localStorage.getItem("FinishedVisualGame") || "False";
 
 
 // Story ni rhema na kahit i summarize, mahaba parin na para vang kasing haba ng sungay nya sa ulo💕 //
@@ -582,54 +584,54 @@ const StoryLines = [
     { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER2-LINE11.png", StoryLineNumber: 30, StoryChapter: 2, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "Between the trees stood a house. Old. Crooked. Half-swallowed by shadows. Rhema stared at it without speaking — as if she recognized it. Or worse, as if it was staring back." },
 
     // CHAPTER 3 LINES RATS //
-    { StoryLineNumber: 31, StoryChapter: 3, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "The house was too clean. Not a speck of dust. Not a single sign of abandonment. As if someone had just been there, watching." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE1.png", StoryLineNumber: 31, StoryChapter: 3, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "The house was too clean. Not a speck of dust. Not a single sign of abandonment. As if someone had just been there, watching." },
 
-    { StoryLineNumber: 32, StoryChapter: 3, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "Lyza turned and ran for the door. BANG. It slammed shut on its own." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE2.png", StoryLineNumber: 32, StoryChapter: 3, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "Lyza turned and ran for the door. BANG. It slammed shut on its own." },
 
-    { StoryLineNumber: 33, StoryChapter: 3, StoryCharacter: "Lyza", StoryCharacterImg: "../OtherImages/CharacterProfile/LyzaProfile.png", StoryLineText: "*— screams —*" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE2.png", StoryLineNumber: 33, StoryChapter: 3, StoryCharacter: "Lyza", StoryCharacterImg: "../OtherImages/CharacterProfile/LyzaProfile.png", StoryLineText: "*— screams —*" },
 
-    { StoryLineNumber: 34, StoryChapter: 3, StoryCharacter: "AJ", StoryCharacterImg: "../OtherImages/CharacterProfile/AJProfile.png", StoryLineText: "Oh my God... we're in a trap. What are we going to do?!" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE3.png", StoryLineNumber: 34, StoryChapter: 3, StoryCharacter: "AJ", StoryCharacterImg: "../OtherImages/CharacterProfile/AJProfile.png", StoryLineText: "Oh my God... we're in a trap. What are we going to do?!" },
 
-    { StoryLineNumber: 35, StoryChapter: 3, StoryCharacter: "Lyza", StoryCharacterImg: "../OtherImages/CharacterProfile/LyzaProfile.png", StoryLineText: "(pointing at Kevin) This is all your fault! You planned this! Why did I even go along with you?!" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE4.png", StoryLineNumber: 35, StoryChapter: 3, StoryCharacter: "Lyza", StoryCharacterImg: "../OtherImages/CharacterProfile/LyzaProfile.png", StoryLineText: "(pointing at Kevin) This is all your fault! You planned this! Why did I even go along with you?!" },
 
-    { StoryLineNumber: 36, StoryChapter: 3, StoryCharacter: "Lyza", StoryCharacterImg: "../OtherImages/CharacterProfile/LyzaProfile.png", StoryLineText: "Kevin wanted to investigate you, Rhema. You've been acting strange lately. That's why we asked to sleep over at your house." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE5.png", StoryLineNumber: 36, StoryChapter: 3, StoryCharacter: "Lyza", StoryCharacterImg: "../OtherImages/CharacterProfile/LyzaProfile.png", StoryLineText: "Kevin wanted to investigate you, Rhema. You've been acting strange lately. That's why we asked to sleep over at your house." },
 
-    { StoryLineNumber: 37, StoryChapter: 3, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "That's a lie! Stop lying!" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE6.png", StoryLineNumber: 37, StoryChapter: 3, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "That's a lie! Stop lying!" },
 
-    { StoryLineNumber: 38, StoryChapter: 3, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "What the hell is this, Kevin? That's exactly why I didn't want you to know about my problems." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE7.png", StoryLineNumber: 38, StoryChapter: 3, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "What the hell is this, Kevin? That's exactly why I didn't want you to know about my problems." },
 
-    { StoryLineNumber: 39, StoryChapter: 3, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "Traitor." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE8.png", StoryLineNumber: 39, StoryChapter: 3, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "Traitor." },
 
-    { StoryLineNumber: 40, StoryChapter: 3, StoryCharacter: "AJ", StoryCharacterImg: "../OtherImages/CharacterProfile/AJProfile.png", StoryLineText: "*(quietly)* ...He did say that. I'm sorry, Rhema." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE8.png", StoryLineNumber: 40, StoryChapter: 3, StoryCharacter: "AJ", StoryCharacterImg: "../OtherImages/CharacterProfile/AJProfile.png", StoryLineText: "*(quietly)* ...He did say that. I'm sorry, Rhema." },
 
-    { StoryLineNumber: 41, StoryChapter: 3, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "*(laughs — cold, not nervous)* Yes. That's all true. And now... I've finally trapped all of you." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE12.png", StoryLineNumber: 41, StoryChapter: 3, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "*(laughs — cold, not nervous)* Yes. That's all true. And now... I've finally trapped all of you." },
 
     // Story Choice A2 LINE //
-    { StoryLineNumber: 42, StoryChapter: 3, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "Kevin, what the hell are you saying?! Is this some kind of prank?! Cut the crap!" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE7.png", StoryLineNumber: 42, StoryChapter: 3, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "Kevin, what the hell are you saying?! Is this some kind of prank?! Cut the crap!" },
 
-    { StoryLineNumber: 43, StoryChapter: 3, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "I like you. You're brave. I'll give you that." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE14.png", StoryLineNumber: 43, StoryChapter: 3, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "I like you. You're brave. I'll give you that." },
 
-    { StoryLineNumber: 44, StoryChapter: 3, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "Stop talking in circles." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE7.png", StoryLineNumber: 44, StoryChapter: 3, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "Stop talking in circles." },
 
     // Story Choice B2 LINE //
-    { StoryLineNumber: 45, StoryChapter: 3, StoryCharacter: "AJ", StoryCharacterImg: "../OtherImages/CharacterProfile/AJProfile.png", StoryLineText: "Kevin, what do you want from us? Just say it." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE10.png", StoryLineNumber: 45, StoryChapter: 3, StoryCharacter: "AJ", StoryCharacterImg: "../OtherImages/CharacterProfile/AJProfile.png", StoryLineText: "Kevin, what do you want from us? Just say it." },
 
-    { StoryLineNumber: 46, StoryChapter: 3, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "Hmm... simple. I want all of you to play with me." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE14.png", StoryLineNumber: 46, StoryChapter: 3, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "Hmm... simple. I want all of you to play with me." },
 
-    { StoryLineNumber: 47, StoryChapter: 3, StoryCharacter: "AJ", StoryCharacterImg: "../OtherImages/CharacterProfile/AJProfile.png", StoryLineText: "Play? What game?" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE8.png", StoryLineNumber: 47, StoryChapter: 3, StoryCharacter: "AJ", StoryCharacterImg: "../OtherImages/CharacterProfile/AJProfile.png", StoryLineText: "Play? What game?" },
 
     // Story line continuation here beech //
-    { StoryLineNumber: 48, StoryChapter: 3, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "Kevin reached behind him and pressed something on the wall." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE12.png", StoryLineNumber: 48, StoryChapter: 3, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "Kevin reached behind him and pressed something on the wall." },
 
-    { StoryLineNumber: 49, StoryChapter: 3, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "*— CLANG —*" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE13.png", StoryLineNumber: 49, StoryChapter: 3, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "*— CLANG —*" },
 
-    { StoryLineNumber: 50, StoryChapter: 3, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "The main door slammed shut. Locks twisted on their own." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE13.png", StoryLineNumber: 50, StoryChapter: 3, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "The main door slammed shut. Locks twisted on their own." },
 
-    { StoryLineNumber: 51, StoryChapter: 3, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "Welcome to Find the Key. You have one hour. Somewhere in this house is a key. Find it — and you walk out alive. If you don't... you won't have to worry about walking out." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE14.png", StoryLineNumber: 51, StoryChapter: 3, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "Welcome to Find the Key. You have one hour. Somewhere in this house is a key. Find it — and you walk out alive. If you don't... you won't have to worry about walking out." },
 
-    { StoryLineNumber: 52, StoryChapter: 3, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "A digital timer on the wall flickered on." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE17.png", StoryLineNumber: 52, StoryChapter: 3, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "A digital timer on the wall flickered on." },
 
-    { StoryLineNumber: 53, StoryChapter: 3, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "*— BEEPING —*" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE17.png", StoryLineNumber: 53, StoryChapter: 3, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "*— BEEPING —*" },
 
     //START OF CHAPTER 4 BEECH VEELAT (LAPIT NA)//
     { StoryLineNumber: 54, StoryChapter: 4, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "Every ten minutes, this house shrinks. And every ten minutes — you get a clue. Consider it my generosity." },
@@ -813,6 +815,9 @@ function DisplayStoryLine() {
     const DialogueCharName = document.getElementById("DialogueCharName");
     const DialogueLines = document.getElementById("DialogueLines");
     const DialogueProfileIMG = document.getElementById("DialogueProfileIMG");
+
+    MusicPlayLines();
+    SFXPlayLines();
 
     setTimeout(() => {
         if (StoryLineNumberSelected == 1) {

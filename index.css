@@ -1,0 +1,471 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.GameWebsite-Navbar-Main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    z-index: 100;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.GameWebsite-Navbar-Title {
+    font-family: Murderer;
+    font-size: 28px;
+    color: white;
+    font-weight: lighter;
+}
+
+.GameWebsite-Navbar-Buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.GameWebsite-Navbar-Button1,
+.GameWebsite-Navbar-Button2,
+.GameWebsite-Navbar-Button3,
+.GameWebsite-Navbar-Button4 {
+    background: none;
+    border: none;
+    color: white;
+    font-family: Arial;
+    font-size: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.GameWebsite-Navbar-Button1:hover,
+.GameWebsite-Navbar-Button2:hover,
+.GameWebsite-Navbar-Button3:hover,
+.GameWebsite-Navbar-Button4:hover {
+    color: rgb(180, 0, 0);
+}
+
+.GameWebsite-Navbar-PlayButton {
+    background-color: rgb(109, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-family: Arial;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.GameWebsite-Navbar-PlayButton:hover {
+    background-color: rgb(150, 0, 0);
+    scale: 1.05;
+}
+
+/* HERO */
+.GameWebsite-Hero-Main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.GameWebsite-Hero-BackgroundImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(0.5);
+}
+
+.GameWebsite-Hero-Content {
+    position: relative;
+    z-index: 1;
+    padding-left: 100px;
+}
+
+.GameWebsite-Hero-Title {
+    font-family: Murderer;
+    font-size: 150px;
+    color: white;
+    font-weight: lighter;
+    line-height: 1;
+}
+
+.GameWebsite-Hero-Subtitle {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: -5px 0 30px;
+}
+
+.GameWebsite-Hero-PlayButton {
+    background-color: rgb(109, 0, 0);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Arial;
+    transition: all 0.3s ease;
+}
+
+.GameWebsite-Hero-PlayButton:hover {
+    background-color: rgb(150, 0, 0);
+    scale: 1.05;
+}
+
+/* SECTION 1 */
+.GameWebsite-Section1-Main {
+    width: 100%;
+    min-height: 500px;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 100px;
+    gap: 60px;
+}
+
+.GameWebsite-Section1-TextContent {
+    width: 50%;
+}
+
+.GameWebsite-Section1-Title {
+    font-family: TheyPerished;
+    font-size: 40px;
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.GameWebsite-Section1-Description {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.GameWebsite-Section1-Button {
+    background-color: rgb(109, 0, 0);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Arial;
+    transition: all 0.3s ease;
+}
+
+.GameWebsite-Section1-Button:hover {
+    background-color: rgb(150, 0, 0);
+    scale: 1.05;
+}
+
+.GameWebsite-Section1-ImgContent {
+    width: 50%;
+}
+
+.GameWebsite-Section1-Img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* SECTION 2 */
+.GameWebsite-Section2-Main {
+    width: 100%;
+    min-height: 500px;
+    background-color: rgb(15, 15, 15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 100px;
+    gap: 60px;
+}
+
+.GameWebsite-Section2-ImgContent {
+    width: 50%;
+}
+
+.GameWebsite-Section2-Img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.GameWebsite-Section2-TextContent {
+    width: 50%;
+}
+
+.GameWebsite-Section2-Title {
+    font-family: TheyPerished;
+    font-size: 40px;
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.GameWebsite-Section2-Description {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.GameWebsite-Section2-Button {
+    background-color: rgb(109, 0, 0);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Arial;
+    transition: all 0.3s ease;
+}
+
+.GameWebsite-Section2-Button:hover {
+    background-color: rgb(150, 0, 0);
+    scale: 1.05;
+}
+
+/* SECTION 3 */
+.GameWebsite-Section3-Main {
+    width: 100%;
+    min-height: 500px;
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 100px;
+    gap: 60px;
+}
+
+.GameWebsite-Section3-TextContent {
+    width: 50%;
+}
+
+.GameWebsite-Section3-Title {
+    font-family: TheyPerished;
+    font-size: 40px;
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.GameWebsite-Section3-Description {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.GameWebsite-Section3-Button {
+    background-color: rgb(109, 0, 0);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Arial;
+    transition: all 0.3s ease;
+}
+
+.GameWebsite-Section3-Button:hover {
+    background-color: rgb(150, 0, 0);
+    scale: 1.05;
+}
+
+.GameWebsite-Section3-ImgContent {
+    width: 50%;
+}
+
+.GameWebsite-Section3-Img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* SECTION 4 - CHAPTERS */
+.GameWebsite-Section4-Main {
+    width: 100%;
+    min-height: 400px;
+    background-color: rgb(15, 15, 15);
+    padding: 80px 100px;
+}
+
+.GameWebsite-Section4-Title {
+    font-family: TheyPerished;
+    font-size: 35px;
+    color: white;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+.GameWebsite-Section4-Cards {
+    display: flex;
+    gap: 30px;
+}
+
+.GameWebsite-Section4-Card1,
+.GameWebsite-Section4-Card2 {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    width: 50%;
+    transition: all 0.3s ease;
+}
+
+.GameWebsite-Section4-Card1:hover,
+.GameWebsite-Section4-Card2:hover {
+    border-color: rgb(109, 0, 0);
+    scale: 1.02;
+}
+
+.GameWebsite-Section4-Card1-Title,
+.GameWebsite-Section4-Card2-Title {
+    font-family: TheyPerished;
+    font-size: 28px;
+    font-weight: lighter;
+    color: white;
+}
+
+.GameWebsite-Section4-Card1-Subtitle,
+.GameWebsite-Section4-Card2-Subtitle {
+    font-size: 14px;
+    color: rgb(180, 0, 0);
+    margin: 5px 0 15px;
+}
+
+.GameWebsite-Section4-Card1-Description,
+.GameWebsite-Section4-Card2-Description {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.GameWebsite-Section4-Card1-Button,
+.GameWebsite-Section4-Card2-Button {
+    background-color: rgb(109, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Arial;
+    transition: all 0.3s ease;
+}
+
+.GameWebsite-Section4-Card1-Button:hover,
+.GameWebsite-Section4-Card2-Button:hover {
+    background-color: rgb(150, 0, 0);
+}
+
+/* FOOTER CTA */
+.GameWebsite-Footer-CTA-Main {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.GameWebsite-Footer-CTA-Img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.4);
+}
+
+.GameWebsite-Footer-CTA-Content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.GameWebsite-Footer-CTA-Title {
+    font-family: TheyPerished;
+    font-size: 50px;
+    font-weight: lighter;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.GameWebsite-Footer-CTA-Description {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 25px;
+}
+
+.GameWebsite-Footer-CTA-Button {
+    background-color: rgb(109, 0, 0);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Arial;
+    transition: all 0.3s ease;
+}
+
+.GameWebsite-Footer-CTA-Button:hover {
+    background-color: rgb(150, 0, 0);
+    scale: 1.05;
+}
+
+/* FOOTER */
+.GameWebsite-Footer-Main {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(5, 5, 5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.GameWebsite-Footer-Title {
+    font-family: TheyPerished;
+    font-size: 25px;
+    font-weight: lighter;
+    color: white;
+}
+
+.GameWebsite-Footer-Copyright {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.4

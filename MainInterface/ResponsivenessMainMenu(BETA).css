@@ -1,38 +1,18 @@
-@media (max-height: 600px) {
+@media (max-height: 500px) {
+    .LoadGameContainer {
+        grid-template-rows: 45px 45px 45px 45px 45px;
+        top: 70%;
+    }
+
+    .MainMenuButton2, .MainMenuButton3, .MainMenuButton4, .MainMenuButton5, .MainMenuButton6 {
+        font-size: 80px;
+    }
+
     .MainMenuButtons {
-        grid-template-rows: 140px 100px 100px 100px;
-    }
-
-    .MainMenuButton2, .MainMenuButton3, .MainMenuButton4, .MainMenuButton5 {
-        font-size: clamp(5rem, 2vw, 5rem);
-    }
-
-    .MainMenuButton1 {
-        font-size: clamp(8rem, 2vw, 5rem);
-    }
-
-    .MainDialoguePanel {
-        scale: 0.7;
-        bottom: -15px;
-    }
-}
-
-@media (max-height: 400px) {
-    .MainMenuButtons {
-        grid-template-rows: 140px 100px 100px 100px;
         scale: 0.6;
     }
-
-    .MainMenuButton2, .MainMenuButton3, .MainMenuButton4, .MainMenuButton5 {
-        font-size: clamp(1rem, 2vw, 5rem);
+    .LoadGameButton1, .LoadGameButton2, .LoadGameButton3, .LoadGameButton4, .LoadGameButton5 {
+        font-size: 50px;
     }
 
-    .MainMenuButton1 {
-        font-size: clamp(8rem, 2vw, 5rem);
-    }
-
-    .MainDialoguePanel {
-        scale: 0.7;
-        bottom: -15px;
-    }
 }
