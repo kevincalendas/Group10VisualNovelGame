@@ -22,6 +22,22 @@ overlaything.addEventListener('click', () => {
         elem.msRequestFullscreen();
     }
 
+    // locking device to landscape mode para di sya mag vug //
+    async function rotateToLandscape() {
+    try {
+        // Must enter fullscreen first for many browsers
+        await document.documentElement.requestFullscreen();
+        
+        // Lock the screen to landscape
+        await screen.orientation.lock('landscape');
+        console.log("Locked to landscape");
+    } catch (error) {
+        console.error("Orientation lock failed:", error);
+    }
+    
+    rotateToLandscape();
+}
+
     overlaytextz.style.animation = 'Fadeout 0.5s ease-out 1.5s forwards';
 
     setTimeout(() => {
