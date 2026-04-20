@@ -634,131 +634,131 @@ const StoryLines = [
     { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE17.png", StoryLineNumber: 53, StoryChapter: 3, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "*— BEEPING —*" },
 
     //START OF CHAPTER 4 BEECH VEELAT (LAPIT NA)//
-    { StoryLineNumber: 54, StoryChapter: 4, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "Every ten minutes, this house shrinks. And every ten minutes — you get a clue. Consider it my generosity." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE1.png", StoryLineNumber: 54, StoryChapter: 4, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "Every ten minutes, this house shrinks. And every ten minutes — you get a clue. Consider it my generosity." },
 
-    { StoryLineNumber: 55, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "Kevin was gone. A paper fell to the floor." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE2.png", StoryLineNumber: 55, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "Kevin was gone. A paper fell to the floor." },
 
-    { StoryLineNumber: 56, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "*Clue 1 — written in black ink:*" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE2.png", StoryLineNumber: 56, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "*Clue 1 — written in black ink:*" },
 
-    { StoryLineNumber: 57, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "**The key hides where light fears to reach.**" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE3.png", StoryLineNumber: 57, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "**The key hides where light fears to reach.**" },
 
-    { StoryLineNumber: 58, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "50:00" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE8.png", StoryLineNumber: 58, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "50:00" },
 
     // CHOICES A3 LINES//
-    { StoryLineNumber: 59, StoryChapter: 4, StoryCharacter: "Lyza", StoryCharacterImg: "../OtherImages/CharacterProfile/LyzaProfile.png", StoryLineText: "Are you sure?!" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE3.png", StoryLineNumber: 59, StoryChapter: 4, StoryCharacter: "Lyza", StoryCharacterImg: "../OtherImages/CharacterProfile/LyzaProfile.png", StoryLineText: "Are you sure?!" },
 
-    { StoryLineNumber: 60, StoryChapter: 4, StoryCharacter: "Lyza", StoryCharacterImg: "../OtherImages/CharacterProfile/LyzaProfile.png", StoryLineText: "Trust me." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE3.png", StoryLineNumber: 60, StoryChapter: 4, StoryCharacter: "Lyza", StoryCharacterImg: "../OtherImages/CharacterProfile/LyzaProfile.png", StoryLineText: "Trust me." },
 
-    { StoryLineNumber: 61, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "*They run. The space behind them narrows by inches." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE13.png", StoryLineNumber: 61, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "*They run. The space behind them narrows by inches." },
 
     // CHOICES B3 LINES//
-    { StoryLineNumber: 62, StoryChapter: 4, StoryCharacter: "AJ", StoryCharacterImg: "../OtherImages/CharacterProfile/AJProfile.png", StoryLineText: "Okay, quick - check everything." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE13.png", StoryLineNumber: 62, StoryChapter: 4, StoryCharacter: "AJ", StoryCharacterImg: "../OtherImages/CharacterProfile/AJProfile.png", StoryLineText: "Okay, quick - check everything." },
 
-    { StoryLineNumber: 63, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "*Nothing found. Clue 2 arrives at 40:00.*" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE9.png", StoryLineNumber: 63, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "*Nothing found. Clue 2 arrives at 40:00.*" },
 
-    { StoryLineNumber: 64, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "**Look beneath what reflects you.**" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE9.png", StoryLineNumber: 64, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "**Look beneath what reflects you.**" },
 
-    { StoryLineNumber: 65, StoryChapter: 4, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "The hallway. The one with no windows. Go!" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE13.png", StoryLineNumber: 65, StoryChapter: 4, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "The hallway. The one with no windows. Go!" },
 
     // CHAPTER 4 CONTINUATION OF STORY //
-    { StoryLineNumber: 66, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "In the hallway, a cracked mirror hung on the wall. Their reflections looked distorted. Beneath the mirror's frame — a faint scratch mark." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE5.png", StoryLineNumber: 66, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "In the hallway, a cracked mirror hung on the wall. Their reflections looked distorted. Beneath the mirror's frame — a faint scratch mark." },
 
-    { StoryLineNumber: 67, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "40:00" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE8.png", StoryLineNumber: 67, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "40:00" },
 
-    { StoryLineNumber: 68, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "*Clue 2 whispered from the walls:*" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE5.png", StoryLineNumber: 68, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "*Clue 2 whispered from the walls:*" },
 
-    { StoryLineNumber: 69, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "**Look beneath what reflects you.**" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE5.png", StoryLineNumber: 69, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "**Look beneath what reflects you.**" },
 
-    { StoryLineNumber: 70, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "The mirror shattered. Glass exploded across the floor. Rhema dropped to her knees, ignoring the glass cutting her skin. She found a latch. She pulled it open." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE7.png", StoryLineNumber: 70, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "The mirror shattered. Glass exploded across the floor. Rhema dropped to her knees, ignoring the glass cutting her skin. She found a latch. She pulled it open." },
 
-    { StoryLineNumber: 71, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "Inside — not a key. Another clue." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE5.png", StoryLineNumber: 71, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "Inside — not a key. Another clue." },
 
-    { StoryLineNumber: 72, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "**Trust is heavier than fear.**" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE5.png", StoryLineNumber: 72, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "**Trust is heavier than fear.**" },
 
-    { StoryLineNumber: 73, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "TIMER: 30:00" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE8.png", StoryLineNumber: 73, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "TIMER: 30:00" },
 
     { StoryLineNumber: 74, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "Another room collapsed completely. They stumbled into the last remaining room. One door. Locked. Carved above it:" },
 
-    { StoryLineNumber: 75, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "**One of you already holds the key.**" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE10.png", StoryLineNumber: 75, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "**One of you already holds the key.**" },
 
-    { StoryLineNumber: 76, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "TIMER: 20:00" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE8.png", StoryLineNumber: 76, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "TIMER: 20:00" },
 
-    { StoryLineNumber: 77, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "Rhema slowly reached into her jacket. Her fingers touched something cold. Metal. She pulled it out." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE10.png", StoryLineNumber: 77, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "Rhema slowly reached into her jacket. Her fingers touched something cold. Metal. She pulled it out." },
 
-    { StoryLineNumber: 78, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "A small, old key." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE10.png", StoryLineNumber: 78, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "A small, old key." },
 
-    { StoryLineNumber: 79, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "She hadn't put it there." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE11.png", StoryLineNumber: 79, StoryChapter: 4, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "She hadn't put it there." },
 
     //START OF CHAPTER 5 HERE //
-    { StoryLineNumber: 80, StoryChapter: 5, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "One key. Three players." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE1.png", StoryLineNumber: 80, StoryChapter: 5, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "One key. Three players." },
 
-    { StoryLineNumber: 81, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "The carving above the door burned and shifted. New words:" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE4.png", StoryLineNumber: 81, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "The carving above the door burned and shifted. New words:" },
 
-    { StoryLineNumber: 82, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "**Only one walks free.**" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE4.png", StoryLineNumber: 82, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "**Only one walks free.**" },
 
-    { StoryLineNumber: 83, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "05:00" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE8.png", StoryLineNumber: 83, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "05:00" },
 
-    { StoryLineNumber: 84, StoryChapter: 5, StoryCharacter: "Lyza", StoryCharacterImg: "../OtherImages/CharacterProfile/LyzaProfile.png", StoryLineText: "*(tears in her eyes)* Rhema... please." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE4.png", StoryLineNumber: 84, StoryChapter: 5, StoryCharacter: "Lyza", StoryCharacterImg: "../OtherImages/CharacterProfile/LyzaProfile.png", StoryLineText: "*(tears in her eyes)* Rhema... please." },
 
     // CHOICE A LINES //
-    { StoryLineNumber: 85, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "Rhema raised the key toward the lock. Her hand trembled." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE11.png", StoryLineNumber: 85, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "Rhema raised the key toward the lock. Her hand trembled." },
 
-    { StoryLineNumber: 86, StoryChapter: 5, StoryCharacter: "AJ", StoryCharacterImg: "../OtherImages/CharacterProfile/AJProfile.png", StoryLineText: "Rhema, don't—" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER4-LINE11.png", StoryLineNumber: 86, StoryChapter: 5, StoryCharacter: "AJ", StoryCharacterImg: "../OtherImages/CharacterProfile/AJProfile.png", StoryLineText: "Rhema, don't—" },
 
-    { StoryLineNumber: 87, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "*(stops)* ...I can't. I can't do this." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE4.png", StoryLineNumber: 87, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "*(stops)* ...I can't. I can't do this." },
 
-    { StoryLineNumber: 88, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "*She steps back. She can't leave them.*" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE4.png", StoryLineNumber: 88, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "*She steps back. She can't leave them.*" },
 
     // CHOICE B LINES //
-    { StoryLineNumber: 89, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "This isn't about sacrifice." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE11.png", StoryLineNumber: 89, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "This isn't about sacrifice." },
 
-    { StoryLineNumber: 90, StoryChapter: 5, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "*(smile fading)* ...What are you doing?" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE12.png", StoryLineNumber: 90, StoryChapter: 5, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "*(smile fading)* ...What are you doing?" },
 
-    { StoryLineNumber: 91, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "If only one walks free — then none of us walk alone." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE11.png", StoryLineNumber: 91, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "If only one walks free — then none of us walk alone." },
 
     // CHAPTER 5 CONTINUATION OF THE STORY //
-    { StoryLineNumber: 92, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "Rhema threw the key across the room. It hit the ground — and split in half." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE3.png", StoryLineNumber: 92, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "Rhema threw the key across the room. It hit the ground — and split in half." },
 
     { StoryLineNumber: 93, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "*— violent shake —*" },
 
-    { StoryLineNumber: 94, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "The carving above the door shattered. New words carved themselves into the wood:" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE12.png", StoryLineNumber: 94, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "The carving above the door shattered. New words carved themselves into the wood:" },
 
-    { StoryLineNumber: 95, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "**Correct.**" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE12.png",StoryLineNumber: 95, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "**Correct.**" },
 
-    { StoryLineNumber: 96, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "The door unlocked with a loud metallic snap." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE12.png", StoryLineNumber: 96, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "The door unlocked with a loud metallic snap." },
 
-    { StoryLineNumber: 97, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "**00:47**" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE8.png", StoryLineNumber: 97, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "**00:47**" },
 
-    { StoryLineNumber: 98, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "The walls stopped. The ceiling rose slightly. All three of them — still alive." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE13.png", StoryLineNumber: 98, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "The walls stopped. The ceiling rose slightly. All three of them — still alive." },
 
-    { StoryLineNumber: 99, StoryChapter: 5, StoryCharacter: "Lyza", StoryCharacterImg: "../OtherImages/CharacterProfile/LyzaProfile.png", StoryLineText: "*— bursts into tears —*" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE1.png",  StoryLineNumber: 99, StoryChapter: 5, StoryCharacter: "Lyza", StoryCharacterImg: "../OtherImages/CharacterProfile/LyzaProfile.png", StoryLineText: "*— bursts into tears —*" },
 
-    { StoryLineNumber: 100, StoryChapter: 5, StoryCharacter: "AJ", StoryCharacterImg: "../OtherImages/CharacterProfile/AJProfile.png", StoryLineText: "How did you know?" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE2.png", StoryLineNumber: 100, StoryChapter: 5, StoryCharacter: "AJ", StoryCharacterImg: "../OtherImages/CharacterProfile/AJProfile.png", StoryLineText: "How did you know?" },
 
-    { StoryLineNumber: 101, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "He wanted one of us to choose themselves. The game was built on fear. So I chose trust." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE11.png",  StoryLineNumber: 101, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "He wanted one of us to choose themselves. The game was built on fear. So I chose trust." },
 
-    { StoryLineNumber: 102, StoryChapter: 5, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "*(stepping back into shadows)*" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE14.png",  StoryLineNumber: 102, StoryChapter: 5, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "*(stepping back into shadows)*" },
 
-    { StoryLineNumber: 103, StoryChapter: 5, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "You passed this round. The next one won't be about trust." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE5.png", StoryLineNumber: 103, StoryChapter: 5, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "You passed this round. The next one won't be about trust." },
 
-    { StoryLineNumber: 104, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "A new timer appeared above the doorway." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE8.png", StoryLineNumber: 104, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "A new timer appeared above the doorway." },
 
-    { StoryLineNumber: 105, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "**60:00** - Rhema stared at it. Then at Kevin. Her fear was gone — replaced by something sharper." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE4.png", StoryLineNumber: 105, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "**60:00** - Rhema stared at it. Then at Kevin. Her fear was gone — replaced by something sharper." },
 
-    { StoryLineNumber: 106, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "You made a mistake. You think we're trapped in your game. But now we know the rules." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE11.png", StoryLineNumber: 106, StoryChapter: 5, StoryCharacter: "Rhema", StoryCharacterImg: "../OtherImages/CharacterProfile/RhemaProfile.png", StoryLineText: "You made a mistake. You think we're trapped in your game. But now we know the rules." },
 
-    { StoryLineNumber: 107, StoryChapter: 5, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "*(smiling slowly)* - Good." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE5.png", StoryLineNumber: 107, StoryChapter: 5, StoryCharacter: "Kevin", StoryCharacterImg: "../OtherImages/CharacterProfile/KevinProfile.png", StoryLineText: "*(smiling slowly)* - Good." },
 
-    { StoryLineNumber: 108, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "The door creaked open again. Darkness waiting. But this time — they didn't look like victims." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE4.png", StoryLineNumber: 108, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "The door creaked open again. Darkness waiting. But this time — they didn't look like victims." },
 
-    { StoryLineNumber: 109, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "They looked ready." },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE4.png", StoryLineNumber: 109, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "They looked ready." },
 
-    { StoryLineNumber: 110, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "59:59" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE8.png", StoryLineNumber: 110, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "59:59" },
 
-    { StoryLineNumber: 111, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "*And together — they stepped back inside.*" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER3-LINE13.png", StoryLineNumber: 111, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "*And together — they stepped back inside.*" },
 
     // END //
-    { StoryLineNumber: 112, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "END" },
+    { StoryVisualImg: "../OtherImages/ImagesScenes/CHAPTER5-LINE6.png", StoryLineNumber: 112, StoryChapter: 5, StoryCharacter: "", StoryCharacterImg: "../OtherImages/CharacterProfile/NarratorProfile.png", StoryLineText: "END" },
 
 ]
 
@@ -1224,4 +1224,32 @@ function ChapterNextWindow() {
     }, 10000);
 }
 
+function StoryEndVisual() {
+    if (StoryLineNumberSelected === 112) {
+        const currentStoryLinesMain = StoryLines[StoryLineNumberSelected]; // ✅ add mo to!
+        const ImageStoryVisualMain = document.getElementById("ImageStoryVisualMain"); // ✅ add mo rin to!
+        ImageStoryVisualMain.style.opacity = "0";
+        ImageStoryVisualMain.style.transition = "all 0.3s ease-out";
+        ImageStoryVisualMain.style.backgroundImage = `url('${currentStoryLinesMain.StoryVisualImg}')`;
+        setTimeout(() => {
+            ImageStoryVisualMain.style.opacity = "1";
+            MusicPlayLines();
+        }, 1000);
+
+        setTimeout(() => {
+            ImageStoryVisualMain.style.opacity = "0";
+            setTimeout(() => {
+                MusicPlayLines();
+                ImageStoryVisualMain.style.opacity = "0";
+                MainIntroPanel1.style.display = "block";
+                MainIntroPanel1.style.animation = "ScaleDownAnimation1 1s ease both, Fadein 1s ease both";
+
+                MainMenuTitle.style.animation = 'Fadein 1s ease 0.5s forwards, FadeInScaleAnimationIntroright ease 0.9s both';
+                MainMenuButtons.style.animation = 'Fadein 1s ease 0.5s forwards, FadeInScaleAnimationIntroleft 0.1s ease 0.3s both';
+                MainDialoguePanel.style.display = "none";
+            }, 1000);
+        }, 4000);
+    }
+    
+}
 // pinish na, ayan lang pu💕 onti lang no //

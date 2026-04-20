@@ -6,7 +6,8 @@ var Music5 = document.getElementById("Music5");
 var Music6 = document.getElementById("Music6");
 var Music7 = document.getElementById("Music7");
 var Music8 = document.getElementById("Music8");
-var EndingMusic = document.getElementById("EndingMusic");
+var Music9 = document.getElementById("Music9");
+var EndingMusic = document.getElementById("Music9");
 
 function StopAllMusic() {
     Music1.pause(); Music1.currentTime = 0;
@@ -17,7 +18,7 @@ function StopAllMusic() {
     Music6.pause(); Music6.currentTime = 0;
     Music7.pause(); Music7.currentTime = 0;
     Music8.pause(); Music8.currentTime = 0;
-    EndingMusic.pause(); EndingMusic.currentTime = 0;
+    Music9.pause(); Music9.currentTime = 0;
 }
 
 function MusicPlayLines() {
@@ -53,10 +54,12 @@ function MusicPlayLines() {
         StopAllMusic();
         Music8.play();
         Music8.volume = 0.3;
+
+        
     } else if (StoryLineNumberSelected === 112) {
         StopAllMusic();
-        EndiingMusic.play();
         Music9.volume = 0.5;
+        Music9.play();
     }
 }
 
