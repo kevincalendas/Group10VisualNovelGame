@@ -9,6 +9,58 @@ const MainMenuVideo = document.querySelector('#MainMenuVideo');
 var MainMenuMusicBackground = document.getElementById("MainMenuMusicBackground");
 var MainMenuSFX = document.getElementById("MainMenuSFX1");
 
+function resetMainMenuLayout() {
+    const mainMenuContainer = document.getElementById('MainContainerMenu');
+    const mainMenuButton1 = document.getElementById('MainMenuButton1');
+    const mainMenuButton2 = document.getElementById('MainMenuButton2');
+    const mainMenuButton3 = document.getElementById('MainMenuButton3');
+    const mainMenuButton5 = document.getElementById('MainMenuButton5');
+
+    if (mainMenuContainer) {
+        mainMenuContainer.style.display = 'block';
+        mainMenuContainer.style.position = 'fixed';
+        mainMenuContainer.style.left = '50%';
+        mainMenuContainer.style.top = '50%';
+        mainMenuContainer.style.transform = 'translate(-50%, -50%) scale(0.9)';
+        mainMenuContainer.style.visibility = 'visible';
+        mainMenuContainer.style.zIndex = '3';
+    }
+
+    MainMenuTitle.style.display = 'block';
+    MainMenuTitle.style.opacity = '1';
+    MainMenuTitle.style.position = 'absolute';
+    MainMenuTitle.style.right = '1%';
+    MainMenuTitle.style.top = '50%';
+    MainMenuTitle.style.transform = 'translate(0, -50%)';
+    MainMenuTitle.style.animation = 'Fadein 1s ease 0.5s forwards, FadeInScaleAnimationIntroright 1s ease 0.9s both';
+
+    MainMenuButtons.style.display = 'grid';
+    MainMenuButtons.style.position = 'fixed';
+    MainMenuButtons.style.left = '-100px';
+    MainMenuButtons.style.top = '55%';
+    MainMenuButtons.style.transform = 'translate(0, -50%)';
+    MainMenuButtons.style.opacity = '1';
+    MainMenuButtons.style.zIndex = '10';
+    MainMenuButtons.style.animation = 'Fadein 1s ease 0.5s forwards, FadeInScaleAnimationIntroleft 1s ease 0.3s both';
+
+    if (mainMenuButton1) {
+        mainMenuButton1.style.display = 'block';
+        mainMenuButton1.style.opacity = '1';
+    }
+    if (mainMenuButton2) {
+        mainMenuButton2.style.display = 'block';
+        mainMenuButton2.style.opacity = '1';
+    }
+    if (mainMenuButton3) {
+        mainMenuButton3.style.display = 'block';
+        mainMenuButton3.style.opacity = '1';
+    }
+    if (mainMenuButton5) {
+        mainMenuButton5.style.display = 'block';
+        mainMenuButton5.style.opacity = '1';
+    }
+}
+
 
 // for whole website //
 const elem = document.documentElement; // Buong website ito beech
@@ -78,7 +130,6 @@ overlaything.addEventListener('click', () => {
                 MainMenuTitle.style.animation = 'Fadein 1s ease 0.5s forwards, FadeInScaleAnimationIntroright 1s ease 0.9s both';
                 MainMenuButtons.style.animation = 'Fadein 1s ease 0.5s forwards, FadeInScaleAnimationIntroleft 1s ease 0.3s both';
             }, 4500);
-            
         }, 0);  
     }, 3000);
 });
@@ -831,7 +882,6 @@ function DisplayStoryLine() {
         }
     }, 1400);
 
-
     StoryLineNextButton();  
 
     ImageStoryVisualMain.style.display = "block";
@@ -1196,7 +1246,7 @@ function StorySavingSession() {
         ChapterNextWindow();
 
         setTimeout(() => {
-            ChapterDisplayText.innerHTML = "The end";
+            ChapterDisplayText.innerHTML = "The End";
         }, 3600);
         
         setTimeout(() => {
@@ -1206,31 +1256,56 @@ function StorySavingSession() {
             MainNotificationMenu.classList.remove('Notification-Animation');
             void MainNotificationMenu.offsetWidth;
             MainNotificationMenu.classList.add('Notification-Animation');
-    
+
             NotificationTimeout = setTimeout(() => {
                 MainNotificationMenu.style.display = "none";
             }, 6000);
-    
+
             LoadingLineAnimationNotification.classList.remove('Notification-Loading-Line-Animation');
             void LoadingLineAnimationNotification.offsetWidth;
             LoadingLineAnimationNotification.classList.add('Notification-Loading-Line-Animation');
-    
-            MainNotificationText.innerHTML = "Chapter 5 Finished";
-            MainNotificationText1.innerHTML = "Congratulations! You have finished the Story.";
-            
+
+            MainNotificationText.innerHTML = "Story Finished!";
+            MainNotificationText1.innerHTML = "Congratulations! You have finished Unspoken.";
+
+            // ✅ declare muna dito
+            const ImageStoryVisualMain = document.getElementById("ImageStoryVisualMain");
+            const MainDialoguePanel = document.getElementById("MainDialoguePanel");
+
             MainDialoguePanel.style.display = "none";
             ImageStoryVisualMain.style.display = "none";
-            MainIntroPanel.style.animation = 'Fadeout 0.5s ease 4s both, ScaleDownAnimation 1s ease 4s both, MainTextShake3 0.5s ease 2.5s 1 both';
-            MainIntroPanel1.style.animation = 'Fadein 1s ease 4.5s forwards, ScaleDownAnimation1 2s ease 4.2s forwards';
-            setTimeout(() => {
-                MainMenuTitle.style.animation = 'Fadein 1s ease 0.5s forwards, FadeInScaleAnimationIntroright 1s ease 0.9s both';
-                MainMenuButtons.style.animation = 'Fadein 1s ease 0.5s forwards, FadeInScaleAnimationIntroleft 1s ease 0.3s both';
-            }, 4500);
+            NextStoryLineButton.style.display = "none";
+
             Chapter5FinishedSave = "True";
             localStorage.setItem("Chapter5FinishedSaved", Chapter5FinishedSave);
-            console.log("GAME SAVED NOTIFICATION: CHAPTER 3");
+            FinishedGame = "True";
+            localStorage.setItem("FinishedVisualGame", FinishedGame);
+
+            StopAllMusic();
+            EndingMusic.play();
+            EndingMusic.volume = 0.5;
+
+            // ✅ back to main menu
+            setTimeout(() => {
+                MainIntroPanel1.style.display = 'block';
+                MainIntroPanel1.style.animation = 'Fadein 1s ease both, ScaleDownAnimation1 2s ease both';
+                MainMenuMusicBackground.play();
+
+                MainMenuTitle.style.display = 'block';
+                MainMenuTitle.style.opacity = '1';
+                MainMenuTitle.style.animation = 'Fadein 1s ease 0.5s forwards, FadeInScaleAnimationIntroright 1s ease 0.9s both';
+
+                MainMenuButtons.style.display = 'grid';
+                MainMenuButtons.style.opacity = '1';
+                MainMenuButtons.style.animation = 'Fadein 1s ease 0.5s forwards, FadeInScaleAnimationIntroleft 1s ease 0.3s both';
+
+            }, 4500);
+
+            StoryLineNumberSelected = 0;
+            localStorage.setItem("LineStorySavee", StoryLineNumberSelected);
+
         }, 10500);
-    } 
+    }
 }
 
 
