@@ -1192,6 +1192,44 @@ function StorySavingSession() {
             localStorage.setItem("Chapter4FinishedSaved", Chapter4FinishedSave);
             console.log("GAME SAVED NOTIFICATION: CHAPTER 3");
         }, 10500);
+    } else if (StoryLineNumberSelected === 112) {
+        ChapterNextWindow();
+
+        setTimeout(() => {
+            ChapterDisplayText.innerHTML = "The end";
+        }, 3600);
+        
+        setTimeout(() => {
+            clearTimeout(NotificationTimeout);
+            MainNotificationMenu.style.display = "block";
+            MainNotificationMenu.classList.remove('Notification-Animation1');
+            MainNotificationMenu.classList.remove('Notification-Animation');
+            void MainNotificationMenu.offsetWidth;
+            MainNotificationMenu.classList.add('Notification-Animation');
+    
+            NotificationTimeout = setTimeout(() => {
+                MainNotificationMenu.style.display = "none";
+            }, 6000);
+    
+            LoadingLineAnimationNotification.classList.remove('Notification-Loading-Line-Animation');
+            void LoadingLineAnimationNotification.offsetWidth;
+            LoadingLineAnimationNotification.classList.add('Notification-Loading-Line-Animation');
+    
+            MainNotificationText.innerHTML = "Chapter 5 Finished";
+            MainNotificationText1.innerHTML = "Congratulations! You have finished the Story.";
+            
+            MainDialoguePanel.style.display = "none";
+            ImageStoryVisualMain.style.display = "none";
+            MainIntroPanel.style.animation = 'Fadeout 0.5s ease 4s both, ScaleDownAnimation 1s ease 4s both, MainTextShake3 0.5s ease 2.5s 1 both';
+            MainIntroPanel1.style.animation = 'Fadein 1s ease 4.5s forwards, ScaleDownAnimation1 2s ease 4.2s forwards';
+            setTimeout(() => {
+                MainMenuTitle.style.animation = 'Fadein 1s ease 0.5s forwards, FadeInScaleAnimationIntroright 1s ease 0.9s both';
+                MainMenuButtons.style.animation = 'Fadein 1s ease 0.5s forwards, FadeInScaleAnimationIntroleft 1s ease 0.3s both';
+            }, 4500);
+            Chapter5FinishedSave = "True";
+            localStorage.setItem("Chapter5FinishedSaved", Chapter5FinishedSave);
+            console.log("GAME SAVED NOTIFICATION: CHAPTER 3");
+        }, 10500);
     } 
 }
 
@@ -1222,34 +1260,5 @@ function ChapterNextWindow() {
         ChapterDisplayNextWindow.style.display = "none";
         ChapterDisplayText.style.display = "none";
     }, 10000);
-}
-
-function StoryEndVisual() {
-    if (StoryLineNumberSelected === 112) {
-        const currentStoryLinesMain = StoryLines[StoryLineNumberSelected]; // ✅ add mo to!
-        const ImageStoryVisualMain = document.getElementById("ImageStoryVisualMain"); // ✅ add mo rin to!
-        ImageStoryVisualMain.style.opacity = "0";
-        ImageStoryVisualMain.style.transition = "all 0.3s ease-out";
-        ImageStoryVisualMain.style.backgroundImage = `url('${currentStoryLinesMain.StoryVisualImg}')`;
-        setTimeout(() => {
-            ImageStoryVisualMain.style.opacity = "1";
-            MusicPlayLines();
-        }, 1000);
-
-        setTimeout(() => {
-            ImageStoryVisualMain.style.opacity = "0";
-            setTimeout(() => {
-                MusicPlayLines();
-                ImageStoryVisualMain.style.opacity = "0";
-                MainIntroPanel1.style.display = "block";
-                MainIntroPanel1.style.animation = "ScaleDownAnimation1 1s ease both, Fadein 1s ease both";
-
-                MainMenuTitle.style.animation = 'Fadein 1s ease 0.5s forwards, FadeInScaleAnimationIntroright ease 0.9s both';
-                MainMenuButtons.style.animation = 'Fadein 1s ease 0.5s forwards, FadeInScaleAnimationIntroleft 0.1s ease 0.3s both';
-                MainDialoguePanel.style.display = "none";
-            }, 1000);
-        }, 4000);
-    }
-    
 }
 // pinish na, ayan lang pu💕 onti lang no //

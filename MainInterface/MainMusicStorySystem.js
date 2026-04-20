@@ -56,11 +56,7 @@ function MusicPlayLines() {
         Music8.volume = 0.3;
 
         
-    } else if (StoryLineNumberSelected === 112) {
-        StopAllMusic();
-        Music9.volume = 0.5;
-        Music9.play();
-    }
+    } 
 }
 
 
